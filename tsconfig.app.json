@@ -23,7 +23,8 @@
     "noUncheckedSideEffectImports": true,
     "paths": {
       "@icons/*": ["./src/icons/*"],
-      "@viaflex/icons/*": ["./src/ui/icons/*"]
+      "@viaflex-system/icons/*": ["./src/ui/icons/*"],
+      "@helpers/*": ["./src/helpers/*"],
     }
   },
   "include": ["src", "@types/*.d.ts", "scripts"]

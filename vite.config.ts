@@ -8,7 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@icons": path.resolve(__dirname, "src/icons"),
-      "@viaflex/icons": path.resolve(__dirname, "src/ui/icons"),
+      "@viaflex-system/icons": path.resolve(__dirname, "src/ui/icons"),
     },
   },
 });
