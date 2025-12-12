@@ -1,5 +1,4 @@
-import RawBoxFilled from "@icons/filled/misc/cc-box-filled.svg?react";
+import RawSvg from "@icons/filled/misc/cc-box-filled.svg?react";
+import { createIcon } from "@viaflex-system/icons/createIcon";
 
-import { createIcon } from "@viaflex/icons/createIcons";
-
-export const BoxFilledIcon = createIcon(RawBoxFilled);
+export const BoxFilledIcon = createIcon(RawSvg, "BoxFilledIcon");

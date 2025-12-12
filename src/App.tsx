@@ -1,5 +1,9 @@
-import { BoxFilledIcon } from "@viaflex/icons/Filled";
 import { useState } from "react";
+import {
+  BoxFilledIcon,
+  PaletteColorOutlineIcon,
+  SunOutlineIcon,
+} from "./ui/icons";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +17,15 @@ function App() {
       <h1>Vite + React</h1>
 
       <div style={{ color: "red" }}>
-        <BoxFilledIcon name="mEUEWNADWADAWD ADW DAW" className="teste" />
+        <BoxFilledIcon />
+
+        <PaletteColorOutlineIcon />
+
+        <PaletteColorOutlineIcon color="blue" />
+
+        <PaletteColorOutlineIcon color="#00ff00" />
+
+        <SunOutlineIcon />
       </div>
 
       <div className="card">
