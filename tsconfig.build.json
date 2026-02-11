@@ -12,10 +12,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
 
-    "paths": {
-      "@icons/*": ["./src/icons/*"],
-      "@helpers/*": ["./src/helpers/*"]
-    }
+    "declaration": true,
+    "emitDeclarationOnly": false
   },
-  "include": ["src", "@types", "scripts"]
+  "include": ["src"]
 }

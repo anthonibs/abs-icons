@@ -1,38 +1,70 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "generate:icons": "node scripts/generate-icons.js",
-    "optimize:svgs": "node scripts/optimize-svgs.js"
+  "name": "@anthonibs/abs-icons",
+  "version": "1.0.0",
+  "description": "Biblioteca de ícones SVG e React do ABS Design System",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonibs/abs-lib-icons"
   },
-  "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./filled": {
+      "types": "./dist/filled/index.d.ts",
+      "import": "./dist/filled/index.js",
+      "require": "./dist/filled/index.cjs"
+    },
+    "./outline": {
+      "types": "./dist/outline/index.d.ts",
+      "import": "./dist/outline/index.js",
+      "require": "./dist/outline/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "dev:web": "vite --config vite.config.web.ts",
+    "build:web": "vite build --config vite.config.web.ts",
+    "generate:icons": "node scripts/generate-icons.js",
+    "optimize:svgs": "node scripts/optimize-svgs.js",
+    "preview:web": "vite preview --config vite.config.web.ts",
+    "prebuild:lib": "npm run optimize:svgs && npm run generate:icons",
+    "build:lib": "npm run prebuild:lib && tsup"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@svgr/cli": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
     "@types/node": "^24.10.3",
-    "@types/react": "^19.2.5",
-    "@types/react-dom": "^19.2.3",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^5.1.1",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "svgo": "^4.0.0",
+    "tsup": "^8.5.1",
     "typescript": "~5.9.3",
-    "typescript-eslint": "^8.46.4",
     "vite": "npm:rolldown-vite@7.2.5",
     "vite-plugin-svgr": "^4.5.0"
   },
-  "overrides": {
-    "vite": "npm:rolldown-vite@7.2.5"
+  "dependencies": {
+    "@svgr/core": "^8.1.0"
   }
 }
