@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #b8860b;
+  --color-primary-hover: #d4af37;
+
+  --color-background: #ffffff;
+  --color-card: #f4f4f5;
+  --color-card-border: #e4e4e7;
+
+  --color-card-preview: #dedede;
+
+  --color-text-main: #18181b;
+  --color-text-muted: #52525b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #d4af37;
+    --color-primary-hover: #e5c150;
+
+    --color-background: #18181b;
+    --color-background-dark: #0f0f11;
+    --color-card: #27272a;
+    --color-card-border: #3f3f46;
+
+    --color-card-preview: #0b0b0d;
+
+    --color-text-main: #f4f4f5;
+    --color-text-muted: #a1a1aa;
+  }
+}
+
+@theme inline {
+  --color-abs-brand-primary: var(--color-primary);
+  --color-abs-brand-primary-hover: var(--color-primary-hover);
+
+  --color-abs-background: var(--color-background);
+  --color-abs-background-dark: var(--color-background-dark);
+  --color-abs-card-background: var(--color-card);
+  --color-abs-card-border: var(--color-card-border);
+
+  --color-abs-text-main: var(--color-text-main);
+  --color-abs-text-muted: var(--color-text-muted);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-background);
+}
+
+.abs-background-preview {
+  background-color: var(--color-card-preview);
+}
