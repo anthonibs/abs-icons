@@ -1,144 +1,134 @@
 /**
  * ------------------------------------------------------
- *  GERADOR AUTOMÁTICO DE COMPONENTES DE ÍCONES
- *  @viaflex/icons
- * ------------------------------------------------------
- *  Lê src/icons/* e cria componentes React em src/ui/icons/*
- *  Suporta múltiplas categorias e subcategorias
- *  Gera index.ts central
+ * GERADOR AUTOMÁTICO DE COMPONENTES DE ÍCONES
+ * Agora compatível com tsup (sem ?react)
  * ------------------------------------------------------
  */
-
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { transform } from "@svgr/core";
 
-// ------------------------------------------------------
-// Suporte ESModules no Node
-// ------------------------------------------------------
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// ------------------------------------------------------
-// Caminhos principais
-// ------------------------------------------------------
 const SRC = path.resolve(__dirname, "../src/icons");
 const OUT = path.resolve(__dirname, "../src/ui/icons");
 
-// ------------------------------------------------------
-// Helpers
-// ------------------------------------------------------
 function pascalCase(str) {
   return (
     str
       .replace(/cc-|\.svg/g, "")
-      .replace(/[-_](.)/g, (_, c) => c.toUpperCase())
+      .replace(/[-_]+(.)?/g, (_, c) => (c ? c.toUpperCase() : ""))
       .replace(/^(.)/, (c) => c.toUpperCase()) + "Icon"
   );
 }
 
 function ensureDir(dir) {
-  fs.mkdirSync(dir, { recursive: true });
-}
-
-function walkSvgFiles(dir, cb) {
-  for (const file of fs.readdirSync(dir)) {
-    const full = path.join(dir, file);
-    const stat = fs.statSync(full);
-    if (stat.isDirectory()) walkSvgFiles(full, cb);
-    else if (file.endsWith(".svg")) cb(full);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
   }
 }
 
-// ------------------------------------------------------
-// Categorias suportadas
-// ------------------------------------------------------
-const CATEGORY_MAP = {
-  filled: "Filled",
-  outline: "Outline",
-};
+function getSvgFiles(dir, fileList = []) {
+  if (!fs.existsSync(dir)) return [];
+  const files = fs.readdirSync(dir);
 
-const SUBCATEGORY_MAP = {
-  actions: "Actions",
-  misc: "Misc",
-  fuel: "Fuel",
-  data: "Data",
-  navigation: "Navigation",
-  status: "Status",
-  system: "System",
-};
+  files.forEach((file) => {
+    const filePath = path.join(dir, file);
+    const stat = fs.statSync(filePath);
 
-// ------------------------------------------------------
-// Limpa saída e recria estrutura
-// ------------------------------------------------------
-if (fs.existsSync(OUT)) {
-  for (const file of fs.readdirSync(OUT)) {
-    const full = path.join(OUT, file);
-    if (fs.statSync(full).isDirectory()) {
-      fs.rmSync(full, { recursive: true, force: true });
+    if (stat.isDirectory()) {
+      getSvgFiles(filePath, fileList);
+    } else if (file.endsWith(".svg")) {
+      fileList.push(filePath);
     }
-  }
-} else {
-  fs.mkdirSync(OUT, { recursive: true });
+  });
+
+  return fileList;
 }
 
-for (const cat of Object.values(CATEGORY_MAP)) {
-  for (const sub of Object.values(SUBCATEGORY_MAP)) {
-    ensureDir(path.join(OUT, cat, sub));
-  }
+console.log(`🔍 Lendo ícones de: ${SRC}`);
+
+if (fs.existsSync(OUT)) {
+  fs.rmSync(OUT, { recursive: true, force: true });
 }
+ensureDir(OUT);
 
 const exportsList = [];
+const svgFiles = getSvgFiles(SRC);
 
-// ------------------------------------------------------
-// PROCESSAMENTO PRINCIPAL
-// ------------------------------------------------------
-walkSvgFiles(SRC, (svgPath) => {
-  const rel = path.relative(SRC, svgPath).replace(/\\/g, "/");
-  const [styleFolder, groupFolder, filename] = rel.split("/");
+for (const svgPath of svgFiles) {
+  const rel = path.relative(SRC, svgPath).split(path.sep).join("/");
+  const parts = rel.split("/");
 
-  const category = CATEGORY_MAP[styleFolder.toLowerCase()];
-  if (!category) {
-    console.warn("⚠ Ignorado: categoria desconhecida:", styleFolder);
-    return;
-  }
+  if (parts.length < 3) continue;
 
-  const subcategory = SUBCATEGORY_MAP[groupFolder.toLowerCase()];
-  if (!subcategory) {
-    console.warn("⚠ Ignorado: subcategoria desconhecida:", groupFolder);
-    return;
-  }
-
+  const [styleFolder, groupFolder, filename] = parts;
   const componentName = pascalCase(filename);
 
-  const outputDir = path.join(OUT, category, subcategory);
-  const outputFile = path.join(outputDir, `${componentName}.tsx`);
+  const svgCode = fs.readFileSync(svgPath, "utf8");
 
-  // Caminho do SVG usando alias @icons
-  const importPath =
-    "@icons/" + rel.replace(/\\/g, "/").replace(/\.svg$/, "") + ".svg?react";
-
-  // Template do componente React
-  const tsx =
-    `
-import RawSvg from "${importPath}";
-import { createIcon } from "@viaflex-system/icons/createIcon";
-
-export const ${componentName} = createIcon(RawSvg, "${componentName}");
-`.trim() + "\n";
-
-  fs.writeFileSync(outputFile, tsx);
-
-  exportsList.push(
-    `export * from "./${category}/${subcategory}/${componentName}";`
+  // Converte SVG → Componente React
+  const componentCode = await transform(
+    svgCode,
+    {
+      typescript: true,
+      icon: true,
+      jsxRuntime: "automatic",
+      plugins: ["@svgr/plugin-jsx"],
+      exportType: "named",
+      svgo: true,
+      svgoConfig: {
+        plugins: [
+          { name: "removeViewBox", active: false },
+          { name: "removeDimensions", active: true },
+          { name: "removeXMLNS", active: true },
+          { name: "cleanupIds", active: true },
+          { name: "removeComments", active: true },
+        ],
+      },
+    },
+    { componentName },
   );
 
-  console.log(`✔ Criado: ${category}/${subcategory}/${componentName}.tsx`);
-});
+  const outputDir = path.join(
+    OUT,
+    styleFolder.charAt(0).toUpperCase() + styleFolder.slice(1),
+    groupFolder.charAt(0).toUpperCase() + groupFolder.slice(1),
+  );
 
-// ------------------------------------------------------
-// Gera index.ts central
-// ------------------------------------------------------
-fs.writeFileSync(path.join(OUT, "index.ts"), exportsList.join("\n") + "\n");
+  ensureDir(outputDir);
 
-console.log("\n✨ Ícones gerados com sucesso!\n");
+  const outputFile = path.join(outputDir, `${componentName}.tsx`);
+
+  // Wrapper com createIcon
+  const finalCode = `
+${componentCode}
+
+import { createIcon } from "../../../createIcon";
+
+const WrappedIcon = createIcon(${componentName}, "${componentName}");
+
+export default WrappedIcon;
+`.trim();
+
+  fs.writeFileSync(outputFile, finalCode);
+
+  exportsList.push(
+    `export { default as ${componentName} } from "./${
+      styleFolder.charAt(0).toUpperCase() + styleFolder.slice(1)
+    }/${
+      groupFolder.charAt(0).toUpperCase() + groupFolder.slice(1)
+    }/${componentName}";`,
+  );
+
+  console.log(`✅ Gerado: ${componentName}`);
+}
+
+fs.writeFileSync(
+  path.join(OUT, "index.ts"),
+  exportsList.sort().join("\n") + "\n",
+);
+
+console.log(`\n🎉 Processo concluído! ${exportsList.length} ícones gerados.`);
