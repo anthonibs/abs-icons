@@ -65,6 +65,8 @@
     "vite-plugin-svgr": "^4.5.0"
   },
   "dependencies": {
-    "@svgr/core": "^8.1.0"
+    "@svgr/core": "^8.1.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18"
   }
 }
