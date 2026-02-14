@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M12 21.75c-5.38 0-9.75-4.37-9.75-9.75 0-2.54.98-4.94 2.7-6.73H3.5c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h3.56c.11 0 .2.04.29.08.09.05.18.12.24.2q.09.105.12.24c.02.08.03.15.03.23v3.47c0 .41-.34.75-.75.75s-.75-.34-.75-.75V6.07a8.22 8.22 0 0 0-2.5 5.92c0 4.55 3.7 8.25 8.25 8.25.62 0 1.24-.07 1.83-.2.4-.09.8.16.9.57.09.4-.16.81-.57.9-.71.16-1.44.24-2.17.24Zm4.98-1.5h-.06a.6.6 0 0 1-.3-.09.9.9 0 0 1-.24-.2.7.7 0 0 1-.12-.24 1 1 0 0 1-.03-.23V16c0-.41.34-.75.75-.75s.75.34.75.75v1.94A8.22 8.22 0 0 0 20.25 12c0-4.55-3.7-8.25-8.25-8.25-.62 0-1.24.07-1.83.2a.753.753 0 0 1-.33-1.47c.71-.16 1.44-.24 2.17-.24a9.754 9.754 0 0 1 7.04 16.5h1.46c.41 0 .75.34.75.75s-.34.75-.75.75h-3.52Z" /></svg>;
+
+
+      export const RefreshCircleOutlineIcon = createIcon("RefreshCircleOutlineIcon", SVGComponent, {
+  "fileName": "abs-refresh-circle.svg",
+  "presentationName": "refresh-circle",
+  "style": "outline",
+  "category": "general"
+});

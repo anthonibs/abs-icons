@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M16.88 21c-.41 0-.75-.34-.75-.75v-2.62h-2.62c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2.62v-2.62c0-.41.34-.75.75-.75s.75.34.75.75v2.62h2.62c.41 0 .75.34.75.75s-.34.75-.75.75h-2.62v2.62c0 .41-.34.75-.75.75m-8.62 0H6.01c-1.65 0-3-1.35-3-3v-2.25c0-1.65 1.35-3 3-3h2.25c1.65 0 3 1.35 3 3V18c0 1.65-1.35 3-3 3m-2.25-6.75c-.83 0-1.5.67-1.5 1.5V18c0 .83.67 1.5 1.5 1.5h2.25c.83 0 1.5-.67 1.5-1.5v-2.25c0-.83-.67-1.5-1.5-1.5zm12-3h-2.25c-1.65 0-3-1.35-3-3V6c0-1.65 1.35-3 3-3h2.25c1.65 0 3 1.35 3 3v2.25c0 1.65-1.35 3-3 3M15.76 4.5c-.83 0-1.5.67-1.5 1.5v2.25c0 .83.67 1.5 1.5 1.5h2.25c.83 0 1.5-.67 1.5-1.5V6c0-.83-.67-1.5-1.5-1.5zm-7.5 6.75H6.01c-1.65 0-3-1.35-3-3V6c0-1.65 1.35-3 3-3h2.25c1.65 0 3 1.35 3 3v2.25c0 1.65-1.35 3-3 3M6.01 4.5c-.83 0-1.5.67-1.5 1.5v2.25c0 .83.67 1.5 1.5 1.5h2.25c.83 0 1.5-.67 1.5-1.5V6c0-.83-.67-1.5-1.5-1.5z" /></svg>;
+
+
+      export const CategoryAddOutlineIcon = createIcon("CategoryAddOutlineIcon", SVGComponent, {
+  "fileName": "abs-category-add.svg",
+  "presentationName": "category-add",
+  "style": "outline",
+  "category": "interface"
+});

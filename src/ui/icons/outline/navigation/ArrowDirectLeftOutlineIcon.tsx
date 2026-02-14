@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M16.01 2.46 4.23 8.67A3.75 3.75 0 0 0 2.22 12c0 1.4.77 2.68 2.01 3.33l11.78 6.2c1.54.81 3.33.55 4.57-.67.78-.77 1.19-1.76 1.19-2.79 0-.6-.14-1.21-.43-1.78l-.37-.73a8 8 0 0 1 0-7.14l.37-.73c.78-1.55.48-3.34-.76-4.56S17.54 1.65 16 2.46Zm3.53 1.75c.61.6 1.05 1.65.47 2.81l-.37.73a9.51 9.51 0 0 0 0 8.48l.37.73c.58 1.17.14 2.23-.47 2.82-.61.6-1.67 1.02-2.82.41L4.94 13.98c-.76-.4-1.21-1.15-1.21-2 0-.86.45-1.6 1.21-2l11.78-6.21c1.16-.61 2.22-.18 2.83.42Z" /></svg>;
+
+
+      export const ArrowDirectLeftOutlineIcon = createIcon("ArrowDirectLeftOutlineIcon", SVGComponent, {
+  "fileName": "abs-arrow-direct-left.svg",
+  "presentationName": "arrow-direct-left",
+  "style": "outline",
+  "category": "navigation"
+});

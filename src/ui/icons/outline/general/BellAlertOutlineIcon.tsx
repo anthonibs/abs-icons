@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="m19.02 14.64-2.99 4.87a4.14 4.14 0 0 1-3.06 1.96 4.1 4.1 0 0 1-2.87-.73 3.749 3.749 0 0 1-5.29-5.19l-1.04-1.04a4.158 4.158 0 0 1 .76-6.49L9.1 5.2a7.01 7.01 0 0 1 8.18.44l1.31-1.31a.8.8 0 0 1 1.12-.02c.31.3.32.8.02 1.12l-.02.02-1.31 1.31a7.09 7.09 0 0 1 .64 7.89Zm-10.13 5L5.95 16.7c-.47.85-.32 1.9.37 2.58.69.66 1.73.8 2.58.36Zm7.85-12.35a5.45 5.45 0 0 0-6.82-.75L5.35 9.36a2.59 2.59 0 0 0-.47 4.03l5.77 5.77a2.59 2.59 0 0 0 4.04-.48l2.97-4.85c1.19-2.14.82-4.82-.91-6.55Zm1.01 14.21a.787.787 0 0 1-.46-1.43 6.8 6.8 0 0 0 2.62-4.28.8.8 0 0 1 .93-.62c.43.09.7.51.62.93v.02a8.46 8.46 0 0 1-3.24 5.22c-.14.1-.3.15-.47.15ZM3.3 7.04c-.44 0-.79-.36-.79-.8 0-.17.05-.33.15-.47A8.48 8.48 0 0 1 7.97 2.5c.43-.09.85.19.93.62.09.43-.19.85-.62.93a6.82 6.82 0 0 0-4.36 2.66c-.15.2-.38.32-.63.32Z" /></svg>;
+
+
+      export const BellAlertOutlineIcon = createIcon("BellAlertOutlineIcon", SVGComponent, {
+  "fileName": "abs-bell-alert.svg",
+  "presentationName": "bell-alert",
+  "style": "outline",
+  "category": "general"
+});

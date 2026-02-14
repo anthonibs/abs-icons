@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M21.96 14.4a2.7 2.7 0 0 0-1.21-1.72L19.68 12l1.07-.68c.34-.22.63-.51.84-.84.39-.62.52-1.36.37-2.07s-.59-1.33-1.21-1.72l-6.2-3.95a4.75 4.75 0 0 0-5.1 0l-6.2 3.95q-.51.33-.84.84a2.76 2.76 0 0 0 .84 3.8l1.07.68-1.07.68c-.34.21-.63.51-.84.84a2.745 2.745 0 0 0 .85 3.79l6.2 3.95a4.76 4.76 0 0 0 5.1 0l6.2-3.95c.34-.21.63-.51.84-.84.39-.62.52-1.36.37-2.07ZM3.67 8.33c.1-.16.23-.28.38-.38L10.25 4c.53-.34 1.14-.51 1.75-.51s1.22.17 1.75.51l6.2 3.95c.28.18.48.46.55.78.07.33.01.66-.17.94-.1.15-.23.28-.38.38L13.75 14a3.24 3.24 0 0 1-3.49 0l-6.2-3.95c-.58-.37-.75-1.14-.38-1.73Zm16.66 7.34c-.1.15-.23.28-.38.38L13.75 20a3.26 3.26 0 0 1-3.49 0l-6.2-3.95a1.25 1.25 0 0 1-.55-.78 1.25 1.25 0 0 1 .55-1.32l1.66-1.06 3.73 2.38a4.76 4.76 0 0 0 5.1 0l3.73-2.38 1.66 1.06c.28.18.48.46.55.78.07.33.01.66-.17.94Z" /></svg>;
+
+
+      export const LayersDoubleOutlineIcon = createIcon("LayersDoubleOutlineIcon", SVGComponent, {
+  "fileName": "abs-layers-double.svg",
+  "presentationName": "layers-double",
+  "style": "outline",
+  "category": "interface"
+});

@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M12.97 3.24a1.62 1.62 0 0 0-1.94 0C9.06 4.74 4.47 8.76 4.5 13.58c0 4.14 3.36 7.5 7.5 7.5s7.5-3.36 7.5-7.49c.03-4.76-4.56-8.82-6.53-10.35m5.04 10.35c0 3.3-2.69 5.99-6 5.99s-6-2.69-6-6c-.03-4.26 4.54-8.07 5.94-9.14.02-.02.04-.02.05-.02s.04 0 .06.02c1.4 1.08 5.98 4.93 5.95 9.15" /></svg>;
+
+
+      export const DropOutlineIcon = createIcon("DropOutlineIcon", SVGComponent, {
+  "fileName": "abs-drop.svg",
+  "presentationName": "drop",
+  "style": "outline",
+  "category": "energy"
+});

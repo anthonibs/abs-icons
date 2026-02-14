@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M14.79 2H9.2C4.11 2 1.93 4.16 1.93 9.23v5.55c0 5.06 2.17 7.23 7.27 7.23h5.59c5.09 0 7.27-2.16 7.27-7.23V9.23c0-5.06-2.17-7.23-7.27-7.23m5.77 12.77c0 4.23-1.51 5.73-5.77 5.73H9.2c-4.26 0-5.77-1.5-5.77-5.73V9.22c0-4.23 1.51-5.73 5.77-5.73h5.59c4.26 0 5.77 1.5 5.77 5.73z" /><path d="m16.51 7.7-2.98-1.65c-.88-.48-2.19-.47-3.04.01L7.51 7.7c-.91.5-1.62 1.7-1.62 2.73v3.14c0 1.05.7 2.23 1.62 2.73l2.98 1.65c.43.24.97.36 1.52.36s1.09-.12 1.53-.36l2.98-1.65c.91-.5 1.62-1.7 1.62-2.73v-3.15c0-1.05-.7-2.23-1.62-2.73Zm-5.3-.32c.2-.11.5-.17.79-.17s.59.06.79.17l2.98 1.65c.06.03.12.09.18.14l-3.96 2.28-3.95-2.27c.06-.05.12-.11.18-.15l2.98-1.65Zm-2.98 7.61c-.44-.24-.84-.91-.84-1.41v-3.06l3.86 2.22v3.91s-.03 0-.04-.01zm7.56 0-2.98 1.64s-.04.01-.05.02v-3.91l3.87-2.23v3.06c0 .49-.41 1.18-.84 1.42" /></g></svg>;
+
+
+      export const CubeFlatOutlineIcon = createIcon("CubeFlatOutlineIcon", SVGComponent, {
+  "fileName": "abs-cube-flat.svg",
+  "presentationName": "cube-flat",
+  "style": "outline",
+  "category": "general"
+});

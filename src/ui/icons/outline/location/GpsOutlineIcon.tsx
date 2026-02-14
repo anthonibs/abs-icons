@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M12 8.48c-1.93 0-3.51 1.58-3.51 3.52s1.57 3.52 3.51 3.52 3.51-1.58 3.51-3.52S13.94 8.48 12 8.48m0 5.55c-1.11 0-2.01-.91-2.01-2.02s.9-2.02 2.01-2.02 2.01.91 2.01 2.02-.9 2.02-2.01 2.02" /><path d="M21.19 11.25H19.6c-.35-3.64-3.24-6.54-6.86-6.9v-1.6c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1.6c-3.62.36-6.51 3.26-6.86 6.9H2.79c-.41 0-.75.34-.75.75s.34.75.75.75h1.59c.35 3.64 3.24 6.54 6.86 6.9v1.6c0 .41.34.75.75.75s.75-.34.75-.75v-1.6c3.62-.36 6.51-3.26 6.86-6.9h1.59c.41 0 .75-.34.75-.75s-.34-.75-.75-.75M12 18.19c-3.39 0-6.15-2.78-6.15-6.19S8.61 5.81 12 5.81s6.15 2.78 6.15 6.19-2.76 6.19-6.15 6.19" /></g></svg>;
+
+
+      export const GpsOutlineIcon = createIcon("GpsOutlineIcon", SVGComponent, {
+  "fileName": "abs-gps.svg",
+  "presentationName": "gps",
+  "style": "outline",
+  "category": "location"
+});

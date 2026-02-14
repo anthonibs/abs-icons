@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M3 6.18C3 4.42 4.42 3 6.18 3h11.64C19.58 3 21 4.42 21 6.18v11.64c0 1.76-1.42 3.18-3.18 3.18H6.18C4.42 21 3 19.58 3 17.82zm15.75 8.46c0-.25-.1-.48-.27-.66l-1.45-1.45a.754.754 0 0 0-1.06 0l-1.94 1.94c-.29.29-.77.29-1.06 0l-3.44-3.44a.754.754 0 0 0-1.06 0l-2.95 2.95c-.17.17-.27.41-.27.66v3.19c0 .51.42.93.93.93h11.64c.51 0 .93-.42.93-.93zM18 7.51c0 .83-.67 1.5-1.5 1.5S15 8.34 15 7.51s.67-1.5 1.5-1.5 1.5.67 1.5 1.5" /></svg>;
+
+
+      export const ImageSquareSolidIcon = createIcon("ImageSquareSolidIcon", SVGComponent, {
+  "fileName": "abs-image-square-solid.svg",
+  "presentationName": "image-square",
+  "style": "solid",
+  "category": "interface"
+});

@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M8.22 4.23a.796.796 0 0 0-.99.55l-4 14a.8.8 0 1 0 1.54.44l4-14a.8.8 0 0 0-.55-.99m12.55 14.55-4-14a.803.803 0 0 0-.99-.55c-.42.12-.67.56-.55.99l4 14a.801.801 0 0 0 1.54-.44M12 5.2c-.44 0-.8.36-.8.8v2c0 .44.36.8.8.8s.8-.36.8-.8V6c0-.44-.36-.8-.8-.8m0 5c-.44 0-.8.36-.8.8v2c0 .44.36.8.8.8s.8-.36.8-.8v-2c0-.44-.36-.8-.8-.8m0 5c-.44 0-.8.36-.8.8v2c0 .44.36.8.8.8s.8-.36.8-.8v-2c0-.44-.36-.8-.8-.8" /></svg>;
+
+
+      export const RoadOutlineIcon = createIcon("RoadOutlineIcon", SVGComponent, {
+  "fileName": "abs-road.svg",
+  "presentationName": "road",
+  "style": "outline",
+  "category": "transport"
+});

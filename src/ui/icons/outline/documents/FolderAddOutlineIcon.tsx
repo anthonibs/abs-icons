@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g fillRule="evenodd"><path d="M12.8 13.87v-1.82c0-.44-.36-.8-.8-.8s-.8.36-.8.8v1.82H9.32c-.44 0-.8.36-.8.8s.36.8.8.8h1.88v1.94c0 .44.36.8.8.8a.8.8 0 0 0 .81-.8v-1.94h1.88c.23 0 .42-.09.57-.24s.23-.35.24-.57c0-.44-.36-.8-.8-.8h-1.88Z" /><path d="M20.39 7.13c-1.16-1.25-2.67-1.22-3.88-1.2-.73.02-1.42.03-1.88-.23-.58-.33-.77-.69-1.02-1.16-.28-.53-.64-1.2-1.58-1.7-1.66-.9-3.61-1.07-6.12-.56-2.53.53-4.17 2.77-4.17 5.71V14c0 7.42 4.45 8 10.26 8s10.26-.59 10.26-8.03c0-1.8 0-4.82-1.87-6.84M12 20.51c-6.1 0-8.77-.62-8.77-6.52V7.98c0-1.76.79-3.8 2.99-4.25.82-.17 1.57-.25 2.26-.25 1.1 0 2.03.22 2.86.66.54.29.72.63.97 1.09.29.54.65 1.21 1.59 1.75.81.46 1.72.44 2.62.43h.03c1.1-.02 2.05-.04 2.76.72 1.47 1.59 1.47 4.14 1.47 5.85 0 5.88-2.81 6.52-8.77 6.52Z" /></g></svg>;
+
+
+      export const FolderAddOutlineIcon = createIcon("FolderAddOutlineIcon", SVGComponent, {
+  "fileName": "abs-folder-add.svg",
+  "presentationName": "folder-add",
+  "style": "outline",
+  "category": "documents"
+});

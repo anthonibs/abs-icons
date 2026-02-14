@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M18.9 9.87h-.58c-.01-.84-.06-1.36-.27-1.86a3.52 3.52 0 0 0-1.93-1.86c-.65-.26-1.35-.26-2.73-.26h-.12v-.53c0-1.66-1.39-3.01-3.1-3.01s-3.1 1.35-3.1 3.01v.53h-.12c-1.39 0-2.08 0-2.73.26-.88.35-1.57 1.01-1.93 1.86-.28.64-.28 1.31-.28 2.66 0 .44.36.8.8.8h1.38c.83 0 1.5.63 1.5 1.41s-.67 1.41-1.5 1.41H2.81c-.44 0-.8.36-.8.8v1.5c0 1.62 0 2.43.39 3.17.35.65.89 1.17 1.56 1.5.76.37 1.59.37 3.26.37h1.1c.44 0 .8-.36.8-.8v-1.55c0-.66.57-1.19 1.27-1.19s1.27.53 1.27 1.19v1.55c0 .44.36.8.8.8h.64c1.67 0 2.5 0 3.26-.37.67-.33 1.21-.85 1.56-1.5.39-.74.39-1.55.39-3.17v-.7h.58c1.71 0 3.1-1.35 3.1-3.01s-1.39-3.01-3.1-3.01Z" /></svg>;
+
+
+      export const PuzzlePieceSolidIcon = createIcon("PuzzlePieceSolidIcon", SVGComponent, {
+  "fileName": "abs-puzzle-piece-solid.svg",
+  "presentationName": "puzzle-piece",
+  "style": "solid",
+  "category": "general"
+});

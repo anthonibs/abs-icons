@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M19.07 4.96c-3.9-3.89-10.24-3.89-14.14 0A9.9 9.9 0 0 0 2 12.16a9.95 9.95 0 0 0 3.13 7.12c1.82 1.73 4.26 2.69 6.86 2.69s5.04-.95 6.86-2.69c1.98-1.87 3.1-4.4 3.13-7.12.04-2.72-1-5.28-2.93-7.2ZM12 3.67c2.24 0 4.34.87 5.92 2.44a8.26 8.26 0 0 1 2.45 6.03 8.36 8.36 0 0 1-2.62 5.96c-3.17 3-8.33 3-11.49 0a8.2 8.2 0 0 1-2.62-5.96c-.03-2.28.84-4.42 2.45-6.03a8.34 8.34 0 0 1 5.92-2.44Z" /><path d="M12 17.93c1.54 0 2.99-.57 4.08-1.59a.75.75 0 0 0 .25-.56c0-.22-.07-.43-.22-.59a.81.81 0 0 0-1.15-.03c-1.63 1.54-4.29 1.54-5.93 0a.82.82 0 0 0-1.15.03c-.31.33-.29.83.03 1.15 1.09 1.03 2.54 1.59 4.08 1.59Z" /></g></svg>;
+
+
+      export const EmojiHappyOutlineIcon = createIcon("EmojiHappyOutlineIcon", SVGComponent, {
+  "fileName": "abs-emoji-happy.svg",
+  "presentationName": "emoji-happy",
+  "style": "outline",
+  "category": "general"
+});

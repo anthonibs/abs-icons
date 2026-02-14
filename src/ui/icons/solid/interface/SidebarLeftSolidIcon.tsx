@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M7.92 3.01v17.98c-3.49-.44-5-2.45-5-6.49v-5c0-4.04 1.51-6.05 5-6.49M21.08 9.5v5c0 4.61-1.97 6.58-6.58 6.58H9.42V2.92h5.08c4.61 0 6.58 1.97 6.58 6.58m-5.82 4.63c0-.2-.08-.39-.22-.53l-1.3-1.3a.417.417 0 0 1 0-.6l1.29-1.3c.29-.3.29-.77 0-1.06a.745.745 0 0 0-1.06 0l-2.13 2.13a.75.75 0 0 0 0 1.06l2.13 2.13c.14.15.33.22.53.22.21 0 .39-.07.54-.22.14-.14.22-.32.22-.53" /></svg>;
+
+
+      export const SidebarLeftSolidIcon = createIcon("SidebarLeftSolidIcon", SVGComponent, {
+  "fileName": "abs-sidebar-left-solid.svg",
+  "presentationName": "sidebar-left",
+  "style": "solid",
+  "category": "interface"
+});

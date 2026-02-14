@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M20.18 7.31c-.41-.44-.71-.66-1.18-.83-.18-.86-.82-2.62-2.09-3.34-2.32-1.31-7.88-.91-8.53-.84-.72.03-1.48.11-2.31.28C3.6 3.09 2 5.27 2 8.14V14c0 7.23 4.33 7.8 10 7.8s10-.57 10-7.83c0-1.76 0-4.7-1.82-6.66m-2.79-1.16c-.3 0-.71-.01-.99 0-.71.02-1.39.03-1.83-.23-.56-.32-.75-.68-.99-1.13-.19-.35-.42-.76-.82-1.13 1.37.07 2.68.27 3.36.72.59.39 1.07 1.13 1.28 1.78ZM12 20.36c-5.95 0-8.55-.6-8.55-6.36V8.14c0-1.71.77-3.7 2.92-4.14.8-.17 1.53-.25 2.2-.25 1.07 0 1.98.21 2.78.65.53.29.71.61.95 1.07.28.53.63 1.18 1.55 1.7.79.45 1.68.43 2.55.42h.02c1.07-.02 2-.04 2.69.71 1.43 1.55 1.43 4.03 1.43 5.71 0 5.73-2.74 6.36-8.55 6.36Z" /></svg>;
+
+
+      export const FolderOpenOutlineIcon = createIcon("FolderOpenOutlineIcon", SVGComponent, {
+  "fileName": "abs-folder-open.svg",
+  "presentationName": "folder-open",
+  "style": "outline",
+  "category": "documents"
+});

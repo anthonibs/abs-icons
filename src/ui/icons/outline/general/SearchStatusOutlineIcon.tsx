@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="m21.53 20.47-2.77-2.77c1.25-1.54 1.91-3.65 1.91-6.24 0-.27-.01-.54-.03-.8 0-.08-.01-.17-.02-.25a.67.67 0 0 0-.27-.41.7.7 0 0 0-.33-.14.76.76 0 0 0-.61.14q-.135.12-.21.3h-.01s-.02.07-.02.1c0 .02-.01.03-.02.04v.02c-.02.23.02.6.02 1 0 4.97-2.74 7.71-7.71 7.71s-7.71-2.74-7.71-7.71 2.74-7.71 7.71-7.71c.28 0 .55.01.82.03h.23c.18-.01.34-.09.47-.22l.02-.02c.12-.14.18-.3.19-.46a.66.66 0 0 0-.3-.63c-.09-.06-.18-.1-.28-.13-.05-.01-.1-.02-.15-.02-.32-.03-.65-.05-1-.05-5.85 0-9.21 3.36-9.21 9.21s3.36 9.21 9.21 9.21c2.59 0 4.7-.66 6.24-1.91l2.77 2.77c.15.15.34.22.53.22s.38-.07.53-.22c.29-.29.29-.77 0-1.06" /><path d="M19.85 6.41h-6c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h6c.41 0 .75.34.75.75s-.34.75-.75.75m-3 3h-3c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h3c.41 0 .75.34.75.75s-.34.75-.75.75" /></g></svg>;
+
+
+      export const SearchStatusOutlineIcon = createIcon("SearchStatusOutlineIcon", SVGComponent, {
+  "fileName": "abs-search-status.svg",
+  "presentationName": "search-status",
+  "style": "outline",
+  "category": "general"
+});

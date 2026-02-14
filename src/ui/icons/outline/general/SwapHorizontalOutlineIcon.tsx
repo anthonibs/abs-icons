@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M6.6 2.73 2.72 6.61s0 .02-.02.02c-.06.07-.12.14-.15.23-.03.08-.05.17-.05.27v.06c0 .09.02.18.05.27.04.09.09.16.15.23 0 0 0 .02.02.03L6.6 11.6c.3.3.79.3 1.1 0 .3-.3.3-.79 0-1.1L5.15 7.95h15.58a.781.781 0 0 0 0-1.56H5.15L7.7 3.84c.15-.15.23-.35.23-.55s-.08-.4-.23-.55c-.3-.3-.79-.3-1.1 0Zm9.7 10.79 2.55 2.55H3.28a.781.781 0 0 0 0 1.56h15.58l-2.55 2.55c-.3.3-.3.79 0 1.1.3.3.79.3 1.1 0l3.88-3.88s0-.01.01-.02a.77.77 0 0 0 .15-.83.8.8 0 0 0-.15-.23s0-.01-.01-.02l-3.88-3.88c-.3-.3-.79-.3-1.1 0-.3.3-.3.79 0 1.1Z" /></svg>;
+
+
+      export const SwapHorizontalOutlineIcon = createIcon("SwapHorizontalOutlineIcon", SVGComponent, {
+  "fileName": "abs-swap-horizontal.svg",
+  "presentationName": "swap-horizontal",
+  "style": "outline",
+  "category": "general"
+});

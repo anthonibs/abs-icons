@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M17 2.2H7C4.35 2.2 2.2 4.35 2.2 7v10c0 2.65 2.15 4.8 4.8 4.8h10c2.65 0 4.8-2.15 4.8-4.8V7c0-2.65-2.15-4.8-4.8-4.8M20.2 17c0 1.76-1.44 3.2-3.2 3.2H7A3.21 3.21 0 0 1 3.8 17V7c0-1.76 1.44-3.2 3.2-3.2h10c1.76 0 3.2 1.44 3.2 3.2z" /><path d="M16 11.2H8c-.44 0-.8.36-.8.8s.36.8.8.8h8c.44 0 .8-.36.8-.8s-.36-.8-.8-.8M8 8.8h6c.44 0 .8-.36.8-.8s-.36-.8-.8-.8H8c-.44 0-.8.36-.8.8s.36.8.8.8m4 6.4H8c-.44 0-.8.36-.8.8s.36.8.8.8h4c.44 0 .8-.36.8-.8s-.36-.8-.8-.8" /></svg>;
+
+
+      export const DocumentTextOutlineIcon = createIcon("DocumentTextOutlineIcon", SVGComponent, {
+  "fileName": "abs-document-text.svg",
+  "presentationName": "document-text",
+  "style": "outline",
+  "category": "documents"
+});

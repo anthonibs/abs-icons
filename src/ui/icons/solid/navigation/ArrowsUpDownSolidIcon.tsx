@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M20.22 6a.8.8 0 0 0-.18-.27l-2.85-2.85a.7.7 0 0 0-.26-.18.8.8 0 0 0-.64 0 .8.8 0 0 0-.27.18l-2.85 2.85a.9.9 0 0 0-.23.42c-.03.16-.01.33.05.48s.17.28.31.37c.13.09.29.14.45.14h2.03v13.42c0 .22.09.43.25.58.3.31.85.31 1.16 0 .15-.15.24-.36.24-.58V7.14h2.03c.16 0 .32-.05.46-.14a.86.86 0 0 0 .31-.37c.03-.1.05-.21.05-.31a.8.8 0 0 0-.06-.32M10.7 17.01a.74.74 0 0 0-.46-.14H8.22V3.45a.88.88 0 0 0-.25-.59 1 1 0 0 0-.26-.18.85.85 0 0 0-.9.18c-.16.16-.24.36-.24.59v13.42H4.54c-.16 0-.32.05-.45.14a.86.86 0 0 0-.31.37.84.84 0 0 0-.05.47c.03.17.11.31.23.43 3.06 3.06 3.1 3.09 3.43 3.09h.01a.95.95 0 0 0 .58-.24l2.85-2.85c.07-.08.13-.17.17-.27s.07-.21.06-.32a.66.66 0 0 0-.05-.31.86.86 0 0 0-.31-.37" /></svg>;
+
+
+      export const ArrowsUpDownSolidIcon = createIcon("ArrowsUpDownSolidIcon", SVGComponent, {
+  "fileName": "abs-arrows-up-down-solid.svg",
+  "presentationName": "arrows-up-down",
+  "style": "solid",
+  "category": "navigation"
+});

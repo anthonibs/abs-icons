@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M21.32 11.89v.33c.11 7.25-1.99 9.39-9.3 9.52h-.65c-3.54 0-5.56-.55-6.9-1.85-1.41-1.37-2.02-3.54-2.09-7.47s.46-6.12 1.84-7.54c1.36-1.42 3.53-2.03 7.46-2.1h.22a.77.77 0 0 1 .03 1.54h-.22c-3.48.07-5.32.53-6.38 1.62s-1.46 2.96-1.4 6.44c.06 3.49.53 5.33 1.62 6.39 1.09 1.05 2.96 1.46 6.44 1.4s5.33-.53 6.39-1.62 1.45-2.96 1.39-6.44v-.07c0-.43.36-.78.78-.78.38 0 .69.26.76.61Z" /><path d="M20.76 2.25h-5.27c-.45 0-.82.37-.82.82s.37.82.82.82h3.33l-5.84 5.84-.04.04a.821.821 0 0 0 1.2 1.12l5.85-5.85v3.33c0 .45.37.82.82.82s.82-.37.82-.82V3.11a.86.86 0 0 0-.86-.86Z" /></svg>;
+
+
+      export const ExportSquareOutlineIcon = createIcon("ExportSquareOutlineIcon", SVGComponent, {
+  "fileName": "abs-export-square.svg",
+  "presentationName": "export-square",
+  "style": "outline",
+  "category": "interface"
+});

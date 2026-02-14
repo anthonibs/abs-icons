@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M19.52 7.23h.01l-3.41-3.42a.43.43 0 0 0-.61 0l-.45.45c-.17.17-.17.44 0 .61l1.8 1.8c-1.05.4-1.76 1.47-1.58 2.71.16 1.1 1.1 1.99 2.2 2.11.47.05.89-.03 1.27-.19v7.21c0 .55-.45 1-1 1s-1-.45-1-1v-4.5c0-1.1-.9-2-2-2h-1v-7c0-1.1-.9-2-2-2h-6c-1.1 0-2 .9-2 2v16h10v-7.5h1.5v4.86c0 1.31.94 2.5 2.24 2.63a2.5 2.5 0 0 0 2.76-2.49v-9.5c0-.69-.28-1.32-.73-1.77ZM11.38 10H6.13a.38.38 0 0 1-.38-.38V5.37c0-.21.17-.38.38-.38h5.25c.21 0 .38.17.38.38v4.25c0 .21-.17.38-.38.38m6.38 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1" /></svg>;
+
+
+      export const FuelPumpSolidIcon = createIcon("FuelPumpSolidIcon", SVGComponent, {
+  "fileName": "abs-fuel-pump-solid.svg",
+  "presentationName": "fuel-pump",
+  "style": "solid",
+  "category": "energy"
+});

@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M19.03 16.75a.75.75 0 0 0-1.06 0l-2.32 2.32-.89-.89a.767.767 0 0 0-1.07 0c-.29.29-.29.77 0 1.07l1.43 1.43a.75.75 0 0 0 1.06 0l2.85-2.85c.29-.29.29-.77 0-1.07Zm-7.2-4.97h.27c2.66-.09 4.74-2.25 4.74-4.91s-2.21-4.92-4.93-4.92c-1.32 0-2.55.51-3.48 1.45C7.5 4.33 7 5.56 7 6.87c0 2.67 2.12 4.82 4.83 4.91M8.51 6.87c0-.91.35-1.76.99-2.41s1.5-1 2.41-1c1.88 0 3.41 1.53 3.41 3.41s-1.42 3.32-3.23 3.4h-.3a3.39 3.39 0 0 1-3.28-3.41Z" /><path d="M11.91 20.54c-1.63 0-3.15-.42-4.28-1.17-.88-.59-1.37-1.35-1.37-2.13s.49-1.54 1.37-2.12c2.32-1.55 6.24-1.55 8.56 0 .17.11.37.15.56.11.2-.04.37-.15.48-.32a.763.763 0 0 0-.21-1.05c-2.82-1.89-7.41-1.89-10.23 0-1.31.87-2.04 2.07-2.04 3.37s.72 2.51 2.04 3.39c1.38.92 3.19 1.42 5.12 1.42a.749.749 0 1 0 0-1.5" /></g></svg>;
+
+
+      export const UserCheckOutlineIcon = createIcon("UserCheckOutlineIcon", SVGComponent, {
+  "fileName": "abs-user-check.svg",
+  "presentationName": "user-check",
+  "style": "outline",
+  "category": "users"
+});

@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M15.5 22.3h-8c-1.55 0-3.01-.6-4.1-1.7a5.73 5.73 0 0 1-1.7-4.1v-8c0-1.55.6-3.01 1.7-4.1 1.1-1.1 2.55-1.7 4.1-1.7h7c.44 0 .8.36.8.8s-.36.8-.8.8h-7c-1.12 0-2.18.44-2.97 1.23S3.3 7.38 3.3 8.5v8c0 1.12.44 2.18 1.23 2.97S6.38 20.7 7.5 20.7h8c1.12 0 2.18-.44 2.97-1.23s1.23-1.85 1.23-2.97v-7c0-.44.36-.8.8-.8s.8.36.8.8v7c0 1.55-.6 3.01-1.7 4.1a5.77 5.77 0 0 1-4.1 1.7" /><path d="M7 14.8c-.2 0-.41-.08-.57-.23a.803.803 0 0 1 0-1.13l1.94-1.94c.21-.21.46-.38.74-.5.56-.23 1.2-.23 1.77 0 .28.12.53.29.75.5l.88.88c.07.07.14.12.23.16.17.07.36.07.53 0 .09-.04.16-.09.22-.15l1.95-1.95c.31-.31.82-.31 1.13 0s.31.82 0 1.13l-1.94 1.94c-.21.21-.46.38-.74.5-.56.23-1.2.24-1.77 0-.28-.12-.53-.29-.75-.5l-.88-.88a.6.6 0 0 0-.23-.15.7.7 0 0 0-.53 0c-.09.04-.16.09-.23.15l-1.94 1.94c-.16.16-.36.23-.57.23Zm12.5-7.5c-1.54 0-2.8-1.26-2.8-2.8s1.26-2.8 2.8-2.8 2.8 1.26 2.8 2.8-1.26 2.8-2.8 2.8m0-4c-.66 0-1.2.54-1.2 1.2s.54 1.2 1.2 1.2 1.2-.54 1.2-1.2-.54-1.2-1.2-1.2" /></svg>;
+
+
+      export const ChartLineActivityOutlineIcon = createIcon("ChartLineActivityOutlineIcon", SVGComponent, {
+  "fileName": "abs-chart-line-activity.svg",
+  "presentationName": "chart-line-activity",
+  "style": "outline",
+  "category": "analytics"
+});

@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M14.08 10.81c-.49 0-.89-.39-.9-.88l-.04-5.03c0-.25.1-.47.26-.63s.38-.26.63-.27c.49 0 .89.39.9.88l.03 3.56c0 .32.26.57.58.57l3.56-.03c.49 0 .89.39.9.88 0 .49-.39.89-.88.9l-5.03.04h-.01Zm-4.16 2.38c.49 0 .89.4.89.89v5.03c0 .25-.1.47-.26.63s-.38.26-.63.26c-.49 0-.89-.4-.89-.89v-3.56a.58.58 0 0 0-.58-.58H4.89c-.49 0-.89-.4-.89-.89s.4-.89.89-.89z" /></svg>;
+
+
+      export const EnlargeShrinkOutlineIcon = createIcon("EnlargeShrinkOutlineIcon", SVGComponent, {
+  "fileName": "abs-enlarge-shrink.svg",
+  "presentationName": "enlarge-shrink",
+  "style": "outline",
+  "category": "general"
+});

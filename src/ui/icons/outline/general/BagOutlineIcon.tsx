@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M19.9 8.93c-.66-.73-1.65-1.17-3.02-1.32v-.7c0-1.39-.59-2.72-1.62-3.65a4.85 4.85 0 0 0-3.74-1.24c-2.39.22-4.41 2.55-4.41 5.07v.52c-1.36.15-2.36.59-3.02 1.32-.74.82-1.01 1.98-.84 3.55l.69 5.54c.21 1.97 1 3.97 5.29 3.97h5.51c4.29 0 5.09-2.01 5.29-3.96l.69-5.56c.17-1.56-.1-2.72-.84-3.54Zm-8.23-5.41c.95-.09 1.88.21 2.59.86a3.46 3.46 0 0 1 1.12 2.54v.63H8.61V7.1c0-1.75 1.43-3.42 3.05-3.58Zm7.58 8.79-.69 5.57c-.16 1.49-.54 2.63-3.8 2.63H9.25c-3.26 0-3.64-1.14-3.8-2.65l-.69-5.54c-.12-1.13.02-1.89.46-2.38.53-.59 1.58-.89 3.11-.89h7.35c1.54 0 2.58.3 3.11.89.44.49.59 1.25.46 2.37" /><path d="M15.22 11c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1m-6.43 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1" /></g></svg>;
+
+
+      export const BagOutlineIcon = createIcon("BagOutlineIcon", SVGComponent, {
+  "fileName": "abs-bag.svg",
+  "presentationName": "bag",
+  "style": "outline",
+  "category": "general"
+});
