@@ -40,7 +40,7 @@
     "lint": "eslint .",
     "dev:web": "vite --config vite.config.web.ts",
     "build:web": "vite build --config vite.config.web.ts",
-    "generate:icons": "node scripts/generate-icons.js",
+    "generate:icons": "node scripts/build.js",
     "optimize:svgs": "node scripts/optimize-svgs.js",
     "preview:web": "vite preview --config vite.config.web.ts",
     "prebuild:lib": "npm run optimize:svgs && npm run generate:icons",
