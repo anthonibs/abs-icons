@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { DocumentDuplicateSolidIcon } from "../../ui/icons";
+
 const HeroBanner = () => {
   const [copied, setCopied] = useState(false);
 
@@ -17,7 +19,10 @@ const HeroBanner = () => {
   }
 
   return (
-    <section id="hero-banner" className="border-b border-abs-card-border-dark bg-abs-background-dark relative overflow-hidden">
+    <section
+      id="hero-banner"
+      className="border-b border-abs-card-border-dark bg-abs-background-dark relative overflow-hidden"
+    >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl opacity-10 pointer-events-none">
         <div className="absolute top-[-50%] left-[20%] w-96 h-96 bg-abs-brand-primary rounded-full blur-3xl"></div>
       </div>
@@ -33,6 +38,7 @@ const HeroBanner = () => {
             A powerful collection of refined SVG icons crafted for modern React
             interfaces. Precision-built, lightweight, and ready for production.
           </p>
+
           <div className="flex flex-wrap items-center justify-center gap-6 mt-4">
             <a
               href="https://github.com/anthonibs/abs-lib-icons"
@@ -70,7 +76,11 @@ const HeroBanner = () => {
                   className="p-1 rounded-full cursor-pointer  text-abs-text-muted hover:text-abs-brand-primary transition-colors"
                   title="Copy command"
                 >
-                  {copied ? "Copied!" : "Copy"}
+                  {copied ? (
+                    <DocumentDuplicateSolidIcon className="w-5 h-5" />
+                  ) : (
+                    <DocumentDuplicateSolidIcon className="w-5 h-5" />
+                  )}
                 </button>
               </div>
             </div>
