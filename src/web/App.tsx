@@ -8,9 +8,7 @@ export default function App() {
     <div className="app">
       <Header />
       <HeroBanner />
-
       <Content />
-
       <Footer />
     </div>
   );
