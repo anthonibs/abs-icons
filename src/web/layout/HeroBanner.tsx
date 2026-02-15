@@ -1,12 +1,18 @@
 import { useState } from "react";
 
-import { DocumentDuplicateSolidIcon } from "../../ui/icons";
+import {
+  DocumentDuplicateSolidIcon,
+  DocumentMultipleOutlineIcon,
+} from "../../ui/icons";
+
+const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
+const GETTING_STARTED_COMMAND = import.meta.env.VITE_GETTING_STARTED_COMMAND;
 
 const HeroBanner = () => {
   const [copied, setCopied] = useState(false);
 
   function copyToClipboard() {
-    const command = "npm i @anthonibs/abs-icons";
+    const command = GETTING_STARTED_COMMAND;
     navigator.clipboard.writeText(command).then(
       () => {
         setCopied(true);
@@ -41,9 +47,9 @@ const HeroBanner = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-6 mt-4">
             <a
-              href="https://github.com/anthonibs/abs-lib-icons"
+              href={GITHUB_URL}
               rel="noopener noreferrer"
-              className="px-6 cursor-pointer py-2.5 text-sm font-semibold rounded-lg flex h-13.75 items-center gap-2 text-abs-background-dark bg-abs-brand-primary hover:bg-abs-brand-primary-hover transition-all shadow-[0_0_15px_-3px_rgba(212,175,55,0.4)] duration-300 hover:shadow-[0_0_20px_-3px_rgba(212,175,55,0.6)]"
+              className="px-6 cursor-pointer py-2.5 text-sm font-semibold rounded-lg flex h-13.75 items-center gap-2 text-abs-background-dark bg-abs-brand-primary hover:bg-abs-brand-primary-hover transition-all shadow-[0_0_15px_-3px_rgba(212,175,55,0.4)] duration-300 hover:shadow-[0_0_20px_-3px_rgba(212,175,55,0.6)] focus:outline-none focus:shadow-[0_0_20px_-3px_rgba(212,175,55,0.6)]"
             >
               <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -68,18 +74,18 @@ const HeroBanner = () => {
 
               <div className="flex items-center">
                 <code className="text-sm font-mono text-abs-text-muted mr-3 select-all">
-                  npm i @anthonibs/abs-icons
+                  {GETTING_STARTED_COMMAND}
                 </code>
 
                 <button
                   onClick={copyToClipboard}
-                  className="p-1 rounded-full cursor-pointer  text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+                  className="p-1 rounded-lg cursor-pointer abs-focus  text-abs-text-muted hover:text-abs-brand-primary transition-colors"
                   title="Copy command"
                 >
                   {copied ? (
                     <DocumentDuplicateSolidIcon className="w-5 h-5" />
                   ) : (
-                    <DocumentDuplicateSolidIcon className="w-5 h-5" />
+                    <DocumentMultipleOutlineIcon className="w-5 h-5" />
                   )}
                 </button>
               </div>

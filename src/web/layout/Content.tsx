@@ -45,9 +45,10 @@ const Content = () => {
               </span>
               Properties
             </h3>
+
             <button
               onClick={handleReset}
-              className="text-[10px] cursor-pointer px-2 py-0.5 border border-abs-card-border rounded hover:bg-zinc-800 text-abs-text-muted transition-colors"
+              className="text-[10px] cursor-pointer px-2 py-0.5 outline-none focus-within:border-abs-brand-primary focus-within:ring-2 focus-within:ring-abs-brand-primary/30 border border-abs-card-border rounded hover:bg-zinc-800 text-abs-text-muted transition-colors"
             >
               Reset
             </button>
