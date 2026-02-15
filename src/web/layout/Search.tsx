@@ -55,7 +55,7 @@ const Search = () => {
       </div>
 
       <div className="flex space-x-5 items-center">
-        <div className="relative flex bg-abs-card-background rounded-xl p-1 h-11 border border-abs-card-border overflow-hidden">
+        <div className="relative flex bg-abs-terminal rounded-xl p-1 h-11 border border-abs-card-border overflow-hidden">
           <span
             aria-hidden
             className={`pointer-events-none absolute top-1 bottom-1 left-1 w-22 rounded-lg bg-abs-brand-primary shadow-sm`}

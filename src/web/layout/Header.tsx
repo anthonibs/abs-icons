@@ -19,7 +19,7 @@ const Header = () => {
             </span>
           </div>
 
-          <div className="flex items-center space-x-6">
+          <div className="hidden items-center space-x-6 sm:flex">
             <a
               className="text-sm font-medium text-abs-text-muted hover:text-abs-brand-primary transition-colors"
               href={`${GIT_HUB_URL}/blob/main/README.md`}
