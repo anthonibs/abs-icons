@@ -35,7 +35,7 @@ const ColorControl = () => {
 
         <div className="flex items-center gap-3">
           <div
-            className="w-12 h-12 rounded-xl border-2 border-white/10 shadow-[0_0_15px_rgba(212,175,55,0.3)] cursor-pointer hover:scale-105 transition-transform shrink-0"
+            className="w-12 h-12 rounded-xl border-2 border-abs-card-border abs-focus shadow-[0_0_15px_rgba(212,175,55,0.4)] cursor-pointer hover:scale-105 transition-transform shrink-0"
             style={{ backgroundColor: colorIcon }}
           >
             <input
@@ -50,22 +50,22 @@ const ColorControl = () => {
           <div className="flex gap-2 flex-wrap">
             <button
               onClick={() => setColorIcon("#ffffff")}
-              className="w-6 h-6 rounded-full bg-white border border-abs-card-border cursor-pointer"
+              className="w-6 h-6 rounded-full bg-white focus:border-abs-brand-primary focus:ring-2 focus:ring-abs-brand-primary/30 border outline-none border-abs-card-border cursor-pointer"
               aria-label="Selecionar cor branca"
             ></button>
             <button
               onClick={() => setColorIcon("#a1a1aa")}
-              className="w-6 h-6 rounded-full bg-zinc-400 border border-abs-card-border cursor-pointer"
+              className="w-6 h-6 rounded-full bg-zinc-400 focus:border-abs-brand-primary focus:ring-2 focus:ring-abs-brand-primary/30 border outline-none border-abs-card-border cursor-pointer"
               aria-label="Selecionar cor cinza"
             ></button>
             <button
               onClick={() => setColorIcon("#3b82f6")}
-              className="w-6 h-6 rounded-full bg-blue-500 border border-abs-card-border cursor-pointer"
+              className="w-6 h-6 rounded-full bg-blue-500 focus:border-abs-brand-primary focus:ring-2 focus:ring-abs-brand-primary/30 border outline-none border-abs-card-border cursor-pointer"
               aria-label="Selecionar cor azul"
             ></button>
             <button
               onClick={() => setColorIcon("#ef4444")}
-              className="w-6 h-6 rounded-full bg-red-500 border border-abs-card-border cursor-pointer"
+              className="w-6 h-6 rounded-full bg-red-500 focus:border-abs-brand-primary focus:ring-2 focus:ring-abs-brand-primary/30 border outline-none border-abs-card-border cursor-pointer"
               aria-label="Selecionar cor vermelha"
             ></button>
           </div>

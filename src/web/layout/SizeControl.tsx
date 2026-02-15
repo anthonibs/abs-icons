@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect, memo } from "react";
 import useData from "../store/useData";
 
 const min = 16;
@@ -8,7 +8,40 @@ const SizeControl = () => {
   const sizeIcon = useData((state) => state.sizeIcon);
   const setSizeIcon = useData((state) => state.setSizeIcon);
 
+  const [localSize, setLocalSize] = useState<number>(sizeIcon);
+
+  const isDragging = useRef(false);
   const timeoutRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    if (!isDragging.current) {
+      setLocalSize(sizeIcon);
+    }
+  }, [sizeIcon]);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = Number(e.target.value);
+    setLocalSize(val);
+    isDragging.current = true;
+
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+
+    timeoutRef.current = window.setTimeout(() => {
+      setSizeIcon(val);
+    }, 300);
+  };
+
+  const handleCommit = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    isDragging.current = false;
+    setSizeIcon(localSize);
+  };
 
   return (
     <div className="space-y-4">
@@ -23,22 +56,20 @@ const SizeControl = () => {
           type="range"
           min={min}
           max={max}
-          value={sizeIcon}
-          className="w-full h-1 bg-abs-card-border/60 rounded-full appearance-none cursor-pointer accent-abs-brand-primary "
-          onChange={(e) => {
-            const val = Number(e.target.value);
-            if (timeoutRef.current) {
-              clearTimeout(timeoutRef.current);
+          value={localSize}
+          onChange={handleChange}
+          onMouseUp={handleCommit}
+          onTouchEnd={handleCommit}
+          onKeyUp={(e) => {
+            if (["Enter", "ArrowLeft", "ArrowRight"].includes(e.key)) {
+              handleCommit();
             }
-
-            timeoutRef.current = window.setTimeout(() => {
-              setSizeIcon(val);
-            }, 120);
           }}
+          className="abs-input-range"
         />
 
-        <span className="text-xs font-mono text-abs-brand-primary">
-          {sizeIcon}px
+        <span className="text-xs font-mono text-abs-brand-primary w-12 text-right">
+          {localSize}px
         </span>
       </div>
       <div className="flex justify-between text-[10px] text-abs-text-muted font-mono">
@@ -49,4 +80,4 @@ const SizeControl = () => {
   );
 };
 
-export default SizeControl;
+export default memo(SizeControl);
