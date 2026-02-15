@@ -1,8 +1,10 @@
+const GIT_HUB_URL = import.meta.env.VITE_GITHUB_URL || "#";
+
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-abs-card-border/50 bg-abs-background/80 backdrop-blur-sm ">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">
             <img
               alt="Abs-Icons Logo"
@@ -20,7 +22,7 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <a
               className="text-sm font-medium text-abs-text-muted hover:text-abs-brand-primary transition-colors"
-              href="https://github.com/anthonibs/abs-lib-icons/blob/main/README.md"
+              href={`${GIT_HUB_URL}/blob/main/README.md`}
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -28,7 +30,7 @@ const Header = () => {
             </a>
             <a
               className="text-sm font-medium text-abs-text-muted hover:text-abs-brand-primary transition-colors"
-              href="https://github.com/anthonibs/abs-lib-icons/blob/main/LICENSE"
+              href={`${GIT_HUB_URL}/blob/main/LICENSE`}
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -38,7 +40,7 @@ const Header = () => {
             <div className="flex items-center border-l border-abs-card-border pl-6 space-x-4">
               <a
                 className="text-abs-text-muted hover:text-abs-brand-primary transition-colors"
-                href="https://github.com/anthonibs/abs-lib-icons"
+                href={`${GIT_HUB_URL}`}
                 rel="noopener noreferrer"
                 target="_blank"
               >

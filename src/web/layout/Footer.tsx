@@ -1,3 +1,6 @@
+const GIT_HUB_URL = import.meta.env.VITE_GITHUB_URL || "#";
+const NPM_PACKAGE_URL = import.meta.env.VITE_NPM_PACKAGE_URL || "#";
+
 const Footer = () => {
   return (
     <footer className="border-t border-abs-card-border bg-abs-background-dark pt-16 pb-8 mt-auto">
@@ -81,64 +84,76 @@ const Footer = () => {
               </h4>
               <nav className="flex flex-col gap-2.5">
                 <a
-                  className="text-sm text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+                  className="text-sm outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
                   href="#"
                 >
                   All Icons
                 </a>
                 <a
-                  className="text-sm text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+                  className="text-sm outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
                   href="#"
                 >
                   Categories
                 </a>
                 <a
-                  className="text-sm text-abs-text-muted hover:text-abs-brand-primary transition-colors"
-                  href="#"
+                  className="text-sm outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+                  href={`${GIT_HUB_URL}/blob/main/LICENSE`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   License
                 </a>
               </nav>
             </div>
+
             <div className="flex flex-col gap-4">
               <h4 className="text-xs font-bold uppercase tracking-widest text-abs-text-main">
                 Resources
               </h4>
               <nav className="flex flex-col gap-2.5">
                 <a
-                  className="text-sm text-abs-text-muted hover:text-abs-brand-primary transition-colors"
-                  href="#"
+                  className="text-sm outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={GIT_HUB_URL}
                 >
                   GitHub
                 </a>
                 <a
-                  className="text-sm text-abs-text-muted hover:text-abs-brand-primary transition-colors"
-                  href="#"
+                  className="text-sm outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+                  href={NPM_PACKAGE_URL}
                 >
                   NPM Package
                 </a>
                 <a
-                  className="text-sm text-abs-text-muted hover:text-abs-brand-primary transition-colors"
-                  href="#"
+                  className="text-sm outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+                  href={`${GIT_HUB_URL}/blob/main/README.md`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Documentation
                 </a>
               </nav>
             </div>
+
             <div className="flex flex-col gap-4">
               <h4 className="text-xs font-bold uppercase tracking-widest text-abs-text-main">
                 Community
               </h4>
               <nav className="flex flex-col gap-2.5">
                 <a
-                  className="text-sm text-abs-text-muted hover:text-abs-brand-primary transition-colors"
-                  href="#"
+                  className="text-sm outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+                  href={`${GIT_HUB_URL}/blob/main/CHANGELOG.md`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Changelog
                 </a>
                 <a
-                  className="text-sm text-abs-text-muted hover:text-abs-brand-primary transition-colors"
-                  href="#"
+                  className="text-sm outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+                  href={`${GIT_HUB_URL}/blob/main/CONTRIBUTING.md`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Contributing
                 </a>
@@ -154,13 +169,13 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-6">
             <a
-              className="text-xs text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+              className="text-xs outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
               href="#"
             >
               Privacy Policy
             </a>
             <a
-              className="text-xs text-abs-text-muted hover:text-abs-brand-primary transition-colors"
+              className="text-xs outline-none focus-within:text-abs-brand-primary text-abs-text-muted hover:text-abs-brand-primary transition-colors"
               href="#"
             >
               Terms of Service
