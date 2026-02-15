@@ -1,3 +1,4 @@
+import ScrollTop from "./components/ScrollTop";
 import Content from "./layout/Content";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
@@ -10,6 +11,8 @@ export default function App() {
       <HeroBanner />
       <Content />
       <Footer />
+
+      <ScrollTop />
     </div>
   );
 }
