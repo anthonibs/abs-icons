@@ -44,6 +44,36 @@
   --color-abs-text-muted: var(--color-text-muted);
 }
 
+@layer components {
+  .abs-input-range {
+    @apply w-full h-1 bg-abs-card-border/60 rounded-full appearance-none cursor-pointer focus:outline-none;
+  }
+  .abs-input-range::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 bg-abs-brand-primary rounded-full transition-all;
+    -webkit-appearance: none;
+    border: none;
+  }
+  .abs-input-range:focus::-webkit-slider-thumb {
+    @apply ring-4 ring-abs-brand-primary/40;
+  }
+  .abs-input-range:hover::-webkit-slider-thumb {
+    @apply ring-4 ring-abs-brand-primary/20;
+  }
+  .abs-input-range::-moz-range-thumb {
+    @apply appearance-none w-4 h-4 bg-abs-brand-primary border-none rounded-full transition-all;
+  }
+  .abs-input-range:focus::-moz-range-thumb {
+    @apply ring-4 ring-abs-brand-primary/40;
+  }
+  .abs-input-range:hover::-moz-range-thumb {
+    @apply ring-4 ring-abs-brand-primary/20;
+  }
+
+  .abs-focus {
+    @apply outline-none focus-within:border-abs-brand-primary focus-within:ring-2 focus-within:ring-abs-brand-primary/30;
+  }
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--color-background);
