@@ -19,7 +19,7 @@ const Content = () => {
   const handleReset = useData((state) => state.handleReset);
 
   return (
-    <main className="w-full max-w-7xl mx-auto px-4 py-12 grid gap-8 lg:grid-cols-[1fr_280px]">
+    <main className="w-full max-w-7xl mx-auto px-4 py-12 grid gap-8 md:grid-cols-[1fr_280px]">
       <section className="grow flex flex-col min-w-0">
         <Search />
 
@@ -34,7 +34,7 @@ const Content = () => {
         <ListIcons />
       </section>
 
-      <aside className="w-80 shrink-0 h-fit bg-abs-card-background rounded-2xl border border-abs-card-border p-6 space-y-8 sticky top-24">
+      <aside className="md:w-70 md:max-w-80 shrink-0 h-fit bg-abs-card-background rounded-2xl border border-abs-card-border p-6 space-y-8 sticky top-24">
         <PreviewIcon />
 
         <div className="space-y-6">

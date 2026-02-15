@@ -27,7 +27,7 @@ const HeroBanner = () => {
   return (
     <section
       id="hero-banner"
-      className="border-b border-abs-card-border-dark bg-abs-background-dark relative overflow-hidden"
+      className="border-b border-abs-card-border bg-abs-background-dark relative overflow-hidden"
     >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl opacity-10 pointer-events-none">
         <div className="absolute top-[-50%] left-[20%] w-96 h-96 bg-abs-brand-primary rounded-full blur-3xl"></div>
@@ -62,7 +62,7 @@ const HeroBanner = () => {
             </a>
 
             <div className="group relative flex items-center bg-abs-card-background border border-abs-brand-primary  rounded-lg px-5 py-2 transition-colors hover:bg-abs-card-dark/80 shadow-[0_0_15px_-3px_rgba(212,175,55,0.2)]">
-              <div className="flex flex-col items-start mr-3">
+              <div className="flex flex-col text-left items-start mr-3">
                 <span className="text-[10px] uppercase font-bold text-abs-brand-primary tracking-wider mb-0.5">
                   NPM Downloads
                 </span>
