@@ -13,7 +13,9 @@
   "license": "MIT",
   "type": "module",
   "files": [
-    "dist"
+    "dist/*.js",
+    "dist/*.d.ts",
+    "dist/*.cjs"
   ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
