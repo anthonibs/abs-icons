@@ -1,10 +1,14 @@
 {
   "name": "@anthonibs/abs-icons",
   "version": "1.0.0",
-  "description": "Biblioteca de ícones SVG e React do ABS Design System",
+  "description": "ABS Design System SVG and React icon library",
   "repository": {
     "type": "git",
     "url": "https://github.com/anthonibs/abs-lib-icons"
+  },
+  "author": {
+    "name": "Anthoni Broering dos Santos",
+    "url": "https://github.com/anthonibs"
   },
   "license": "MIT",
   "type": "module",
