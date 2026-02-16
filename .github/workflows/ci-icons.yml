@@ -26,7 +26,7 @@ jobs:
           echo "Checking naming convention in src/icons..."
           # Rule: abs-[name].svg or abs-[name]-(solid|outline).svg
           # The grep detects files that do NOT follow the pattern
-          invalid_files=$(find src/icons -name "*.svg" | grep -vE "src/icons/abs-[a-z0-9-]+(-solid|-outline)?\.svg$")
+          invalid_files=$(find src/icons -name "*.svg" | grep -vE "abs-[a-z0-9-]+(-solid|-outline)?\.svg$")
 
           if [ ! -z "$invalid_files" ]; then
             echo "::error::Invalid icons detected in src/icons. Use the pattern abs-[name].svg"
