@@ -1,0 +1,39 @@
+name: CI Abs-Icons
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate Naming Convention
+        run: |
+          echo "Checking naming convention in src/icons..."
+          # Rule: abs-[name].svg or abs-[name]-(solid|outline).svg
+          # The grep detects files that do NOT follow the pattern
+          invalid_files=$(find src/icons -name "*.svg" | grep -vE "src/icons/abs-[a-z0-9-]+(-solid|-outline)?\.svg$")
+
+          if [ ! -z "$invalid_files" ]; then
+            echo "::error::Invalid icons detected in src/icons. Use the pattern abs-[name].svg"
+            echo "$invalid_files"
+            exit 1
+          fi
+          echo "Naming convention validated!"
+
+      - name: Run Build Pipeline
+        run: npm run build:lib
