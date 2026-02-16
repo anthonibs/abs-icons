@@ -10,20 +10,14 @@ Modern, elegant hand-crafted SVG icons for high-performance interfaces.
 Available as basic SVG icons or via the official <strong>React</strong> library.
 <p>
 
-
-<p align="center">
-
 <a href="https://github.com/tailwindlabs/heroicons/releases">
-    <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@anthoni/abs-icons?style=plastic&label=Downloads&color=yellow">
-    </a>
-
-<a href="https://github.com/tailwindlabs/heroicons/releases">
-    <img alt="NPM Unpacked Size" src="https://img.shields.io/npm/unpacked-size/@anthoni/abs-icons?style=plastic&label=Unpacked&&labelColor=yellow&color=yellow">
-    </a>
+    <img alt="NPM Downloads" src="https://img.shields.io/npm/d18m/%40anthonibs%2Fabs-icons?style=plastic&label=Downloads&color=yellow">
+</a>
     <a href="https://github.com/tailwindlabs/heroicons/releases">
     <img alt="NPM Version" src="https://img.shields.io/npm/v/@anthonibs/abs-icons?style=plastic" alt="Latest Release">
     </a>
-    <a href="https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/anthonibs/abs-icons?style=plastic&label=LICENSE&color=green" alt="License"></a>
+    <a href="https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/anthonibs/abs-lib-icons?style=plastic">
+    </a>
 
 </p>
 
