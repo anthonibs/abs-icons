@@ -44,7 +44,11 @@
     "optimize:svgs": "node scripts/optimize-svgs.js",
     "preview:web": "vite preview --config vite.config.web.ts",
     "prebuild:lib": "npm run optimize:svgs && npm run generate:icons",
-    "build:lib": "npm run prebuild:lib && tsup"
+    "build:lib": "npm run prebuild:lib && tsup",
+    "major": "npm version major && git push && git push origin --tags",
+    "minor": "npm version minor && git push && git push origin --tags",
+    "patch": "npm version patch && git push && git push origin --tags",
+    "alpha": "npm version prerelease --preid=alpha && git push && git push origin --tags"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
