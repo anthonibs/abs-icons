@@ -1,18 +1,15 @@
 <p align="center">
-
-<a href="#" target="_blank" rel="">
-<img alt="Logo Abs Icons" width="315px" height="auto"  src="public/logo-abs-icons.webp">
-</a>
-
+  <a href="#" target="_blank" rel="">
+  <img alt="Logo Abs Icons" width="315px" height="auto"  src="public/logo-abs-icons.webp">
+  </a>
 </p>
 
 <p align="center">
-
 Modern, elegant hand-crafted SVG icons for high-performance interfaces.
-
+<br/>
 Available as basic SVG icons or via the official <strong>React</strong> library.
-
 <p>
+
 
 <p align="center">
 
