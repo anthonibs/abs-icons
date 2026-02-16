@@ -27,6 +27,8 @@ Available as basic SVG icons or via the official <strong>React</strong> library.
 
 </p>
 
+## HTML
+
 ```html
 <svg viewBox="0 0 24 24" color="currentColor" width="62" height="62">
   <path
