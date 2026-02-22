@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M20.37 21.75H3c-.41 0-.75-.34-.75-.75V4.94a2.69 2.69 0 0 1 2.69-2.69h6.11a2.69 2.69 0 0 1 2.69 2.69v6.51c.3-.13.64-.21.99-.21h3.63c1.86 0 3.38 1.52 3.38 3.38v5.74c0 .76-.62 1.38-1.38 1.38Zm-6.62-1.5h6.5v-5.62c0-1.04-.84-1.88-1.88-1.88h-3.63c-.55 0-.99.44-.99.99zm-10 0h8.5V4.94c0-.66-.54-1.19-1.19-1.19H4.95c-.66 0-1.19.54-1.19 1.19v15.31ZM9 15.75H7c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2c.41 0 .75.34.75.75s-.34.75-.75.75m0-4H7c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2c.41 0 .75.34.75.75s-.34.75-.75.75m0-4H7c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2c.41 0 .75.34.75.75s-.34.75-.75.75" /></svg>;
+
+
+      export const BuildingClassicAltOutlineIcon = createIcon("BuildingClassicAltOutlineIcon", SVGComponent, {
+  "fileName": "abs-building-classic-alt.svg",
+  "presentationName": "building-classic-alt",
+  "style": "outline",
+  "category": "general"
+});

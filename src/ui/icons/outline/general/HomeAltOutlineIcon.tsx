@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M12 18.27c-.41 0-.75-.34-.75-.75v-2.76c0-.41.34-.75.75-.75s.75.34.75.75v2.76c0 .41-.34.75-.75.75" /><path d="M17.18 21.77H6.82c-1.71 0-3.27-1.31-3.55-2.99l-1.23-7.32c-.2-1.16.37-2.65 1.3-3.39l6.41-5.1c1.26-1 3.24-1 4.5 0l6.41 5.09c.92.74 1.49 2.22 1.3 3.38l-1.23 7.32c-.28 1.65-1.87 2.99-3.55 2.99ZM11.99 3.73c-.48 0-.95.14-1.31.42l-6.41 5.1c-.51.4-.86 1.33-.75 1.96l1.23 7.32c.16.94 1.11 1.74 2.07 1.74h10.36c.96 0 1.91-.8 2.07-1.74l1.23-7.31c.1-.63-.26-1.57-.76-1.96l-6.41-5.09c-.36-.29-.84-.43-1.33-.43Zm-1.77-.16" /></svg>;
+
+
+      export const HomeAltOutlineIcon = createIcon("HomeAltOutlineIcon", SVGComponent, {
+  "fileName": "abs-home-alt.svg",
+  "presentationName": "home-alt",
+  "style": "outline",
+  "category": "general"
+});

@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M12 22c-4.21 0-7.63-3.45-7.63-7.69V9.69C4.37 5.45 7.79 2 12 2s7.63 3.45 7.63 7.69v4.62c0 4.24-3.42 7.69-7.63 7.69m0-18.5c-3.38 0-6.13 2.78-6.13 6.19v4.62c0 3.41 2.75 6.19 6.13 6.19s6.13-2.78 6.13-6.19V9.69c0-3.41-2.75-6.19-6.13-6.19" /><path d="M12 11.83a2.14 2.14 0 0 1-2.13-2.14V7.84c0-1.18.95-2.14 2.13-2.14s2.13.96 2.13 2.14v1.85c0 1.18-.95 2.14-2.13 2.14m0-4.62c-.34 0-.63.29-.63.64V9.7c0 .35.28.64.63.64s.63-.29.63-.64V7.85c0-.35-.28-.64-.63-.64" /><path d="M12 7.2c-.41 0-.75-.34-.75-.75v-3.7c0-.41.34-.75.75-.75s.75.34.75.75v3.7c0 .41-.34.75-.75.75" /></svg>;
+
+
+      export const MouseOutlineIcon = createIcon("MouseOutlineIcon", SVGComponent, {
+  "fileName": "abs-mouse.svg",
+  "presentationName": "mouse",
+  "style": "outline",
+  "category": "general"
+});

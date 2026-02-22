@@ -1,9 +1,9 @@
 export * as timeoutlineIcons from "./time";
 export * from "./time";
-export * as navigationoutlineIcons from "./navigation";
-export * from "./navigation";
 export * as generaloutlineIcons from "./general";
 export * from "./general";
+export * as navigationoutlineIcons from "./navigation";
+export * from "./navigation";
 export * as analyticsoutlineIcons from "./analytics";
 export * from "./analytics";
 export * as energyoutlineIcons from "./energy";

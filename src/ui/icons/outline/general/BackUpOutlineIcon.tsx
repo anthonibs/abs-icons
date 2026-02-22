@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M2.2 7v6c0 .49.31.8.8.8h6c.49 0 .8-.31.8-.8s-.31-.8-.8-.8H4.6c-.07 0-.14-.04-.17-.1-.04-.07-.04-.14 0-.2C5.92 9.45 8.96 7.8 12 7.8c4.52 0 8.2 3.45 8.2 7.7V17c0 .49.31.8.8.8s.8-.31.8-.8v-1.5c0-5.13-4.4-9.3-9.8-9.3-2.97 0-5.83 1.22-7.86 3.34-.03.04-.09.06-.14.06h-.07a.205.205 0 0 1-.13-.19v-2.4c0-.49-.31-.8-.8-.8s-.8.31-.8.8Z" /></svg>;
+
+
+      export const BackUpOutlineIcon = createIcon("BackUpOutlineIcon", SVGComponent, {
+  "fileName": "abs-back-up.svg",
+  "presentationName": "back-up",
+  "style": "outline",
+  "category": "general"
+});

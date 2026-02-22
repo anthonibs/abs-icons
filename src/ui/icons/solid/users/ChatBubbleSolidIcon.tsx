@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M19.99 5.99a9.97 9.97 0 0 0-5.36-3.64c-1.86-.51-3.8-.47-5.62.1a9.9 9.9 0 0 0-4.67 3.12 9.94 9.94 0 0 0-2.26 5.14c-.24 1.9.06 3.83.88 5.56.12.25.15.56.08.83l-.33 1.31c-.12.4-.12.81 0 1.21.11.4.32.76.61 1.05.28.29.65.5 1.05.6.4.11.81.11 1.2 0l1.31-.33c.28-.06.58-.03.86.11 1.3.6 2.71.92 4.13.94l.03.02c2.64 0 5.17-1.03 7.05-2.87 1.89-1.84 2.99-4.34 3.05-6.98.03-2.22-.68-4.41-2.01-6.17M7.15 14c0-.5.3-.8.8-.8h4c.4 0 .8.3.8.8s-.3.8-.8.8h-4c-.4 0-.8-.3-.8-.8m.8-3.2c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h8c.4 0 .8.3.8.8s-.3.8-.8.8z" /></svg>;
+
+
+      export const ChatBubbleSolidIcon = createIcon("ChatBubbleSolidIcon", SVGComponent, {
+  "fileName": "abs-chat-bubble-solid.svg",
+  "presentationName": "chat-bubble",
+  "style": "solid",
+  "category": "users"
+});

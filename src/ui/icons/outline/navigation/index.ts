@@ -2,6 +2,7 @@ export * from "./ArrowDirectDownOutlineIcon";
 export * from "./ArrowDirectLeftOutlineIcon";
 export * from "./ArrowDirectRightOutlineIcon";
 export * from "./ArrowDirectUpOutlineIcon";
+export * from "./ArrowDownRightSquareOutlineIcon";
 export * from "./ArrowDownOutlineIcon";
 export * from "./ArrowLeftOutlineIcon";
 export * from "./ArrowRightOutlineIcon";

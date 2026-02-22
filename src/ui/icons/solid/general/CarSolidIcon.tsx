@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M3.63 8.59h16.74c.38 0 .7-.32.7-.7s-.32-.7-.7-.7h-.95l-.35-1.68c-.33-1.63-1.03-3.13-3.8-3.13H8.74c-2.77 0-3.47 1.5-3.8 3.13l-.35 1.68h-.95c-.38 0-.7.32-.7.7s.32.7.7.7Zm17.84 4.57c-.14-1.53-.55-3.17-3.53-3.17H6.07c-2.99 0-3.39 1.64-3.53 3.17l-.52 5.66c-.07.71.17 1.41.65 1.94.49.54 1.19.85 1.93.85h1.75c1.51 0 1.8-.86 1.98-1.43l.19-.56c.21-.64.27-.8 1.11-.8h4.76c.84 0 .86.09 1.11.8l.19.56c.19.57.47 1.43 1.98 1.43h1.75c.73 0 1.44-.31 1.93-.85.48-.53.72-1.24.65-1.94l-.52-5.66ZM9.21 15.1H6.42c-.38 0-.7-.32-.7-.7s.32-.7.7-.7h2.79c.38 0 .7.32.7.7s-.32.7-.7.7m8.37 0h-2.79c-.38 0-.7-.32-.7-.7s.32-.7.7-.7h2.79c.38 0 .7.32.7.7s-.32.7-.7.7" /></svg>;
+
+
+      export const CarSolidIcon = createIcon("CarSolidIcon", SVGComponent, {
+  "fileName": "abs-car-solid.svg",
+  "presentationName": "car",
+  "style": "solid",
+  "category": "general"
+});

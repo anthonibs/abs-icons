@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M16.61 13.86H7.38c-.41 0-.75.34-.75.75s.34.75.75.75h9.23c.41 0 .75-.34.75-.75s-.34-.75-.75-.75" /><path d="M20.18 7.26c-1.14-1.22-2.61-1.19-3.79-1.17-.71.02-1.38.03-1.81-.22-.55-.31-.74-.66-.98-1.11-.28-.52-.63-1.17-1.54-1.66-1.62-.87-3.52-1.04-5.96-.54-2.48.51-4.09 2.69-4.09 5.56v5.82c0 7.21 4.33 7.79 10 7.79s10-.57 10-7.82c0-1.75 0-4.69-1.82-6.65ZM12 20.22c-5.91 0-8.5-.59-8.5-6.29V8.11c0-1.69.76-3.65 2.89-4.09.8-.16 1.53-.25 2.19-.25 1.06 0 1.97.21 2.76.64.52.28.69.6.93 1.05.28.52.63 1.18 1.56 1.7.8.45 1.7.43 2.58.42 1.06-.02 1.98-.04 2.66.69 1.42 1.53 1.42 3.99 1.42 5.65 0 5.67-2.72 6.29-8.5 6.29Z" /></svg>;
+
+
+      export const FolderMinusOutlineIcon = createIcon("FolderMinusOutlineIcon", SVGComponent, {
+  "fileName": "abs-folder-minus.svg",
+  "presentationName": "folder-minus",
+  "style": "outline",
+  "category": "documents"
+});

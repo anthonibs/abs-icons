@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M17.55 19.17H7.38C4.42 19.17 2 16.78 2 13.84c0-2.51 1.78-4.67 4.21-5.21.98-2.29 3.26-3.79 5.79-3.79 3.18 0 5.81 2.35 6.24 5.39.01.1.09.18.19.2 2.03.41 3.57 2.19 3.57 4.33 0 2.44-2 4.42-4.45 4.42ZM7.44 9.57a.76.76 0 0 1-.59.46c-1.91.26-3.35 1.89-3.35 3.8 0 2.11 1.74 3.83 3.88 3.83h10.17c1.63 0 2.95-1.31 2.95-2.92s-1.25-2.84-2.8-2.91c-.51-.02-.88-.45-.9-.96-.11-2.52-2.22-4.54-4.8-4.54-2.03 0-3.85 1.27-4.53 3.17 0 .02-.02.05-.03.07" /></svg>;
+
+
+      export const CloudAltOutlineIcon = createIcon("CloudAltOutlineIcon", SVGComponent, {
+  "fileName": "abs-cloud-alt.svg",
+  "presentationName": "cloud-alt",
+  "style": "outline",
+  "category": "general"
+});

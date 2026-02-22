@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M10.99 2c1.01 0 1.65 0 2.29.18.55.18 1.01.37 1.47.73s.92.92 1.47 1.74l.83 1.1h.83c.64.09 1.19.18 1.74.46.83.46 1.47 1.1 1.93 1.93.28.55.37 1.1.46 1.74v.46h-1.65c-1.93 0-3.49 1.56-3.49 3.49s1.56 3.49 3.49 3.49h1.56v.46c-.09.64-.18 1.19-.46 1.74-.46.83-1.1 1.47-1.93 1.93-.55.28-1.1.37-1.74.46s-1.47.09-2.48.09H8.7c-1.01 0-1.83 0-2.48-.09s-1.19-.18-1.74-.46c-.83-.46-1.47-1.1-1.93-1.93-.28-.55-.37-1.1-.46-1.74S2 16.31 2 15.3V4.48C2 3.1 3.19 2 4.48 2zM22 12.28v3.58h-1.65c-1.1 0-2.02-.92-2.02-2.02s.92-2.02 2.02-2.02h1.56c0 .09.09.28.09.46M4.75 3.47c-.64 0-1.1.55-1.1 1.1 0 .64.55 1.1 1.1 1.1H15.3l-.18-.18c-.64-.92-.92-1.19-1.28-1.47-.28-.18-.64-.37-1.01-.46s-.83-.09-1.93-.09z" /></svg>;
+
+
+      export const WalletAltSolidIcon = createIcon("WalletAltSolidIcon", SVGComponent, {
+  "fileName": "abs-wallet-alt-solid.svg",
+  "presentationName": "wallet-alt",
+  "style": "solid",
+  "category": "general"
+});

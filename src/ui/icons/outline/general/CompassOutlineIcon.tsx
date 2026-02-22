@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M12 2.5c-6.04 0-9.5 3.46-9.5 9.5s3.46 9.5 9.5 9.5 9.5-3.46 9.5-9.5-3.46-9.5-9.5-9.5m0 17.45c-5.13 0-7.95-2.82-7.95-7.95S6.87 4.05 12 4.05s7.95 2.82 7.95 7.95-2.82 7.95-7.95 7.95" /><path d="M16.86 7.14c-.44-.44-1.06-.61-1.66-.46l-4.05 1.01a4.75 4.75 0 0 0-3.46 3.46L6.68 15.2c-.15.6.02 1.22.46 1.66.33.34.77.52 1.23.52.14 0 .29-.02.43-.06l4.05-1.01a4.75 4.75 0 0 0 3.46-3.46l1.01-4.05c.15-.6-.02-1.22-.46-1.66m-2.01 5.35a3.22 3.22 0 0 1-2.36 2.36l-4.06 1.02c-.12.03-.19-.03-.23-.07a.24.24 0 0 1-.07-.24l1.02-4.05a3.22 3.22 0 0 1 2.36-2.36l4.05-1.02h.01s.04-.01.06-.01c.08 0 .14.05.17.08.04.03.1.12.07.24z" /><circle cx={12} cy={12} r={1} /></g></svg>;
+
+
+      export const CompassOutlineIcon = createIcon("CompassOutlineIcon", SVGComponent, {
+  "fileName": "abs-compass.svg",
+  "presentationName": "compass",
+  "style": "outline",
+  "category": "general"
+});

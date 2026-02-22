@@ -1,4 +1,6 @@
+export * from "./ChatBubbleOutlineIcon";
 export * from "./ChatQuestionOutlineIcon";
+export * from "./ChatOutlineIcon";
 export * from "./ContactBookOutlineIcon";
 export * from "./ContactUserOutlineIcon";
 export * from "./ContactOutlineIcon";

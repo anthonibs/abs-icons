@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M21.8 7v6c0 .49-.31.8-.8.8h-6c-.49 0-.8-.31-.8-.8s.31-.8.8-.8h4.4c.07 0 .14-.04.17-.1.04-.07.04-.14 0-.2-1.49-2.45-4.53-4.1-7.57-4.1-4.52 0-8.2 3.45-8.2 7.7V17c0 .49-.31.8-.8.8s-.8-.31-.8-.8v-1.5c0-5.13 4.4-9.3 9.8-9.3 2.97 0 5.83 1.22 7.86 3.34.03.04.09.06.14.06h.07c.08-.03.13-.11.13-.19v-2.4c0-.49.31-.8.8-.8s.8.31.8.8Z" /></svg>;
+
+
+      export const ForwardUpOutlineIcon = createIcon("ForwardUpOutlineIcon", SVGComponent, {
+  "fileName": "abs-forward-up.svg",
+  "presentationName": "forward-up",
+  "style": "outline",
+  "category": "general"
+});

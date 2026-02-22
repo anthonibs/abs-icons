@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M18.74 15.54c-.56-3.36-3.79-6.1-7.2-6.1-3.7 0-6.96 3-7.28 6.7-.12 1.43.33 2.78 1.28 3.8.93 1.02 2.25 1.58 3.68 1.58h4.46c1.61 0 3.02-.63 3.98-1.76s1.34-2.64 1.09-4.22Zm-8.38-7.48a2.791 2.791 0 0 0 0-5.58 2.791 2.791 0 0 0 0 5.58m6.34 1.11c1.28 0 2.32-1.04 2.32-2.32s-1.04-2.32-2.32-2.32-2.32 1.04-2.32 2.32 1.04 2.32 2.32 2.32m3.44 3.71c1.03 0 1.86-.83 1.86-1.86s-.83-1.86-1.86-1.86-1.86.83-1.86 1.86.83 1.86 1.86 1.86M4.32 11.03c1.28 0 2.32-1.04 2.32-2.32S5.6 6.39 4.32 6.39 2 7.43 2 8.71s1.04 2.32 2.32 2.32" /></svg>;
+
+
+      export const PawAltSolidIcon = createIcon("PawAltSolidIcon", SVGComponent, {
+  "fileName": "abs-paw-alt-solid.svg",
+  "presentationName": "paw-alt",
+  "style": "solid",
+  "category": "general"
+});

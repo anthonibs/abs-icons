@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M19.87 4.31C19.65 4.22 14.59 2 12 2S4.35 4.22 4.06 4.35c-.33.19-1.94 1.43-1.94 7.23 0 7.21 6.84 9.67 9.78 10.4.06.01.12.02.18.02s.12-.01.18-.02c2.26-.56 9.62-2.95 9.62-10.4 0-5.8-1.61-7.04-2.01-7.27m-7.86 12.73H12c-.46 0-.83-.37-.83-.84s.36-.84.83-.84.84.38.84.84-.37.83-.83.84m3.2-5.28c-.26.63-.71 1.18-1.29 1.56-.56.38-1.24.59-1.92.59v-.02c-.47 0-.84-.38-.84-.85s.37-.84.84-.84q.54 0 .99-.3c.29-.2.52-.48.66-.8.14-.33.17-.69.11-1.03-.08-.35-.25-.67-.5-.92s-.57-.42-.91-.48c-.35-.08-.71-.04-1.04.1-.32.14-.61.37-.8.66-.2.3-.3.65-.3.99 0 .47-.38.85-.84.85s-.85-.38-.85-.85c0-.69.2-1.35.59-1.92.38-.57.93-1.01 1.56-1.28.63-.26 1.33-.33 2.01-.2.68.14 1.3.47 1.78.95.49.48.82 1.11.95 1.78.14.68.06 1.37-.2 2.01" /></svg>;
+
+
+      export const ShieldQuestionSoftSolidIcon = createIcon("ShieldQuestionSoftSolidIcon", SVGComponent, {
+  "fileName": "abs-shield-question-soft-solid.svg",
+  "presentationName": "shield-question-soft",
+  "style": "solid",
+  "category": "security"
+});
