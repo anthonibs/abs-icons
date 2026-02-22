@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M19.54 8.03c-.4.09-.66.49-.57.9.98 4.34-1.74 8.07-4.19 10.43a3.984 3.984 0 0 1-5.58 0 .746.746 0 0 0-1.06.02c-.29.3-.28.77.02 1.06A5.52 5.52 0 0 0 12 22c1.38 0 2.76-.52 3.83-1.56 2.72-2.63 5.73-6.82 4.6-11.84a.764.764 0 0 0-.9-.57Zm2.18-5.81a.754.754 0 0 0-1.06 0L18.3 4.59c-2.09-2.16-5.34-3.09-8.47-2.34-3.2.77-5.54 3.13-6.26 6.33-.66 2.93.02 5.89 2.01 8.8l-3.31 3.33c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.39-.07.53-.22l18.4-18.49c.29-.29.29-.77 0-1.06ZM5.04 8.92c.6-2.67 2.48-4.56 5.15-5.2 2.62-.63 5.33.14 7.06 1.94l-2.46 2.47C14.11 7.3 13.09 6.8 12 6.8c-2 0-3.62 1.63-3.62 3.64 0 1.09.5 2.12 1.32 2.8L6.65 16.3c-1.62-2.47-2.18-4.96-1.63-7.39Zm5.74 3.24c-.55-.4-.9-1.03-.9-1.73 0-1.18.95-2.14 2.12-2.14.7 0 1.32.35 1.71.91l-2.93 2.95Z" /></svg>;
+
+
+      export const MarkerPinOffOutlineIcon = createIcon("MarkerPinOffOutlineIcon", SVGComponent, {
+  "fileName": "abs-marker-pin-off.svg",
+  "presentationName": "marker-pin-off",
+  "style": "outline",
+  "category": "location"
+});

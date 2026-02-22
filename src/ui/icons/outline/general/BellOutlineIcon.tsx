@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M11.91 2c3.52 0 6.67 2.5 7.31 6.02l1.2 5.83c.37 1.85-.65 3.7-2.31 4.54-.65.28-1.3.56-1.94.74l-.09.19c-.74 1.67-2.31 2.69-4.07 2.69s-3.43-1.02-4.07-2.69l-.09-.19c-.65-.19-1.3-.46-1.94-.74-1.76-.74-2.69-2.69-2.31-4.54l1.2-5.83C5.26 4.59 8.41 2 11.93 2Zm2.41 17.5c-1.57.28-3.15.28-4.72 0 .56.65 1.48 1.11 2.41 1.11.83-.09 1.67-.46 2.31-1.11M11.91 3.48c-2.87 0-5.37 2.04-5.93 4.91l-1.2 5.83c-.28 1.2.37 2.5 1.57 2.96.65.28 1.3.56 1.94.74h.09c2.31.56 4.72.56 6.94 0h.09c.65-.19 1.3-.37 1.94-.74 1.11-.46 1.76-1.76 1.57-2.96l-1.2-5.83c-.46-2.87-2.96-4.91-5.83-4.91Z" /></svg>;
+
+
+      export const BellOutlineIcon = createIcon("BellOutlineIcon", SVGComponent, {
+  "fileName": "abs-bell.svg",
+  "presentationName": "bell",
+  "style": "outline",
+  "category": "general"
+});

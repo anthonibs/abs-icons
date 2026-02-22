@@ -1,4 +1,6 @@
 export * from "./BarrelOilOutlineIcon";
+export * from "./DropAltOutlineIcon";
+export * from "./DropHalfOutlineIcon";
 export * from "./DropOutlineIcon";
 export * from "./FuelCompartmentDivisorOutlineIcon";
 export * from "./FuelCompartmentOutlineIcon";

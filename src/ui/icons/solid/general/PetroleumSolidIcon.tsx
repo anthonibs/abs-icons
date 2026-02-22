@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M20.34 5.2a2.79 2.79 0 0 0-3.4-1.97l-.58.16c-.56.15-.9.73-.75 1.29l.78 2.92c.04.17-.06.34-.22.38l-3.45.9-.22-.63c-.16-.44-.58-.74-1.05-.74s-.89.3-1.05.74l-.42 1.2c-.03.1-.12.17-.22.2L5.33 10.8V9.46c0-.46-.37-.83-.83-.83s-.83.37-.83.83v9.17h-.56c-.61 0-1.11.5-1.11 1.11s.5 1.11 1.11 1.11h17.78c.61 0 1.11-.5 1.11-1.11s-.5-1.11-1.11-1.11H16.9c-.46 0-.88-.29-1.03-.73l-1.78-5.09a.31.31 0 0 0-.37-.2l-1.56.4a.31.31 0 0 0-.21.4l.58 1.65c.04.11-.04.23-.16.23h-1.82c-.12 0-.2-.12-.16-.23l.61-1.75-2.43.63c-.1.03-.18.1-.21.2l-1.47 4.21a.41.41 0 0 1-.38.27h-.74c-.22 0-.41-.18-.41-.41V13.4c0-.19.13-.35.3-.39l11.11-2.88c.17-.04.34.06.38.22l.81 3.02c.15.56.73.9 1.29.75l.6-.16c1.48-.4 2.36-1.92 1.97-3.4L20.38 5.2ZM9.26 18.23l.37-1.06a.3.3 0 0 1 .28-.2h3.05c.13 0 .24.08.28.2l.37 1.06a.3.3 0 0 1-.28.4h-3.8c-.21 0-.35-.2-.28-.4Z" /></svg>;
+
+
+      export const PetroleumSolidIcon = createIcon("PetroleumSolidIcon", SVGComponent, {
+  "fileName": "abs-petroleum-solid.svg",
+  "presentationName": "petroleum",
+  "style": "solid",
+  "category": "general"
+});

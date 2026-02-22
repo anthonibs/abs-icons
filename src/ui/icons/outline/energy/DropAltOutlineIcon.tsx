@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M13.07 2.36a1.8 1.8 0 0 0-2.14 0C8.76 4.01 3.71 8.44 3.74 13.75c0 4.56 3.7 8.26 8.26 8.26s8.26-3.7 8.26-8.25c.03-5.24-5.02-9.71-7.19-11.4m5.55 11.4c0 3.63-2.96 6.6-6.61 6.6S5.4 17.4 5.4 13.75c-.03-4.69 5-8.89 6.54-10.06.02-.02.04-.02.06-.02s.04 0 .07.02c1.54 1.19 6.58 5.43 6.55 10.08Z" /><path fillRule="evenodd" d="M11.17 17.43c0-.76.68-.81.81-.81 1.35 0 2.44-1.1 2.44-2.44 0-.13.04-.81.81-.81s.81.68.81.81c0 2.25-1.82 4.07-4.07 4.07-.13 0-.81-.04-.81-.81Z" /></svg>;
+
+
+      export const DropAltOutlineIcon = createIcon("DropAltOutlineIcon", SVGComponent, {
+  "fileName": "abs-drop-alt.svg",
+  "presentationName": "drop-alt",
+  "style": "outline",
+  "category": "energy"
+});

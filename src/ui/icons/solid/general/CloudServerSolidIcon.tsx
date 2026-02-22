@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M16.53 6.57C15.25-1.18 4.02 1.76 6.68 9.15h-.04c-3.89.28-3.88 5.9 0 6.18h9.2c1.11 0 2.2-.41 3.02-1.16 2.72-2.37 1.27-7.14-2.32-7.6Zm1.19 12.81h-3.81s-.09 0-.13.02c-.19-.5-.58-.89-1.08-1.08.02-.05.02-.09.02-.13v-2.86h-1.43v2.86s0 .09.02.13c-.5.19-.89.58-1.08 1.08-.05-.02-.09-.02-.13-.02H6.29c-.39 0-.71.32-.71.71s.32.71.71.71h3.81s.09 0 .13-.02c.28.7.97 1.21 1.77 1.21s1.5-.5 1.77-1.21c.05.02.09.02.13.02h3.81c.39 0 .71-.32.71-.71s-.32-.71-.71-.71Z" /></svg>;
+
+
+      export const CloudServerSolidIcon = createIcon("CloudServerSolidIcon", SVGComponent, {
+  "fileName": "abs-cloud-server-solid.svg",
+  "presentationName": "cloud-server",
+  "style": "solid",
+  "category": "general"
+});

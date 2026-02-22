@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M20.63 3.36c-1.08-1.08-2.85-1.29-4.97-.58L7.17 5.61c-3.96 1.33-4.79 3-4.79 4.18 0 1.17.83 2.85 4.79 4.17a4.59 4.59 0 0 1 2.89 2.89c1.32 3.96 3 4.8 4.17 4.8s2.85-.83 4.17-4.79l2.83-8.49c.7-2.13.49-3.9-.59-4.98Zm-.83 4.51-2.83 8.49c-.92 2.78-2.03 3.77-2.75 3.77s-1.82-.99-2.75-3.77a6.1 6.1 0 0 0-1.08-1.93l3.83-3.84c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0L9.3 13.4a6 6 0 0 0-1.66-.87c-2.78-.92-3.77-2.02-3.77-2.74s.99-1.82 3.77-2.75l8.49-2.83c1.53-.51 2.79-.43 3.44.22.66.65.74 1.91.23 3.45Z" /></svg>;
+
+
+      export const SendUpRightOutlineIcon = createIcon("SendUpRightOutlineIcon", SVGComponent, {
+  "fileName": "abs-send-up-right.svg",
+  "presentationName": "send-up-right",
+  "style": "outline",
+  "category": "general"
+});

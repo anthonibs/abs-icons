@@ -1,3 +1,5 @@
+export * from "./Camera2OutlineIcon";
+export * from "./CameraOffOutlineIcon";
 export * from "./CameraOutlineIcon";
 export * from "./CommandLineOutlineIcon";
 export * from "./ComputingOutlineIcon";

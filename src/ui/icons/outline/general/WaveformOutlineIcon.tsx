@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M8.99 20.5h-.04a1.59 1.59 0 0 1-1.48-1.09L5.43 13.3a.53.53 0 0 0-.5-.36H2.78c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2.15c.87 0 1.65.56 1.92 1.38l2.04 6.11s.02.06.09.07c.08 0 .09-.04.09-.06L14.8 4.37c.22-.56.78-.91 1.38-.87.61.05 1.1.48 1.24 1.07l1.23 6.47c.05.23.27.4.53.4h2.04c.41 0 .75.34.75.75s-.34.75-.75.75h-2.04c-.97 0-1.79-.66-2-1.6l-1.15-6.02-5.57 14.16c-.24.62-.82 1.02-1.49 1.02Zm7.22-15.58" /></svg>;
+
+
+      export const WaveformOutlineIcon = createIcon("WaveformOutlineIcon", SVGComponent, {
+  "fileName": "abs-waveform.svg",
+  "presentationName": "waveform",
+  "style": "outline",
+  "category": "general"
+});

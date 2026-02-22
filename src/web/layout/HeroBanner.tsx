@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   DocumentDuplicateSolidIcon,
@@ -10,6 +10,7 @@ const GETTING_STARTED_COMMAND = import.meta.env.VITE_GETTING_STARTED_COMMAND;
 
 const HeroBanner = () => {
   const [copied, setCopied] = useState(false);
+  const [totalDownloads, setTotalDownloads] = useState<number | null>(null);
 
   function copyToClipboard() {
     const command = GETTING_STARTED_COMMAND;
@@ -23,6 +24,18 @@ const HeroBanner = () => {
       },
     );
   }
+
+  useEffect(() => {
+    async function getTotalDownloads() {
+      const response = await fetch(
+        "https://api.npmjs.org/downloads/point/last-month/@anthonibs/abs-icons",
+      );
+      const data = await response.json();
+      setTotalDownloads(data.downloads);
+    }
+
+    getTotalDownloads();
+  }, []);
 
   return (
     <section
@@ -67,7 +80,7 @@ const HeroBanner = () => {
                   NPM Downloads
                 </span>
                 <span className="text-xl font-bold text-abs-text-main leading-none">
-                  245k+
+                  {totalDownloads}
                 </span>
               </div>
               <div className="h-8 w-px bg-abs-card-border mx-3 shrink-0"></div>

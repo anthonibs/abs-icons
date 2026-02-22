@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M17.95 2h-3.68c-2.26 0-3.51 1.25-3.51 3.52v12.95c0 2.27 1.25 3.52 3.51 3.52h3.68c2.26 0 3.51-1.25 3.51-3.52V5.52c0-2.27-1.25-3.52-3.51-3.52m2.01 16.48c0 1.44-.58 2.02-2.01 2.02h-3.68c-1.43 0-2.01-.59-2.01-2.02v-.18h2.93c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-2.93v-2.24l3.84.04c.41 0 .75-.33.75-.74s-.33-.75-.74-.76l-3.85-.04V10.9h2.01c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-2.01V7.2h3.85c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-3.85v-.18c0-1.44.58-2.02 2.01-2.02h3.68c1.43 0 2.01.59 2.01 2.02v12.95ZM6.02 2a3.48 3.48 0 0 0-3.47 3.48v11.99c0 .54.21 1.31.49 1.79l.75 1.26c.55.92 1.36 1.46 2.22 1.46s1.67-.53 2.22-1.45l.76-1.26c.28-.48.49-1.24.49-1.79v-12C9.48 3.56 7.93 2 6.02 2m0 1.5c1.08 0 1.96.89 1.96 1.98v1.15H4.05V5.48c0-1.09.88-1.98 1.97-1.98M7.7 18.49l-.75 1.26c-.27.46-.61.72-.93.72s-.66-.26-.93-.72l-.75-1.25c-.15-.25-.28-.75-.28-1.03V8.13h3.93v9.34c0 .28-.14.78-.28 1.02Z" /></svg>;
+
+
+      export const RulerPencilOutlineIcon = createIcon("RulerPencilOutlineIcon", SVGComponent, {
+  "fileName": "abs-ruler-pencil.svg",
+  "presentationName": "ruler-pencil",
+  "style": "outline",
+  "category": "general"
+});

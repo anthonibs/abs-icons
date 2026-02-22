@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M20.98 12c0-.35 0-.71-.04-1.06 0-.07-.01-.15-.02-.22-.69-4.75-4.99-8.13-9.77-7.67a8.986 8.986 0 0 0-8.14 9.38C3.24 17.23 7.2 21 12 21c.06 0 .12-.02.19-.04 4.86-.1 8.79-4.08 8.79-8.96m-9.53 1.83c-.46-.8-1.06-1.52-1.8-2.12h4.77c-1.04.83-1.85 1.95-2.4 3.33-.16-.41-.34-.82-.57-1.21m-.14-9.05c3.51-.34 6.69 1.9 7.65 5.19H5.04c.81-2.78 3.24-4.9 6.27-5.19m-6.56 7.57c-.01-.21 0-.43 0-.64h.22c2.61.27 4.1 1.46 4.97 2.98.76 1.32 1.07 2.92 1.15 4.5a7.256 7.256 0 0 1-6.34-6.85Zm8.12 6.89c.23-4.56 2.26-7.09 5.95-7.52h.15l.13-.03h.18v.32c0 3.72-2.81 6.8-6.42 7.23Z" /></svg>;
+
+
+      export const SteeringWheelOutlineIcon = createIcon("SteeringWheelOutlineIcon", SVGComponent, {
+  "fileName": "abs-steering-wheel.svg",
+  "presentationName": "steering-wheel",
+  "style": "outline",
+  "category": "general"
+});

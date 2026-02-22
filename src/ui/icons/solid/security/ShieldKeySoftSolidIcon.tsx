@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M13.09 10.61c0 .61-.49 1.1-1.09 1.1s-1.09-.49-1.09-1.1.49-1.1 1.09-1.1 1.09.49 1.09 1.1" /><path d="M19.87 4.31C19.65 4.22 14.59 2 12 2S4.35 4.22 4.06 4.35c-.33.19-1.94 1.43-1.94 7.23 0 7.21 6.84 9.67 9.78 10.4.06.01.12.02.18.02s.12-.01.18-.02c2.26-.56 9.62-2.95 9.62-10.4 0-5.8-1.61-7.04-2.01-7.27m-7.12 8.78v2.15c0 .41-.34.75-.75.75s-.75-.34-.75-.75v-2.15a2.605 2.605 0 0 1-1.84-2.48c0-1.43 1.16-2.6 2.59-2.6s2.59 1.17 2.59 2.6c0 1.17-.78 2.15-1.84 2.48" /></svg>;
+
+
+      export const ShieldKeySoftSolidIcon = createIcon("ShieldKeySoftSolidIcon", SVGComponent, {
+  "fileName": "abs-shield-key-soft-solid.svg",
+  "presentationName": "shield-key-soft",
+  "style": "solid",
+  "category": "security"
+});

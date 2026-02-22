@@ -2,6 +2,7 @@ import useData from "../store/useData";
 import { ChangeEvent, useEffect, useRef } from "react";
 
 import { SearchOutlineIcon } from "@anthonibs/abs-icons";
+import useListIcons from "../hooks/useListIcons";
 
 const variants = [
   { label: "Outline", value: "outline" },
@@ -9,6 +10,8 @@ const variants = [
 ] as const;
 
 const Search = () => {
+  const { icons } = useListIcons();
+
   const setSearchQuery = useData((state) => state.setSearchQuery);
 
   const variant = useData((state) => state.variants);
@@ -47,7 +50,7 @@ const Search = () => {
         <input
           id="search-icons"
           className="block w-full pl-12 pr-4 py-3 bg-abs-card-background rounded-xl text-sm text-abs-text-main placeholder-text-muted focus:outline-none focus:ring-0 transition-all shadow-sm border-none"
-          placeholder="Search from 285 icons..."
+          placeholder={`Search from ${icons.length} icons...`}
           autoComplete="off"
           type="search"
           onChange={onChangeSearchIcon}

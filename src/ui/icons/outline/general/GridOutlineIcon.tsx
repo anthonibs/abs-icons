@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M5.25 7.5c-.6 0-1.17-.24-1.59-.66a2.248 2.248 0 1 1 3.18-3.18A2.248 2.248 0 0 1 5.25 7.5m0 6.75c-.6 0-1.17-.24-1.59-.66a2.248 2.248 0 1 1 3.18-3.18 2.248 2.248 0 0 1-1.59 3.84m0 6.75c-.6 0-1.17-.24-1.59-.66a2.248 2.248 0 1 1 3.18-3.18A2.248 2.248 0 0 1 5.25 21M12 7.5c-.6 0-1.17-.24-1.59-.66a2.248 2.248 0 1 1 3.18-3.18A2.248 2.248 0 0 1 12 7.5m0 6.75c-.6 0-1.17-.24-1.59-.66a2.248 2.248 0 1 1 3.18-3.18A2.248 2.248 0 0 1 12 14.25M12 21c-.6 0-1.17-.24-1.59-.66a2.248 2.248 0 1 1 3.18-3.18A2.248 2.248 0 0 1 12 21m6.75-13.5c-.6 0-1.17-.24-1.59-.66a2.248 2.248 0 1 1 3.18-3.18 2.248 2.248 0 0 1-1.59 3.84m0 6.75c-.6 0-1.17-.24-1.59-.66a2.248 2.248 0 1 1 3.18-3.18 2.248 2.248 0 0 1-1.59 3.84m0 6.75c-.6 0-1.17-.24-1.59-.66a2.248 2.248 0 1 1 3.18-3.18A2.248 2.248 0 0 1 18.75 21" /></svg>;
+
+
+      export const GridOutlineIcon = createIcon("GridOutlineIcon", SVGComponent, {
+  "fileName": "abs-grid.svg",
+  "presentationName": "grid",
+  "style": "outline",
+  "category": "general"
+});

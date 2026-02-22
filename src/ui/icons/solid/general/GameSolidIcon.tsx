@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M16.86 16.62h-.1c-.41 0-.74-.33-.74-.74s.33-.74.74-.74h.1c.41 0 .74.32.74.74s-.33.74-.74.74m-1.7-3.36h-.1c-.41 0-.74-.32-.74-.74s.33-.74.74-.74h.1c.41 0 .74.33.74.74s-.33.74-.74.74m-4.32 1.65H9.78v1.02c0 .41-.33.74-.74.74s-.74-.32-.74-.74v-1.02H7.24c-.41 0-.74-.32-.74-.74s.33-.74.74-.74H8.3v-1.01c0-.41.33-.74.74-.74s.74.32.74.74v1.01h1.06c.41 0 .74.33.74.74s-.33.74-.74.74m2.48-8.45v-.53c-.02-1.48-1.22-2.72-2.72-2.67h-1c-.14 0-.27-.06-.37-.16s-.16-.23-.16-.37c0-.4-.35-.76-.74-.73-.41 0-.73.33-.73.75.01 1.1.91 1.99 2 1.99h1.02c.67 0 1.23.54 1.23 1.21v.5c-7.16.03-9.72 2.07-9.72 7.78s2.59 7.78 9.88 7.78 9.88-2.04 9.88-7.78c0-5.39-2.27-7.51-8.57-7.76Z" /></svg>;
+
+
+      export const GameSolidIcon = createIcon("GameSolidIcon", SVGComponent, {
+  "fileName": "abs-game-solid.svg",
+  "presentationName": "game",
+  "style": "solid",
+  "category": "general"
+});

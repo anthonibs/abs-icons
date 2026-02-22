@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M14.53 2.07c-.4-.06-.76.24-.8.64s.24.76.64.8c3.27.36 5.81 2.9 6.18 6.17.04.37.36.64.72.64h.08c.4-.05.69-.41.64-.8a8.386 8.386 0 0 0-7.47-7.45Z" /><path fillRule="evenodd" d="M17.13 9.76c.07.35.37.58.71.58h.14c.39-.08.65-.46.57-.85a4.97 4.97 0 0 0-3.97-3.96.72.72 0 0 0-.85.57c-.08.4.18.78.58.85 1.43.28 2.54 1.39 2.82 2.82Zm1.85 11.61s2.01-1.24 2.35-3.05c.16-.84-.07-1.65-.68-2.38-2.55-3.1-3.83-2.83-5.23-2.14-.97.47-1.8.88-3.98-1.3s-1.77-3.01-1.3-3.98c.68-1.41.96-2.68-2.14-5.23-.74-.61-1.55-.84-2.39-.68-1.78.33-3.03 2.31-3.03 2.31-.79 1.1-1.86 4.42 5.08 11.36 4.57 4.57 7.57 5.67 9.38 5.67" /></svg>;
+
+
+      export const PhoneIncomingSolidIcon = createIcon("PhoneIncomingSolidIcon", SVGComponent, {
+  "fileName": "abs-phone-incoming-solid.svg",
+  "presentationName": "phone-incoming",
+  "style": "solid",
+  "category": "general"
+});

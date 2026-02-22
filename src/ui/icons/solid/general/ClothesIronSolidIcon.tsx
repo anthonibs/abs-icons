@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M8.92 3.77c2.34-.28 5.38-.61 8.6.01 1.6.31 2.57 1.53 3.16 2.79.49 1.06.78 2.29.96 3.43l.03.12c.32 2.34.41 4.62.26 6.93-.12 1.87-1.66 3.26-3.49 3.35-4.88.24-9.73.23-14.61-.04-.59-.03-1.1-.23-1.44-.65-.33-.4-.4-.89-.39-1.3.02-.75.34-1.58.52-2.06l.03-.07c1.84-4.84 7.1-7.57 12.14-7.57 1.85 0 3.45.2 4.6.4a8.5 8.5 0 0 0-.55-1.64c-.46-.98-1-1.47-1.62-1.59-2.86-.55-5.6-.26-7.94.01a1.07 1.07 0 0 1-1.19-.94c-.07-.59.35-1.12.94-1.19Z" /></svg>;
+
+
+      export const ClothesIronSolidIcon = createIcon("ClothesIronSolidIcon", SVGComponent, {
+  "fileName": "abs-clothes-iron-solid.svg",
+  "presentationName": "clothes-iron",
+  "style": "solid",
+  "category": "general"
+});
