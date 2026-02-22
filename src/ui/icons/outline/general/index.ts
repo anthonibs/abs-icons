@@ -51,7 +51,6 @@ export * from "./MoreCircleVOutlineIcon";
 export * from "./NewspaperOutlineIcon";
 export * from "./PaletteColorOutlineIcon";
 export * from "./PhotoOutlineIcon";
-export * from "./PictureFrameOutlineIcon";
 export * from "./PlusLargeOutlineIcon";
 export * from "./PlusSmallOutlineIcon";
 export * from "./PointingInOutlineIcon";

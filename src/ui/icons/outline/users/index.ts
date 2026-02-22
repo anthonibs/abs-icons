@@ -4,7 +4,6 @@ export * from "./ContactUserOutlineIcon";
 export * from "./ContactOutlineIcon";
 export * from "./EnvelopeTrackingOutlineIcon";
 export * from "./EnvelopeOutlineIcon";
-export * from "./Personalcard2OutlineIcon";
 export * from "./PersonalcardOutlineIcon";
 export * from "./UserCheckOutlineIcon";
 export * from "./UserGroupOutlineIcon";
