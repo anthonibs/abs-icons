@@ -127,7 +127,6 @@ export * from "./PhoneOffOutlineIcon";
 export * from "./PhoneRemoveOutlineIcon";
 export * from "./PhoneOutlineIcon";
 export * from "./PhotoOutlineIcon";
-export * from "./PiggyBankOutlineIcon";
 export * from "./PlusLargeOutlineIcon";
 export * from "./PlusSmallOutlineIcon";
 export * from "./PlusOutlineIcon";
