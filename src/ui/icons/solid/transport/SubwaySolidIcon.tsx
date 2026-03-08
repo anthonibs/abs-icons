@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M6.48 19.13c.05-.11 0-.23-.11-.28a3 3 0 0 1-.96-.64c-.91-.91-1.09-2.28-1.12-4.69 0-.11.09-.21.2-.21h15c.11 0 .21.1.2.21-.03 2.41-.21 3.77-1.12 4.69-.28.27-.59.48-.96.64-.11.05-.16.17-.11.28l.91 1.82a.723.723 0 0 1-1.29.65L16 19.36c-.04-.07-.11-.12-.19-.11-.99.09-2.24.09-3.83.09s-2.84 0-3.83-.09c-.08 0-.16.04-.19.11L6.84 21.6c-.17.36-.61.5-.97.32a.72.72 0 0 1-.32-.97l.91-1.82Zm8.17-3.64c0-.4.33-.72.72-.72h1.45c.4 0 .72.32.72.72s-.33.72-.72.72h-1.45c-.4 0-.72-.32-.72-.72m-7.48-.72c-.4 0-.72.32-.72.72s.33.72.72.72h1.45c.4 0 .72-.32.72-.72s-.33-.72-.72-.72z" /><path d="M19.51 11.87a.2.2 0 0 0 .2-.2V9.7c0-3.64 0-5.46-1.13-6.59-.85-.85-2.08-1.06-4.18-1.11-.26 0-.48.21-.48.47 0 1.31-1.31 2.31-2.68 1.78-.74-.29-1.07-1.07-1.19-1.86A.45.45 0 0 0 9.58 2c-2.1.05-3.34.26-4.19 1.11C4.26 4.24 4.26 6.06 4.26 9.7v1.97c0 .11.09.2.2.2h15.03Z" /></svg>;
+
+
+      export const SubwaySolidIcon = createIcon("SubwaySolidIcon", SVGComponent, {
+  "fileName": "abs-subway-solid.svg",
+  "presentationName": "subway",
+  "style": "solid",
+  "category": "transport"
+});

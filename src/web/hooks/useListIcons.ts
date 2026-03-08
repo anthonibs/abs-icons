@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import useData from "../store/useData";
 
-import * as Icons from "@anthonibs/abs-icons";
+import * as Icons from "../../ui/icons";
 
 const useListIcons = () => {
   const searchQuery = useData((state) => state.searchQuery);

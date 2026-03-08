@@ -4,8 +4,6 @@ export type IconComponent = React.NamedExoticComponent<IconProps> & {
   metadata: IconMetadata;
 };
 
-import { SettingsOutlineIcon } from "@anthonibs/abs-icons";
-
 import Search from "./Search";
 import useData from "../store/useData";
 import ListIcons from "./ListIcons";
@@ -14,12 +12,22 @@ import SizeControl from "./SizeControl";
 import ColorControl from "./ColorControl";
 import { IconProps } from "../../ui/createIcon";
 import { IconMetadata } from "../interfaces";
+import { SettingsOutlineIcon } from "../../ui/icons";
+import Categories from "./Categories";
 
 const Content = () => {
   const handleReset = useData((state) => state.handleReset);
 
   return (
-    <main className="w-full max-w-7xl mx-auto px-4 py-12 grid gap-8 md:grid-cols-[1fr_280px]">
+    <main className="w-full max-w-350 mx-auto px-4 py-12 grid gap-8 md:grid-cols-[180px_1fr_280px]">
+      <aside>
+        <h2 className="text-2xl font-bold tracking-tight text-abs-text-main mb-4.5">
+          Categories
+        </h2>
+
+        <Categories />
+      </aside>
+
       <section className="grow flex flex-col min-w-0">
         <Search />
 

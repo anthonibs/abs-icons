@@ -1,15 +1,25 @@
-import { KEY_WORDS_CATEGORIES_MAP } from "./categories.js";
+import fs from "fs";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export function formatFileName(name) {
   return name
     .replace(/\.[^.]+$/i, "")
-    .replace(/^(?:abs-)+/i, "") 
+    .replace(/^(?:abs-)+/i, "")
     .replace(/(?:-(?:icon|outline|solid))+$/i, "")
     .replace(/[_\s]+/g, "-")
     .replace(/-+/g, "-")
     .replace(/^-+|-+$/g, "")
     .toLowerCase();
 }
+
+const categoriesPath = join(__dirname, "categories.json");
+const KEY_WORDS_CATEGORIES_MAP = JSON.parse(
+  fs.readFileSync(categoriesPath, "utf8"),
+);
 
 export function getCategory(fileName) {
   const cleanName = fileName.toLowerCase();
@@ -19,9 +29,9 @@ export function getCategory(fileName) {
       return category;
     }
   }
+
   return "general";
 }
-
 export function formatComponentName(filename) {
   const isSolid = filename.toLowerCase().includes("solid");
   const style = isSolid ? "Solid" : "Outline";
