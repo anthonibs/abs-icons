@@ -1,8 +1,30 @@
+import { useEffect, useState } from "react";
+
 const GIT_HUB_URL = import.meta.env.VITE_GITHUB_URL || "#";
 
 const Header = () => {
+  const [packageVersion, setPackageVersion] = useState<string>("");
+
+  useEffect(() => {
+    async function getPackageData() {
+      try {
+        const versionRes = await fetch(
+          "https://registry.npmjs.org/@anthonibs/abs-icons/latest",
+        );
+
+        const versionData = await versionRes.json();
+
+        setPackageVersion(versionData.version);
+      } catch (error) {
+        console.error("Erro ao buscar dados da API do NPM:", error);
+      }
+    }
+
+    getPackageData();
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-abs-card-border/50 bg-abs-background/80 backdrop-blur-sm ">
+    <header className="sticky top-0 z-50 w-full border-b border-abs-card-border/50 bg-abs-background/80 backdrop-blur-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">
@@ -15,7 +37,7 @@ const Header = () => {
               Abs Icons
             </span>
             <span className="inline-flex items-center px-2 py-0.5 bg-abs rounded text-[10px] font-medium bg-abs-card-background text-abs-text-muted border border-abs-card-border">
-              v1.0
+              {packageVersion ? `v${packageVersion}` : "Loading..."}
             </span>
           </div>
 
