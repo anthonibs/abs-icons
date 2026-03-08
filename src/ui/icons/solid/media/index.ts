@@ -1,5 +1,6 @@
 export * from "./BasketballSolidIcon";
 export * from "./ClimberSolidIcon";
+export * from "./ColorSwatchSolidIcon";
 export * from "./CutImageSolidIcon";
 export * from "./DiscSolidIcon";
 export * from "./FootballSolidIcon";

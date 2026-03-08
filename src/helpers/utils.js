@@ -25,13 +25,14 @@ export function getCategory(fileName) {
   const cleanName = fileName.toLowerCase();
 
   for (const [category, keywords] of Object.entries(KEY_WORDS_CATEGORIES_MAP)) {
-    if (keywords.some((word) => cleanName.includes(word))) {
+    if (keywords.some((word) => new RegExp(`\\b${word}\\b`).test(cleanName))) {
       return category;
     }
   }
 
   return "general";
 }
+
 export function formatComponentName(filename) {
   const isSolid = filename.toLowerCase().includes("solid");
   const style = isSolid ? "Solid" : "Outline";

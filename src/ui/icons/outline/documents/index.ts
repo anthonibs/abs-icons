@@ -47,4 +47,3 @@ export * from "./RulerOutlineIcon";
 export * from "./SaveAltOutlineIcon";
 export * from "./SaveOutlineIcon";
 export * from "./SquareEditOutlineIcon";
-export * from "./UserProfileOutlineIcon";

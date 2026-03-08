@@ -12,9 +12,7 @@
     "truck",
     "ship",
     "boat",
-    "transmission",
     "motor",
-    "road",
     "airplane",
     "bike",
     "bus",
@@ -94,11 +92,7 @@
     "personalcard",
     "group",
     "hierarchy",
-    "emoji",
-    "mask",
-    "ghost",
-    "alien",
-    "skull",
+    "user-security",
     "mustache"
   ],
   "interface": [
@@ -142,7 +136,8 @@
     "company",
     "factory",
     "office",
-    "garage"
+    "garage",
+    "road"
   ],
   "time": [
     "clock",
@@ -154,6 +149,7 @@
   ],
   "devices": [
     "terminal",
+    "transmission",
     "command",
     "computing",
     "printer",

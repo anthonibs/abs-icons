@@ -8,6 +8,7 @@ export * from "./BellAlertSolidIcon";
 export * from "./BellOffSolidIcon";
 export * from "./BellSolidIcon";
 export * from "./CategoryAddSolidIcon";
+export * from "./ClockSquareSolidIcon";
 export * from "./CrownAltSolidIcon";
 export * from "./CrownSolidIcon";
 export * from "./CrownStarSolidIcon";

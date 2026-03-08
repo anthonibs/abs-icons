@@ -1,8 +1,3 @@
-export * from "./Clock24hOutlineIcon";
-export * from "./ClockAltOutlineIcon";
-export * from "./ClockSquareOutlineIcon";
-export * from "./ClockTimeOutlineIcon";
-export * from "./ClockOutlineIcon";
 export * from "./DatabaseLockOutlineIcon";
 export * from "./DigitalFingerOutlineIcon";
 export * from "./EyeSlashOutlineIcon";
@@ -12,8 +7,6 @@ export * from "./LockUnlockOutlineIcon";
 export * from "./LockOutlineIcon";
 export * from "./Radar2OutlineIcon";
 export * from "./RadarOutlineIcon";
-export * from "./RefreshClockwiseOutlineIcon";
-export * from "./RefreshCounterClockwiseOutlineIcon";
 export * from "./SensorScanOutlineIcon";
 export * from "./SensorOutlineIcon";
 export * from "./ShieldAlertSoftOutlineIcon";

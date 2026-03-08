@@ -1,5 +1,4 @@
 export * from "./BarcodeOutlineIcon";
-export * from "./CalculatorOutlineIcon";
 export * from "./ChartAnalyticsOutlineIcon";
 export * from "./ChartBarsSquareOutlineIcon";
 export * from "./ChartHistogramTwoOutlineIcon";
@@ -9,7 +8,6 @@ export * from "./ChartLineUpOutlineIcon";
 export * from "./ChartPieOutlineIcon";
 export * from "./ChartPolarOutlineIcon";
 export * from "./ChartUpOutlineIcon";
-export * from "./CoinsOutlineIcon";
 export * from "./GaugeAltOutlineIcon";
 export * from "./GaugeOutlineIcon";
 export * from "./MathGridOutlineIcon";

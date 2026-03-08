@@ -1,6 +1,7 @@
 export * from "./BasketballOutlineIcon";
 export * from "./CastOutlineIcon";
 export * from "./ClimberOutlineIcon";
+export * from "./ColorSwatchOutlineIcon";
 export * from "./CutImageOutlineIcon";
 export * from "./CutOutlineIcon";
 export * from "./DiscOffOutlineIcon";

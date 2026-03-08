@@ -1,7 +1,6 @@
 export * from "./CloseOutlineIcon";
 export * from "./CrossLargeOutlineIcon";
 export * from "./CrossOutlineIcon";
-export * from "./EyeClosedOutlineIcon";
 export * from "./LinkCopiedOutlineIcon";
 export * from "./LinkOutlineIcon";
 export * from "./LoginAltOutlineIcon";
@@ -15,6 +14,8 @@ export * from "./PlusLargeOutlineIcon";
 export * from "./PlusSmallOutlineIcon";
 export * from "./PlusOutlineIcon";
 export * from "./RefreshCircleOutlineIcon";
+export * from "./RefreshClockwiseOutlineIcon";
+export * from "./RefreshCounterClockwiseOutlineIcon";
 export * from "./RefreshOutlineIcon";
 export * from "./SearchAiOutlineIcon";
 export * from "./SearchMinusOutlineIcon";

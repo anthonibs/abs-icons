@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M7.7 12.8h.6a2.5 2.5 0 0 0 2.5-2.5v-.6a2.5 2.5 0 0 0-2.5-2.5h-.6a2.5 2.5 0 0 0-2.5 2.5v.6a2.5 2.5 0 0 0 2.5 2.5m-.9-3.1c0-.5.4-.9.9-.9h.6c.5 0 .9.4.9.9v.6c0 .5-.4.9-.9.9h-.6c-.5 0-.9-.4-.9-.9zM17 15.2H6c-.44 0-.8.36-.8.8s.36.8.8.8h11c.44 0 .8-.36.8-.8s-.36-.8-.8-.8m0-8h-3c-.44 0-.8.36-.8.8s.36.8.8.8h3c.44 0 .8-.36.8-.8s-.36-.8-.8-.8m0 4h-3c-.44 0-.8.36-.8.8s.36.8.8.8h3c.44 0 .8-.36.8-.8s-.36-.8-.8-.8" /><path d="M12 3.03C3.81 3.03 1.26 4.27 1.26 12c0 8.27 2.62 8.97 10.74 8.97S22.74 19.79 22.74 12c0-8.27-2.62-8.97-10.74-8.97m0 16.43c-7.96 0-9.24-.51-9.24-7.47 0-6.35 1.38-7.47 9.24-7.47s9.24.55 9.24 7.47-1.63 7.47-9.24 7.47" /></svg>;
+
+
+      export const UserProfileOutlineIcon = createIcon("UserProfileOutlineIcon", SVGComponent, {
+  "fileName": "abs-user-profile.svg",
+  "presentationName": "user-profile",
+  "style": "outline",
+  "category": "users"
+});
