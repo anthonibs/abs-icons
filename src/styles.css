@@ -114,6 +114,32 @@ body {
   transform: translateY(0);
 }
 
+.abs-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-abs-brand-primary)
+    var(--color-abs-card-background);
+}
+
+.abs-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.abs-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-abs-card-background);
+  border-radius: 10px;
+}
+
+.abs-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-abs-brand-primary);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.abs-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-abs-brand-primary-hover);
+}
+
 @keyframes abs-card-enter {
   from {
     opacity: 0;
