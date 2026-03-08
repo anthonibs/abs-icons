@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M9 5.62c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3m-6.5 12c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3m16 3c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3M7.2 7.19a.747.747 0 1 0-.99-1.12 8.74 8.74 0 0 0-2.96 6.56c0 .41.34.75.75.75s.75-.34.75-.75c0-2.17.95-4.11 2.45-5.44m10.59-1.13a.747.747 0 1 0-.99 1.12 7.25 7.25 0 0 1 2.45 5.44c0 .41.34.75.75.75s.75-.34.75-.75c0-2.61-1.15-4.96-2.96-6.56m-7.6 13.59c-.4-.1-.81.14-.92.54-.1.4.14.81.54.91.7.18 1.44.28 2.19.28s1.49-.1 2.19-.28c.4-.1.64-.51.54-.91a.765.765 0 0 0-.92-.54c-.58.15-1.18.23-1.81.23s-1.23-.08-1.81-.23" /></svg>;
+
+
+      export const RingSolidIcon = createIcon("RingSolidIcon", SVGComponent, {
+  "fileName": "abs-ring-solid.svg",
+  "presentationName": "ring",
+  "style": "solid",
+  "category": "general"
+});

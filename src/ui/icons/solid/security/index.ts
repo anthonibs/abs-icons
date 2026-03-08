@@ -1,3 +1,6 @@
+export * from "./ClockSolidIcon";
+export * from "./ClockSquareSolidIcon";
+export * from "./IncognitoSolidIcon";
 export * from "./LockSolidIcon";
 export * from "./LockUnlockSolidIcon";
 export * from "./ShieldAlertSoftSolidIcon";
