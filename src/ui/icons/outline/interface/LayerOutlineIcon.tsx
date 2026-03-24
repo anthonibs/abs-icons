@@ -2,7 +2,7 @@ import * as React from "react";
       import { createIcon } from "../../../createIcon";
 
       import type { SVGProps } from "react";
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M12 19c-.89 0-1.78-.25-2.55-.74l-6.2-3.95a2.74 2.74 0 0 1-1.21-1.72 2.74 2.74 0 0 1 1.2-2.91l6.2-3.95a4.75 4.75 0 0 1 5.1 0l6.2 3.95a2.75 2.75 0 0 1 .84 3.8c-.22.34-.51.63-.85.84l-6.2 3.95c-.77.49-1.66.74-2.55.74Zm0-12.51c-.61 0-1.21.17-1.75.51l-6.2 3.95a1.25 1.25 0 0 0-.55 1.32c.07.33.27.6.55.78l6.2 3.95c1.06.68 2.43.68 3.49 0l6.2-3.95a1.252 1.252 0 0 0 0-2.11l-6.2-3.95a3.24 3.24 0 0 0-1.75-.51Z" /></svg>;
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 20.24 8.25" color="currentColor" width="1em" height="1em" {...props}><path d="M3.28 6.25C.89 5.39 0 5.07 0 4.12s.89-1.27 3.28-2.13l2.64-.95C7.8.36 8.83-.01 10.12-.01s2.32.37 4.2 1.05l2.63.95c2.39.86 3.29 1.18 3.29 2.13s-.89 1.27-3.28 2.13l-2.64.95c-1.88.68-2.91 1.05-4.2 1.05S7.8 7.88 5.92 7.2l-2.63-.95m.51-1.41 2.63.95c1.83.66 2.67.96 3.69.96s1.86-.3 3.69-.96l2.63-.95c.73-.26 1.43-.52 1.89-.72-.46-.2-1.16-.45-1.89-.71l-2.64-.95c-1.83-.66-2.67-.96-3.69-.96s-1.86.3-3.69.96l-2.63.95c-.73.26-1.43.52-1.89.72.46.2 1.16.45 1.89.71" /></svg>;
 
 
       export const LayerOutlineIcon = createIcon("LayerOutlineIcon", SVGComponent, {

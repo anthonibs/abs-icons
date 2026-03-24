@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 17.66 7.69" color="currentColor" width="1em" height="1em" {...props}><path d="M13.32 7.48c-.3-.29-.3-.77 0-1.07l1.58-1.58c.09-.09.03-.23-.1-.23H.75C.34 4.6 0 4.26 0 3.85s.34-.75.75-.75H14.8c.12 0 .18-.15.1-.23l-1.57-1.58a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l3.03 3.04c.32.32.32.84 0 1.17l-3.04 3.04c-.29.29-.76.29-1.06 0" /></svg>;
+
+
+      export const TrendingFlatOutlineIcon = createIcon("TrendingFlatOutlineIcon", SVGComponent, {
+  "fileName": "abs-trending-flat.svg",
+  "presentationName": "trending-flat",
+  "style": "outline",
+  "category": "analytics"
+});

@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 19.88 20" color="currentColor" width="1em" height="1em" {...props}><path d="M19.67 5.77 14.15.22a.754.754 0 0 0-1.06 0c-.29.29-.3.77 0 1.06l.39.4L.98 14.26a3.39 3.39 0 0 0 0 4.76c.65.65 1.51.98 2.37.98s1.71-.32 2.36-.97L18.22 6.45l.39.39c.15.15.34.22.53.22s.38-.07.53-.22c.29-.29.3-.77 0-1.06ZM4.65 17.96c-.8.79-2.14.7-2.82-.26-.53-.76-.36-1.82.29-2.47l.6-.6c.11-.11.26-.18.42-.18h4.69c.11 0 .17.14.09.22zm4.78-5.01H4.81c-.16 0-.23-.19-.12-.3l9.74-9.8c.06-.06.16-.06.22 0l2.4 2.41c.06.06.06.16 0 .22L9.77 12.8c-.09.09-.21.14-.34.14Z" /></svg>;
+
+
+      export const TestTubeDiagonalOutlineIcon = createIcon("TestTubeDiagonalOutlineIcon", SVGComponent, {
+  "fileName": "abs-test-tube-diagonal.svg",
+  "presentationName": "test-tube-diagonal",
+  "style": "outline",
+  "category": "general"
+});

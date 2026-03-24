@@ -1,8 +1,8 @@
 import useData from "../store/useData";
 import { ChangeEvent, useEffect, useRef } from "react";
 
-import { SearchOutlineIcon } from "@anthonibs/abs-icons";
 import useListIcons from "../hooks/useListIcons";
+import { SearchOutlineIcon } from "../../ui/icons";
 
 const variants = [
   { label: "Outline", value: "outline" },
@@ -12,12 +12,14 @@ const variants = [
 const Search = () => {
   const { icons } = useListIcons();
 
+  const searchQuery = useData((state) => state.searchQuery);
   const setSearchQuery = useData((state) => state.setSearchQuery);
 
   const variant = useData((state) => state.variants);
   const setVariant = useData((state) => state.setVariants);
 
   const timerRef = useRef<number | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const onChangeSearchIcon = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -36,6 +38,12 @@ const Search = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (searchQuery.length === 0 && inputRef.current) {
+      inputRef.current.value = "";
+    }
+  }, [searchQuery]);
+
   return (
     <nav className="mb-10 flex flex-col md:flex-row gap-6 justify-between items-center">
       <div className="relative w-full md:max-w-lg border border-abs-card-border rounded-xl text-abs-text-muted transition-colors focus-within:border-abs-brand-primary focus-within:text-abs-brand-primary">
@@ -48,6 +56,7 @@ const Search = () => {
         </label>
 
         <input
+          ref={inputRef}
           id="search-icons"
           className="block w-full pl-12 pr-4 py-3 bg-abs-card-background rounded-xl text-sm text-abs-text-main placeholder-text-muted focus:outline-none focus:ring-0 transition-all shadow-sm border-none"
           placeholder={`Search from ${icons.length} icons...`}

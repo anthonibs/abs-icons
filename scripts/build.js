@@ -33,13 +33,13 @@ async function generate() {
     const rawSvg = fs.readFileSync(path.join(SRC, filename), "utf8");
     const cleanedSvg = cleanSvgForReact(rawSvg);
 
-    const componentCode = await transform(
+  const componentCode = await transform(
       cleanedSvg,
       {
         typescript: true,
-        icon: true,
+        icon: true,       
         jsxRuntime: "automatic",
-        plugins: ["@svgr/plugin-jsx"],
+        plugins: ["@svgr/plugin-jsx"],      
       },
       { componentName },
     );

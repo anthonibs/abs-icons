@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 17.8 19.94" color="currentColor" width="1em" height="1em" {...props}><path d="M8.9 2.14c-5.66 0-8.9 3.25-8.9 8.9s3.24 8.9 8.9 8.9 8.9-3.24 8.9-8.9-3.24-8.9-8.9-8.9m.7 8.77c0 .39-.31.7-.7.7s-.7-.31-.7-.7V7.17c0-.39.31-.7.7-.7s.7.31.7.7zM7.04 1.4h3.72c.39 0 .7-.31.7-.7s-.31-.7-.7-.7H7.04c-.39 0-.7.31-.7.7s.31.7.7.7" /></svg>;
+
+
+      export const TimerAltSolidIcon = createIcon("TimerAltSolidIcon", SVGComponent, {
+  "fileName": "abs-timer-alt-solid.svg",
+  "presentationName": "timer-alt",
+  "style": "solid",
+  "category": "time"
+});

@@ -80,7 +80,7 @@ const HeroBanner = () => {
                   NPM Downloads
                 </span>
                 <span className="text-xl font-bold text-abs-text-main leading-none">
-                  {totalDownloads}
+                  {totalDownloads} <span className="text-[10px]">monthly</span>
                 </span>
               </div>
               <div className="h-8 w-px bg-abs-card-border mx-3 shrink-0"></div>

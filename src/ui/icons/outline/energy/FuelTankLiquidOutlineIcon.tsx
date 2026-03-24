@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 21 14.9" color="currentColor" width="1em" height="1em" {...props}><g><path d="M20.12 7.58c-.06.14.04-.17 0 0-.04.15.34.62.29.79l-.53 2.48-.69 1.85-1.6 1.09-1.29.46-13-.06-.64-.36-.56-.81s-.63-.41-.64-.44c.01-.37-.26-.32-.44-.97-.03-.03-.79-1.35-.28-1.72 1.68-1.3 3.65-1.56 5.86-.83 2.33.8 2.96 1.1 3.99 1.59.62.31 1.41.68 2.82 1.28.68.29 2.61.11 3.99-.66l.81-.62c.21-.22.4-.45.56-.66.63-.88.93-1.82 1.16-2.55 0 0-.04.15 0 0z" /><path d="M20.31 5.04a3.73 3.73 0 0 0-3.47-2.38H11.5v-1.2c.39-.02.7-.34.7-.73S11.87 0 11.47 0H5.29c-.4 0-.73.33-.73.73s.31.72.7.73v1.2h-1.1c-1.53 0-2.92.96-3.47 2.38a10.48 10.48 0 0 0 0 7.48 3.74 3.74 0 0 0 3.47 2.38h12.67c1.53 0 2.92-.96 3.47-2.38.93-2.41.93-5.06 0-7.47ZM6.72 2.66v-1.2h3.31v1.2zm12.22 9.33c-.33.86-1.18 1.44-2.1 1.44H4.16c-.93 0-1.77-.58-2.1-1.44a9.1 9.1 0 0 1 0-6.42c.33-.86 1.18-1.44 2.1-1.44h12.67c.93 0 1.77.58 2.1 1.44.78 2.04.79 4.38 0 6.42Z" /></g></svg>;
+
+
+      export const FuelTankLiquidOutlineIcon = createIcon("FuelTankLiquidOutlineIcon", SVGComponent, {
+  "fileName": "abs-fuel-tank-liquid.svg",
+  "presentationName": "fuel-tank-liquid",
+  "style": "outline",
+  "category": "energy"
+});

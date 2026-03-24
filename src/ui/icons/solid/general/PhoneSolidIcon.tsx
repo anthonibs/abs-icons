@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M21.25 15.81c-2.64-3.2-3.95-2.91-5.4-2.21-1 .49-1.86.91-4.11-1.34S9.91 9.15 10.4 8.15c.7-1.45.99-2.77-2.21-5.4-.76-.62-1.6-.87-2.46-.7C3.9 2.39 2.6 4.43 2.6 4.43 1.79 5.57.68 8.98 7.84 16.15c4.71 4.71 7.8 5.85 9.68 5.85.98 0 1.62-.31 2-.57.02-.01 2.08-1.29 2.43-3.16.16-.87-.07-1.7-.7-2.46" /></svg>;
+
+
+      export const PhoneSolidIcon = createIcon("PhoneSolidIcon", SVGComponent, {
+  "fileName": "abs-phone-solid.svg",
+  "presentationName": "phone",
+  "style": "solid",
+  "category": "general"
+});

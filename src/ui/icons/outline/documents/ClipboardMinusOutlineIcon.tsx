@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 18.59 20.5" color="currentColor" width="1em" height="1em" {...props}><g><path d="M13.78 1.98C13.52.01 12.04 0 11.21 0H7.4c-.83 0-2.32 0-2.57 1.98C1.41 2.36 0 4.24 0 8.34v5.72c0 3.98 1.08 6.44 6.44 6.44h5.72c5.36 0 6.44-2.46 6.44-6.44V8.34c0-4.1-1.4-5.99-4.82-6.36m-6.39-.55h3.81c.94 0 1.19 0 1.19 1.19 0 .94 0 1.19-1.19 1.19H7.39c-.94 0-1.19 0-1.19-1.19s.25-1.19 1.19-1.19m9.77 12.63c0 3.53-.7 5.01-5.01 5.01H6.43c-4.31 0-5.01-1.48-5.01-5.01V8.34c0-3.67 1.14-4.67 3.4-4.93.31 1.82 1.74 1.83 2.56 1.83h3.81c1.96 0 2.46-.96 2.58-1.83 2.24.27 3.38 1.27 3.38 4.93v5.72Z" /><path d="M12.3 12.53h-6c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h6c.41 0 .75.34.75.75s-.34.75-.75.75" /></g></svg>;
+
+
+      export const ClipboardMinusOutlineIcon = createIcon("ClipboardMinusOutlineIcon", SVGComponent, {
+  "fileName": "abs-clipboard-minus.svg",
+  "presentationName": "clipboard-minus",
+  "style": "outline",
+  "category": "documents"
+});

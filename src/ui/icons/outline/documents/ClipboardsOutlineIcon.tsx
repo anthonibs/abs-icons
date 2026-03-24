@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 20 18.96" color="currentColor" width="1em" height="1em" {...props}><path d="M19.32 3.23c-.77-1.24-2.15-2.05-4.35-2.56L13.43.31c-2.1-.49-5.04-.78-6.68 2.17-.24.06-.51.13-.82.23l-1.46.48c-2.08.67-3.35 1.56-4 2.82-.64 1.26-.63 2.81.04 4.88l1.18 3.63c.98 3 2.56 4.44 4.97 4.44.82 0 1.75-.17 2.78-.5l1.46-.48c.86-.28 1.56-.59 2.14-.95.17.01.34.02.5.02 2.77 0 4.45-1.61 5.24-5l.91-3.84c.51-2.17.39-3.76-.37-4.99ZM8.99 17.04c-3.27 1.05-4.8.27-5.86-2.98l-1.18-3.63c-.54-1.67-.58-2.85-.13-3.73s1.44-1.54 3.12-2.08l1.09-.36s0 .03-.01.05c-.06.22-.12.44-.18.68l-.91 3.85c-.51 2.17-.39 3.76.38 5 .77 1.23 2.14 2.04 4.32 2.56l.77.18zm9.25-9.16-.91 3.85c-.7 2.98-1.93 4.05-4.41 3.81a9 9 0 0 1-1.39-.23l-1.56-.37c-1.77-.42-2.85-1.02-3.4-1.89s-.61-2.1-.19-3.86l.91-3.85c.18-.77.39-1.38.63-1.87.65-1.34 1.61-1.97 3.14-1.97.59 0 1.26.09 2.03.27l1.55.36c1.78.41 2.87 1.02 3.41 1.89s.6 2.1.19 3.85Z" /></svg>;
+
+
+      export const ClipboardsOutlineIcon = createIcon("ClipboardsOutlineIcon", SVGComponent, {
+  "fileName": "abs-clipboards.svg",
+  "presentationName": "clipboards",
+  "style": "outline",
+  "category": "documents"
+});

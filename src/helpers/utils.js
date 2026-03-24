@@ -5,6 +5,38 @@ import { dirname, join } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+const categoriesPath = join(__dirname, "categories.json");
+const KEY_WORDS_CATEGORIES_MAP = JSON.parse(
+  fs.readFileSync(categoriesPath, "utf8"),
+);
+
+const ICON_VARIANTS = ["alt", "soft"];
+
+export function getCategory(fileName) {
+  const clean = fileName
+    .toLowerCase()
+    .replace(/^abs-/, "")
+    .replace(/-solid|-outline/, "")
+    .replace(/\.svg$/, "");
+
+  const parts = clean.split("-").filter((p) => !ICON_VARIANTS.includes(p));
+  const first = parts[0];
+
+  for (const [category, keywords] of Object.entries(KEY_WORDS_CATEGORIES_MAP)) {
+    if (keywords.includes(first)) {
+      return category;
+    }
+  }
+
+  for (const [category, keywords] of Object.entries(KEY_WORDS_CATEGORIES_MAP)) {
+    if (keywords.some((k) => parts.includes(k))) {
+      return category;
+    }
+  }
+
+  return "general";
+}
+
 export function formatFileName(name) {
   return name
     .replace(/\.[^.]+$/i, "")
@@ -14,23 +46,6 @@ export function formatFileName(name) {
     .replace(/-+/g, "-")
     .replace(/^-+|-+$/g, "")
     .toLowerCase();
-}
-
-const categoriesPath = join(__dirname, "categories.json");
-const KEY_WORDS_CATEGORIES_MAP = JSON.parse(
-  fs.readFileSync(categoriesPath, "utf8"),
-);
-
-export function getCategory(fileName) {
-  const cleanName = fileName.toLowerCase();
-
-  for (const [category, keywords] of Object.entries(KEY_WORDS_CATEGORIES_MAP)) {
-    if (keywords.some((word) => new RegExp(`\\b${word}\\b`).test(cleanName))) {
-      return category;
-    }
-  }
-
-  return "general";
 }
 
 export function formatComponentName(filename) {
