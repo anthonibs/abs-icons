@@ -36,7 +36,7 @@ const CardIcon = ({
 
   const handleCopyImport = (e: React.MouseEvent) => {
     e.stopPropagation();
-    const importText = `import { ${name} } from "@anthonibs/abs-icons";`;
+    const importText = `<${name}/>`;
     navigator.clipboard.writeText(importText);
     setCopiedJsx(true);
     setTimeout(() => setCopiedJsx(false), 1200);
