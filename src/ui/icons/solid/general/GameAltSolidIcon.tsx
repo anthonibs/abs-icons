@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 20 14.34" color="currentColor" width="1em" height="1em" {...props}><path d="M19.36 4.09v-.12A4.455 4.455 0 0 0 14.92 0H5.08C2.79 0 .89 1.71.65 3.97v.12C.53 4.97 0 9.42 0 10.84c0 1.93 1.58 3.5 3.53 3.5 1.23 0 1.86-.63 2.37-1.14l.41-.4c.79-.78 1.83-1.21 2.94-1.21h1.5c1.11 0 2.15.43 2.94 1.21l.41.41c.51.5 1.14 1.13 2.37 1.13 1.95 0 3.53-1.57 3.53-3.5 0-1.39-.49-5.52-.64-6.75M14.8 5.34c0-.42.34-.75.75-.75h.01a.749.749 0 1 1 0 1.5c-.41 0-.76-.34-.76-.75m-1.27 1.83a.749.749 0 1 1-1.5 0 .749.749 0 1 1 1.5 0M4.45 7a.749.749 0 1 1 0-1.5h1.1V4.42a.749.749 0 1 1 1.5 0V5.5h1.1c.41 0 .75.34.75.75S8.56 7 8.15 7h-1.1v1.09c0 .41-.34.75-.75.75s-.75-.34-.75-.75V7z" /></svg>;
+
+
+      export const GameAltSolidIcon = createIcon("GameAltSolidIcon", SVGComponent, {
+  "fileName": "abs-game-alt-solid.svg",
+  "presentationName": "game-alt",
+  "style": "solid",
+  "category": "general"
+});

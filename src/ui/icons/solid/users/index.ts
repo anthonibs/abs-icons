@@ -1,8 +1,3 @@
-export * from "./ChatBubbleSolidIcon";
-export * from "./ChatQuestionSolidIcon";
-export * from "./ChatSolidIcon";
-export * from "./HierarchySolidIcon";
-export * from "./MustacheSolidIcon";
 export * from "./PersonalcardSolidIcon";
 export * from "./UserAddSolidIcon";
 export * from "./UserCancelSolidIcon";
@@ -13,3 +8,4 @@ export * from "./UserSolidIcon";
 export * from "./UserSquareSolidIcon";
 export * from "./UserTalkSolidIcon";
 export * from "./UsersGroupSolidIcon";
+export * from "./UsersSolidIcon";

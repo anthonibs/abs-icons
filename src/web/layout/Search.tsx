@@ -1,8 +1,8 @@
 import useData from "../store/useData";
 import { ChangeEvent, useEffect, useRef } from "react";
 
-import { SearchOutlineIcon } from "@anthonibs/abs-icons";
 import useListIcons from "../hooks/useListIcons";
+import { SearchOutlineIcon } from "../../ui/icons";
 
 const variants = [
   { label: "Outline", value: "outline" },

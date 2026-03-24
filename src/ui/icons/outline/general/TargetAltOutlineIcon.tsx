@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 19.89 20" color="currentColor" width="1em" height="1em" {...props}><g><path d="M9.94 20C4.46 20 0 15.51 0 10S4.46 0 9.94 0s9.94 4.49 9.94 10-4.46 10-9.94 10m0-18.5C5.29 1.5 1.5 5.31 1.5 10s3.79 8.5 8.44 8.5 8.44-3.81 8.44-8.5-3.78-8.5-8.44-8.5" /><path d="M9.94 16.3c-3.46 0-6.27-2.83-6.27-6.3s2.81-6.3 6.27-6.3 6.27 2.83 6.27 6.3-2.81 6.3-6.27 6.3m0-11.1c-2.63 0-4.77 2.15-4.77 4.8s2.14 4.8 4.77 4.8 4.77-2.15 4.77-4.8-2.14-4.8-4.77-4.8" /><path d="M9.94 12.6c-1.43 0-2.59-1.17-2.59-2.6s1.16-2.6 2.59-2.6 2.59 1.17 2.59 2.6-1.16 2.6-2.59 2.6m0-3.7c-.6 0-1.09.49-1.09 1.1s.49 1.1 1.09 1.1 1.09-.49 1.09-1.1-.49-1.1-1.09-1.1" /></g></svg>;
+
+
+      export const TargetAltOutlineIcon = createIcon("TargetAltOutlineIcon", SVGComponent, {
+  "fileName": "abs-target-alt.svg",
+  "presentationName": "target-alt",
+  "style": "outline",
+  "category": "general"
+});

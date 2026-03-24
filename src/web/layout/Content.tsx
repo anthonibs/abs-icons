@@ -12,8 +12,8 @@ import SizeControl from "./SizeControl";
 import ColorControl from "./ColorControl";
 import { IconProps } from "../../ui/createIcon";
 import { IconMetadata } from "../interfaces";
-import { SettingsOutlineIcon } from "../../ui/icons";
 import Categories from "./Categories";
+import { SettingsOutlineIcon } from "../../ui/icons";
 
 const Content = () => {
   const handleReset = useData((state) => state.handleReset);

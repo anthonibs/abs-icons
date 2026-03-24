@@ -5,7 +5,7 @@ const useListIcons = () => {
   const category = useData((state) => state.category);
   const setCategory = useData((state) => state.setCategory);
 
-  const categories = ["general", ...Object.keys(KEY_WORDS_CATEGORIES_MAP)]
+  const categories = [ ...Object.keys(KEY_WORDS_CATEGORIES_MAP)]
     ?.sort()
     .map((key) => ({
       key,

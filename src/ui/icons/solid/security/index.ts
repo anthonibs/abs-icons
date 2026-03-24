@@ -12,4 +12,3 @@ export * from "./ShieldQuestionSoftSolidIcon";
 export * from "./ShieldQuestionSolidIcon";
 export * from "./ShieldSoftSolidIcon";
 export * from "./ShieldUserSoftSolidIcon";
-export * from "./VerifiedSealSolidIcon";

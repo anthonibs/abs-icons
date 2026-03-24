@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M11.74 21.57c-1.5 0-3.05-.04-4.57-.15-2.01-.17-3.55-.67-4.59-2.55-1.47-2.48.18-5.37 1.52-7.68.34-.6.67-1.16.93-1.69l.13-.23c.32-.49.64-1.06.98-1.67 1.33-2.38 2.98-5.34 5.99-5.18 2.01.04 3.11 1.06 4.31 2.82 1.48 2.26 2.95 4.82 4.5 7.84 1.24 2.24 1.41 4.36.45 5.94-1 1.65-3.06 2.52-5.81 2.47-1.19.04-2.49.07-3.84.07ZM6.33 10.02l-.08.13c-.26.53-.59 1.11-.95 1.73-1.27 2.21-2.58 4.49-1.51 6.29.67 1.22 1.55 1.68 3.48 1.85 2.82.21 5.78.16 8.29.08 2.25.05 3.9-.6 4.62-1.79.68-1.13.51-2.75-.49-4.55-1.54-3-2.98-5.52-4.43-7.72-1.14-1.66-1.89-2.18-3.2-2.2C9.89 3.73 8.6 6.05 7.34 8.3c-.35.62-.67 1.2-1.01 1.73Z" /><path d="M12.01 16.6c-.52 0-.94-.42-.94-.93s.41-.93.93-.93.93.42.93.93-.42.93-.93.93Zm0-3.04c-.39 0-.7-.31-.7-.7V9.13c0-.39.31-.7.7-.7s.7.31.7.7v3.73c0 .39-.31.7-.7.7" /></g></svg>;
+
+
+      export const ExclamationTriangleOutlineIcon = createIcon("ExclamationTriangleOutlineIcon", SVGComponent, {
+  "fileName": "abs-exclamation-triangle.svg",
+  "presentationName": "exclamation-triangle",
+  "style": "outline",
+  "category": "general"
+});

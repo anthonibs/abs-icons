@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M17.35 22.03c-1.93 0-4.99-1.21-9.57-5.8C.93 9.36 1.63 5.92 2.66 4.48s1.29-2.07 3.2-2.43c.91-.17 1.81.08 2.61.73 3.26 2.69 2.96 4.06 2.22 5.58-.45.92-.8 1.65 1.25 3.7s2.77 1.7 3.69 1.25c1.51-.74 2.88-1.04 5.57 2.22.65.79.9 1.7.74 2.61-.36 1.93-2.46 3.24-2.49 3.26-.46.33-1.14.62-2.1.62Zm-8.51-6.86c5.15 5.16 8.44 5.95 9.8 4.97.38-.24 1.64-1.22 1.82-2.3.08-.47-.06-.91-.43-1.36-2.14-2.61-2.82-2.28-3.75-1.82-1.42.69-2.81 1.06-5.41-1.54-2.59-2.6-2.23-3.99-1.54-5.42.46-.94.78-1.61-1.82-3.76-.44-.36-.88-.5-1.35-.42-1.08.18-2.05 1.44-2.25 1.77-1.01 1.42-.22 4.72 4.93 9.87Z" /></svg>;
+
+
+      export const PhoneOutlineIcon = createIcon("PhoneOutlineIcon", SVGComponent, {
+  "fileName": "abs-phone.svg",
+  "presentationName": "phone",
+  "style": "outline",
+  "category": "general"
+});

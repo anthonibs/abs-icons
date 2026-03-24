@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 18.1 20.26" color="currentColor" width="1em" height="1em" {...props}><path d="m1.51 3.62 3.72-2.33c.33-.2.43-.63.22-.96a.686.686 0 0 0-.96-.22L.77 2.44c-.33.2-.43.64-.22.96.2.33.63.43.96.22M12.87 1.3l3.72 2.33c.33.2.76.11.96-.22s.11-.76-.22-.96L13.61.12c-.33-.2-.76-.1-.96.22-.2.33-.11.76.22.96m-3.82.85C3.3 2.15 0 5.45 0 11.2s3.3 9.06 9.05 9.06 9.05-3.3 9.05-9.06-3.3-9.05-9.05-9.05m2.81 12.53H6.25a.7.7 0 0 1-.5-1.19l4.24-4.25c.06-.06.02-.17-.07-.17H6.24c-.39 0-.7-.31-.7-.7s.31-.7.7-.7h5.61a.705.705 0 0 1 .5 1.2l-4.24 4.25c-.06.06-.02.17.07.17h3.68c.39 0 .7.3.7.69s-.31.7-.7.7" /></svg>;
+
+
+      export const AlarmClockDrowseAltSolidIcon = createIcon("AlarmClockDrowseAltSolidIcon", SVGComponent, {
+  "fileName": "abs-alarm-clock-drowse-alt-solid.svg",
+  "presentationName": "alarm-clock-drowse-alt",
+  "style": "solid",
+  "category": "time"
+});

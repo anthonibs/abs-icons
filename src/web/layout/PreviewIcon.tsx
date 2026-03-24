@@ -1,4 +1,4 @@
-import { EyeOutlineIcon } from "@anthonibs/abs-icons";
+import { EyeOutlineIcon } from "../../ui/icons";
 import useData from "../store/useData";
 import { memo } from "react";
 
