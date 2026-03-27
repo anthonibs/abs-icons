@@ -1,5 +1,6 @@
 export * from "./ArrowBackSolidIcon";
 export * from "./ArrowDownRightSquareSolidIcon";
+export * from "./ArrowDownSolidIcon";
 export * from "./ArrowDownwardSolidIcon";
 export * from "./ArrowForwardSolidIcon";
 export * from "./ArrowLeftRightSolidIcon";

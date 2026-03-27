@@ -2,7 +2,7 @@ import * as React from "react";
       import { createIcon } from "../../../createIcon";
 
       import type { SVGProps } from "react";
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 19.79 19.79" color="currentColor" width="1em" height="1em" {...props}><g><path d="M9.89 0C3.61 0 0 3.61 0 9.89s3.61 9.89 9.89 9.89 9.89-3.61 9.89-9.89S16.18 0 9.89 0m0 18.29c-5.41 0-8.39-2.98-8.39-8.39s2.98-8.4 8.39-8.4 8.39 2.98 8.39 8.39-2.98 8.39-8.39 8.39Z" /><path d="M14.53 9.14H5.25c-.41 0-.75.34-.75.75s.34.75.75.75h9.28c.41 0 .75-.34.75-.75s-.34-.75-.75-.75" /></g></svg>;
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M12 2C5.64 2 2 5.64 2 12s3.64 10 10 10 10-3.64 10-10S18.36 2 12 2m0 18.48c-5.47 0-8.48-3.01-8.48-8.48S6.53 3.52 12 3.52s8.48 3.01 8.48 8.48-3.01 8.48-8.48 8.48" /><path d="M16.69 11.24H7.31a.76.76 0 1 0 0 1.52h9.38a.76.76 0 1 0 0-1.52" /></g></svg>;
 
 
       export const RemoveCircleOutlineIcon = createIcon("RemoveCircleOutlineIcon", SVGComponent, {

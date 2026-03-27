@@ -2,7 +2,7 @@ import * as React from "react";
       import { createIcon } from "../../../createIcon";
 
       import type { SVGProps } from "react";
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 18.11 20.25" color="currentColor" width="1em" height="1em" {...props}><g><path d="M9.05 20.25C3.3 20.25 0 16.95 0 11.2s3.3-9.05 9.05-9.05 9.05 3.3 9.05 9.05-3.3 9.05-9.05 9.05m0-16.61c-4.87 0-7.55 2.68-7.55 7.55s2.68 7.55 7.55 7.55 7.55-2.68 7.55-7.55-2.68-7.55-7.55-7.55" /><rect width={1.5} height={7.5} x={6.46} y={7.45} rx={0.75} ry={0.75} /><rect width={1.5} height={7.5} x={10.15} y={7.45} rx={0.75} ry={0.75} /><path d="m1.51 3.62 3.72-2.33c.33-.2.43-.63.22-.96a.686.686 0 0 0-.96-.22L.77 2.44c-.33.2-.43.64-.22.96.2.33.63.43.96.22M12.87 1.3l3.72 2.33c.33.2.76.11.96-.22s.11-.76-.22-.96L13.61.12c-.33-.2-.76-.1-.96.22-.2.33-.11.76.22.96" /></g></svg>;
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M12 22c-5.68 0-8.94-3.26-8.94-8.94S6.32 4.12 12 4.12s8.94 3.26 8.94 8.94S17.68 22 12 22m0-16.4c-4.81 0-7.46 2.65-7.46 7.46s2.65 7.46 7.46 7.46 7.46-2.65 7.46-7.46S16.81 5.6 12 5.6" /><rect width={1.48} height={7.41} x={9.44} y={9.36} rx={0.74} ry={0.74} /><rect width={1.48} height={7.41} x={13.08} y={9.36} rx={0.74} ry={0.74} /><path d="m4.55 5.57 3.67-2.3c.33-.2.42-.62.22-.95a.683.683 0 0 0-.95-.22L3.82 4.4c-.33.2-.42.63-.22.95.2.33.62.42.95.22m11.22-2.29 3.67 2.3c.33.2.75.11.95-.22s.11-.75-.22-.95l-3.67-2.3c-.33-.2-.75-.1-.95.22-.2.33-.11.75.22.95" /></g></svg>;
 
 
       export const AlarmClockPauseAltOutlineIcon = createIcon("AlarmClockPauseAltOutlineIcon", SVGComponent, {
