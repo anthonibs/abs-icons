@@ -2,7 +2,7 @@ import * as React from "react";
       import { createIcon } from "../../../createIcon";
 
       import type { SVGProps } from "react";
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 16.69 11" color="currentColor" width="1em" height="1em" {...props}><path d="M0 10.25c0-.41.34-.75.75-.75h10.71c.41 0 .75.34.75.75s-.34.75-.75.75H.75c-.41 0-.75-.34-.75-.75m15.42-.73-3.26-3.25c-.43-.43-.43-1.12 0-1.55l3.26-3.24c.29-.29.76-.29 1.05 0s.29.76 0 1.06l-2.59 2.57a.55.55 0 0 0 0 .77l2.6 2.58a.742.742 0 1 1-1.05 1.05ZM0 5.5c0-.41.34-.75.75-.75h7.79c.41 0 .75.34.75.75s-.34.75-.75.75H.75C.34 6.25 0 5.91 0 5.5M0 .75C0 .34.34 0 .75 0h10.71c.41 0 .75.34.75.75s-.34.75-.75.75H.75C.34 1.5 0 1.16 0 .75" /></svg>;
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M3 17.12c0-.45.36-.81.81-.81h11.55c.45 0 .81.36.81.81s-.36.81-.81.81H3.81c-.45 0-.81-.36-.81-.81m16.63-.78-3.52-3.5c-.46-.46-.46-1.21 0-1.67l3.52-3.5c.31-.31.82-.31 1.13 0s.31.83 0 1.14l-2.8 2.77c-.23.23-.23.6 0 .83l2.8 2.78c.32.31.32.82 0 1.14-.31.31-.82.31-1.13 0ZM3 12c0-.45.36-.81.81-.81h8.4c.45 0 .81.36.81.81s-.36.81-.81.81h-8.4c-.45 0-.81-.36-.81-.81m0-5.12c0-.45.36-.81.81-.81h11.55c.45 0 .81.36.81.81s-.36.81-.81.81H3.81c-.45 0-.81-.36-.81-.81" /></svg>;
 
 
       export const MenuCollapseOutlineIcon = createIcon("MenuCollapseOutlineIcon", SVGComponent, {
