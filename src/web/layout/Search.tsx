@@ -1,7 +1,5 @@
 import useData from "../store/useData";
-import { ChangeEvent, useEffect, useRef } from "react";
-
-import useListIcons from "../hooks/useListIcons";
+import { ChangeEvent, useEffect, useRef, useState } from "react";
 import { SearchOutlineIcon } from "../../ui/icons";
 
 const variants = [
@@ -10,27 +8,37 @@ const variants = [
 ] as const;
 
 const Search = () => {
-  const { icons } = useListIcons();
-
   const searchQuery = useData((state) => state.searchQuery);
   const setSearchQuery = useData((state) => state.setSearchQuery);
 
   const variant = useData((state) => state.variants);
   const setVariant = useData((state) => state.setVariants);
 
-  const timerRef = useRef<number | null>(null);
+  const [inputValue, setInputValue] = useState(searchQuery);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const onChangeSearchIcon = (e: ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    if (timerRef.current) {
-      clearTimeout(timerRef.current);
-    }
+    setInputValue(e.target.value);
+  };
+
+  const clearSearch = () => {
+    setInputValue("");
+    setSearchQuery("");
+    inputRef.current?.focus();
+  };
+
+  useEffect(() => {
+    if (timerRef.current) clearTimeout(timerRef.current);
 
     timerRef.current = setTimeout(() => {
-      setSearchQuery(value);
-    }, 500);
-  };
+      setSearchQuery(inputValue);
+    }, 250);
+
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [inputValue, setSearchQuery]);
 
   useEffect(() => {
     return () => {
@@ -39,10 +47,34 @@ const Search = () => {
   }, []);
 
   useEffect(() => {
-    if (searchQuery.length === 0 && inputRef.current) {
-      inputRef.current.value = "";
-    }
+    setInputValue(searchQuery);
   }, [searchQuery]);
+
+  useEffect(() => {
+    const onKeydown = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement | null;
+      const isTypingField =
+        target?.tagName === "INPUT" ||
+        target?.tagName === "TEXTAREA" ||
+        target?.isContentEditable;
+
+      if (event.key === "/" && !isTypingField) {
+        event.preventDefault();
+        inputRef.current?.focus();
+        inputRef.current?.select();
+      }
+
+      if (
+        event.key === "Escape" &&
+        document.activeElement === inputRef.current
+      ) {
+        clearSearch();
+      }
+    };
+
+    window.addEventListener("keydown", onKeydown);
+    return () => window.removeEventListener("keydown", onKeydown);
+  }, []);
 
   return (
     <nav className="mb-10 flex flex-col md:flex-row gap-6 justify-between items-center">
@@ -59,11 +91,23 @@ const Search = () => {
           ref={inputRef}
           id="search-icons"
           className="block w-full pl-12 pr-4 py-3 bg-abs-card-background rounded-xl text-sm text-abs-text-main placeholder-text-muted focus:outline-none focus:ring-0 transition-all shadow-sm border-none"
-          placeholder={`Search from ${icons.length} icons...`}
+          placeholder="Search icons by name ( / )"
           autoComplete="off"
-          type="search"
+          type="text"
+          value={inputValue}
           onChange={onChangeSearchIcon}
         />
+
+        {inputValue.length > 0 && (
+          <button
+            type="button"
+            onClick={clearSearch}
+            className="absolute inset-y-0 right-2 my-auto h-8 px-2 text-xs text-abs-text-muted hover:text-abs-text-main"
+            aria-label="Clear search"
+          >
+            Clear
+          </button>
+        )}
       </div>
 
       <div className="flex space-x-5 items-center">
