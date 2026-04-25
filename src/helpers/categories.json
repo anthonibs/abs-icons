@@ -18,7 +18,13 @@
     "tray-download",
     "upload"
   ],
-  "analytics": ["chart", "graph", "trend", "trending", "waveform"],
+  "analytics": [
+    "chart",
+    "graph",
+    "trend",
+    "trending",
+    "waveform"
+  ],
   "arrows": [
     "arrow",
     "arrows",
@@ -41,6 +47,7 @@
     "android",
     "angular",
     "app-store",
+    "apple",
     "brave",
     "css3",
     "deepseek",
@@ -145,7 +152,9 @@
     "tower",
     "usb-drive",
     "vr-goggles",
-    "wifi"
+    "wifi",
+    "wireless",
+    "hotspot"
   ],
   "documents": [
     "book",
@@ -192,7 +201,12 @@
     "solar-panel",
     "tank"
   ],
-  "general": ["chat", "color", "palette", "swatch"],
+  "general": [
+    "chat",
+    "color",
+    "palette",
+    "swatch"
+  ],
   "interface": [
     "category",
     "dashboard",
@@ -264,7 +278,11 @@
     "umbrella",
     "weather"
   ],
-  "navigation": ["copied", "cursor", "link"],
+  "navigation": [
+    "copied",
+    "cursor",
+    "link"
+  ],
   "security": [
     "incognito",
     "key",
@@ -324,5 +342,11 @@
     "wheel",
     "zeppelin"
   ],
-  "users": ["id-card", "personalcard", "user", "user-profile", "users"]
+  "users": [
+    "id-card",
+    "personalcard",
+    "user",
+    "user-profile",
+    "users"
+  ]
 }

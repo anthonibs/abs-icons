@@ -3,6 +3,7 @@ export * from "./AmazonOutlineIcon";
 export * from "./AndroidOutlineIcon";
 export * from "./AngularOutlineIcon";
 export * from "./AppStoreOutlineIcon";
+export * from "./AppleOutlineIcon";
 export * from "./Css3OutlineIcon";
 export * from "./DeepseekOutlineIcon";
 export * from "./DevOutlineIcon";
