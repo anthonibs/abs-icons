@@ -1,63 +1,63 @@
-import { memo, useRef, useState, useEffect, useMemo } from "react";
-import { useVirtualizer } from "@tanstack/react-virtual";
-import CardIcon from "../components/CardIcon";
-import useListIcons from "../hooks/useListIcons";
+import { memo, useRef, useState, useEffect, useMemo } from "react"
+import { useVirtualizer } from "@tanstack/react-virtual"
+import CardIcon from "../components/CardIcon"
+import useListIcons from "../hooks/useListIcons"
 
-const CARD_HEIGHT = 158;
-const GAP = 24;
-const MIN_CARD_WIDTH = 160;
-const VIEWPORT_OFFSET = 260;
-const MIN_VIEWPORT_HEIGHT = 420;
-const MAX_VIEWPORT_HEIGHT = 820;
+const CARD_HEIGHT = 158
+const GAP = 24
+const MIN_CARD_WIDTH = 160
+const VIEWPORT_OFFSET = 260
+const MIN_VIEWPORT_HEIGHT = 420
+const MAX_VIEWPORT_HEIGHT = 820
 
 const ListIcons = () => {
-  const { icons, sizeIcon, colorIcon } = useListIcons();
+  const { icons, sizeIcon, colorIcon } = useListIcons()
 
-  const parentRef = useRef<HTMLElement | null>(null);
-  const [columns, setColumns] = useState(4);
+  const parentRef = useRef<HTMLElement | null>(null)
+  const [columns, setColumns] = useState(4)
 
   useEffect(() => {
-    if (!parentRef.current) return;
-    let timeoutId: number;
+    if (!parentRef.current) return
+    let timeoutId: number
 
     const observer = new ResizeObserver((entries) => {
-      window.clearTimeout(timeoutId);
+      window.clearTimeout(timeoutId)
 
       timeoutId = window.setTimeout(() => {
-        const { width } = entries[0].contentRect;
-        const cols = Math.floor((width + GAP) / (MIN_CARD_WIDTH + GAP));
-        setColumns(Math.max(1, cols));
-      }, 150);
-    });
+        const { width } = entries[0].contentRect
+        const cols = Math.floor((width + GAP) / (MIN_CARD_WIDTH + GAP))
+        setColumns(Math.max(1, cols))
+      }, 150)
+    })
 
-    observer.observe(parentRef.current);
+    observer.observe(parentRef.current)
 
     return () => {
-      observer.disconnect();
-      window.clearTimeout(timeoutId);
-    };
-  }, []);
+      observer.disconnect()
+      window.clearTimeout(timeoutId)
+    }
+  }, [])
 
   const rows = useMemo(() => {
-    const chunked = [];
+    const chunked = []
     for (let i = 0; i < icons.length; i += columns) {
-      chunked.push(icons.slice(i, i + columns));
+      chunked.push(icons.slice(i, i + columns))
     }
-    return chunked;
-  }, [icons, columns]);
+    return chunked
+  }, [icons, columns])
 
   const rowVirtualizer = useVirtualizer({
     count: rows.length,
     getScrollElement: () => parentRef.current,
     estimateSize: () => CARD_HEIGHT + GAP,
     overscan: 5,
-  });
+  })
 
   useEffect(() => {
-    parentRef.current?.scrollTo({ top: 0, behavior: "auto" });
-    rowVirtualizer.scrollToIndex(0, { align: "start" });
+    parentRef.current?.scrollTo({ top: 0, behavior: "auto" })
+    rowVirtualizer.scrollToIndex(0, { align: "start" })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [icons]);
+  }, [icons])
 
   return (
     <section
@@ -83,7 +83,7 @@ const ListIcons = () => {
           }}
         >
           {rowVirtualizer.getVirtualItems().map((virtualRow) => {
-            const rowItems = rows[virtualRow.index];
+            const rowItems = rows[virtualRow.index]
 
             return (
               <div
@@ -110,12 +110,12 @@ const ListIcons = () => {
                   />
                 ))}
               </div>
-            );
+            )
           })}
         </div>
       )}
     </section>
-  );
-};
+  )
+}
 
-export default memo(ListIcons);
+export default memo(ListIcons)

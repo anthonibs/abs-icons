@@ -1,13 +1,26 @@
-import * as React from "react";
-      import { createIcon } from "../../../createIcon";
+import { createIcon } from "../../../createIcon"
 
-      import type { SVGProps } from "react";
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M12 5.72c-1.92 0-3.49 1.56-3.49 3.49S10.08 12.7 12 12.7s3.49-1.56 3.49-3.49S13.92 5.72 12 5.72m0 5.58c-1.15 0-2.09-.94-2.09-2.09s.94-2.09 2.09-2.09 2.09.94 2.09 2.09-.94 2.09-2.09 2.09" /><path d="M12 2.11c-6.29 0-9.89 3.6-9.89 9.89s3.61 9.89 9.89 9.89 9.89-3.61 9.89-9.89-3.6-9.89-9.89-9.89M7.16 19.27c.16-2.08.79-3.78 4.84-3.78s4.73 1.7 4.9 3.75c-1.3.76-2.93 1.15-4.9 1.15S8.45 20 7.16 19.27m11.03-1.01c-.43-2.16-1.88-4.17-6.19-4.17s-5.74 2.02-6.14 4.21c-1.47-1.42-2.25-3.54-2.25-6.3 0-5.41 2.98-8.39 8.39-8.39s8.39 2.98 8.39 8.39c0 2.73-.76 4.84-2.2 6.26" /></svg>;
+import type { SVGProps } from "react"
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="0 0 24 24"
+    color="currentColor"
+    width="1em"
+    height="1em"
+    {...props}
+  >
+    <path d="M12 5.72c-1.92 0-3.49 1.56-3.49 3.49S10.08 12.7 12 12.7s3.49-1.56 3.49-3.49S13.92 5.72 12 5.72m0 5.58c-1.15 0-2.09-.94-2.09-2.09s.94-2.09 2.09-2.09 2.09.94 2.09 2.09-.94 2.09-2.09 2.09" />
+    <path d="M12 2.11c-6.29 0-9.89 3.6-9.89 9.89s3.61 9.89 9.89 9.89 9.89-3.61 9.89-9.89-3.6-9.89-9.89-9.89M7.16 19.27c.16-2.08.79-3.78 4.84-3.78s4.73 1.7 4.9 3.75c-1.3.76-2.93 1.15-4.9 1.15S8.45 20 7.16 19.27m11.03-1.01c-.43-2.16-1.88-4.17-6.19-4.17s-5.74 2.02-6.14 4.21c-1.47-1.42-2.25-3.54-2.25-6.3 0-5.41 2.98-8.39 8.39-8.39s8.39 2.98 8.39 8.39c0 2.73-.76 4.84-2.2 6.26" />
+  </svg>
+)
 
-
-      export const UserSquareOutlineIcon = createIcon("UserSquareOutlineIcon", SVGComponent, {
-  "fileName": "abs-user-square.svg",
-  "presentationName": "user-square",
-  "style": "outline",
-  "category": "users"
-});
+export const UserSquareOutlineIcon = createIcon(
+  "UserSquareOutlineIcon",
+  SVGComponent,
+  {
+    fileName: "abs-user-square.svg",
+    presentationName: "user-square",
+    style: "outline",
+    category: "users",
+  },
+)

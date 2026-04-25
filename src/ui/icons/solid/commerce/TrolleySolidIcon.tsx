@@ -1,13 +1,21 @@
-import * as React from "react";
-      import { createIcon } from "../../../createIcon";
+import { createIcon } from "../../../createIcon"
 
-      import type { SVGProps } from "react";
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M3.53 2.66c-.39-.13-.82.08-.95.47s.08.82.47.95l.27.09c.68.23 1.12.38 1.45.53.31.15.45.26.53.38.09.12.15.28.19.63.04.36.04.83.04 1.55v2.67c0 1.37 0 2.47.12 3.34.12.9.38 1.66.98 2.26s1.36.86 2.26.98c.87.12 1.97.12 3.34.12h7.05c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-7c-1.43 0-2.44 0-3.19-.1-.73-.1-1.12-.28-1.4-.56-.23-.23-.4-.55-.51-1.09H17.3c.96 0 1.44 0 1.82-.25s.57-.69.94-1.57l.43-1c.81-1.89 1.21-2.83.77-3.51-.45-.67-1.47-.67-3.53-.67H7.04c0-.31-.02-.59-.05-.83-.05-.48-.18-.93-.47-1.33s-.67-.66-1.12-.86c-.42-.19-.95-.37-1.57-.58l-.3-.1Zm5.26 15.71c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5m9 0c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5" /></svg>;
+import type { SVGProps } from "react"
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="0 0 24 24"
+    color="currentColor"
+    width="1em"
+    height="1em"
+    {...props}
+  >
+    <path d="M3.53 2.66c-.39-.13-.82.08-.95.47s.08.82.47.95l.27.09c.68.23 1.12.38 1.45.53.31.15.45.26.53.38.09.12.15.28.19.63.04.36.04.83.04 1.55v2.67c0 1.37 0 2.47.12 3.34.12.9.38 1.66.98 2.26s1.36.86 2.26.98c.87.12 1.97.12 3.34.12h7.05c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-7c-1.43 0-2.44 0-3.19-.1-.73-.1-1.12-.28-1.4-.56-.23-.23-.4-.55-.51-1.09H17.3c.96 0 1.44 0 1.82-.25s.57-.69.94-1.57l.43-1c.81-1.89 1.21-2.83.77-3.51-.45-.67-1.47-.67-3.53-.67H7.04c0-.31-.02-.59-.05-.83-.05-.48-.18-.93-.47-1.33s-.67-.66-1.12-.86c-.42-.19-.95-.37-1.57-.58l-.3-.1Zm5.26 15.71c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5m9 0c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5" />
+  </svg>
+)
 
-
-      export const TrolleySolidIcon = createIcon("TrolleySolidIcon", SVGComponent, {
-  "fileName": "abs-trolley-solid.svg",
-  "presentationName": "trolley",
-  "style": "solid",
-  "category": "commerce"
-});
+export const TrolleySolidIcon = createIcon("TrolleySolidIcon", SVGComponent, {
+  fileName: "abs-trolley-solid.svg",
+  presentationName: "trolley",
+  style: "solid",
+  category: "commerce",
+})

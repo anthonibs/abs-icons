@@ -1,34 +1,34 @@
-export * as generaloutlineIcons from "./general";
-export * from "./general";
-export * as transportoutlineIcons from "./transport";
-export * from "./transport";
-export * as mediaoutlineIcons from "./media";
-export * from "./media";
-export * as timeoutlineIcons from "./time";
-export * from "./time";
-export * as devicesoutlineIcons from "./devices";
-export * from "./devices";
-export * as arrowsoutlineIcons from "./arrows";
-export * from "./arrows";
-export * as commerceoutlineIcons from "./commerce";
-export * from "./commerce";
-export * as locationoutlineIcons from "./location";
-export * from "./location";
-export * as energyoutlineIcons from "./energy";
-export * from "./energy";
-export * as documentsoutlineIcons from "./documents";
-export * from "./documents";
-export * as natureoutlineIcons from "./nature";
-export * from "./nature";
-export * as interfaceoutlineIcons from "./interface";
-export * from "./interface";
-export * as analyticsoutlineIcons from "./analytics";
-export * from "./analytics";
-export * as actionsoutlineIcons from "./actions";
-export * from "./actions";
-export * as navigationoutlineIcons from "./navigation";
-export * from "./navigation";
-export * as securityoutlineIcons from "./security";
-export * from "./security";
-export * as usersoutlineIcons from "./users";
-export * from "./users";
+export * as actionsoutlineIcons from "./actions"
+export * from "./actions"
+export * as transportoutlineIcons from "./transport"
+export * from "./transport"
+export * as mediaoutlineIcons from "./media"
+export * from "./media"
+export * as timeoutlineIcons from "./time"
+export * from "./time"
+export * as generaloutlineIcons from "./general"
+export * from "./general"
+export * as devicesoutlineIcons from "./devices"
+export * from "./devices"
+export * as arrowsoutlineIcons from "./arrows"
+export * from "./arrows"
+export * as commerceoutlineIcons from "./commerce"
+export * from "./commerce"
+export * as locationoutlineIcons from "./location"
+export * from "./location"
+export * as energyoutlineIcons from "./energy"
+export * from "./energy"
+export * as documentsoutlineIcons from "./documents"
+export * from "./documents"
+export * as natureoutlineIcons from "./nature"
+export * from "./nature"
+export * as interfaceoutlineIcons from "./interface"
+export * from "./interface"
+export * as analyticsoutlineIcons from "./analytics"
+export * from "./analytics"
+export * as navigationoutlineIcons from "./navigation"
+export * from "./navigation"
+export * as usersoutlineIcons from "./users"
+export * from "./users"
+export * as securityoutlineIcons from "./security"
+export * from "./security"

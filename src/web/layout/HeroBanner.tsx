@@ -1,41 +1,41 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
 import {
   DocumentDuplicateSolidIcon,
   DocumentMultipleOutlineIcon,
-} from "../../ui/icons";
+} from "../../ui/icons"
 
-const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
-const GETTING_STARTED_COMMAND = import.meta.env.VITE_GETTING_STARTED_COMMAND;
+const GITHUB_URL = import.meta.env.VITE_GITHUB_URL
+const GETTING_STARTED_COMMAND = import.meta.env.VITE_GETTING_STARTED_COMMAND
 
 const HeroBanner = () => {
-  const [copied, setCopied] = useState(false);
-  const [totalDownloads, setTotalDownloads] = useState<number | null>(null);
+  const [copied, setCopied] = useState(false)
+  const [totalDownloads, setTotalDownloads] = useState<number | null>(null)
 
   function copyToClipboard() {
-    const command = GETTING_STARTED_COMMAND;
+    const command = GETTING_STARTED_COMMAND
     navigator.clipboard.writeText(command).then(
       () => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
       },
       (err) => {
-        console.error("Could not copy text: ", err);
+        console.error("Could not copy text: ", err)
       },
-    );
+    )
   }
 
   useEffect(() => {
     async function getTotalDownloads() {
       const response = await fetch(
         "https://api.npmjs.org/downloads/point/last-month/@anthonibs/abs-icons",
-      );
-      const data = await response.json();
-      setTotalDownloads(data.downloads);
+      )
+      const data = await response.json()
+      setTotalDownloads(data.downloads)
     }
 
-    getTotalDownloads();
-  }, []);
+    getTotalDownloads()
+  }, [])
 
   return (
     <section
@@ -107,7 +107,7 @@ const HeroBanner = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroBanner;
+export default HeroBanner

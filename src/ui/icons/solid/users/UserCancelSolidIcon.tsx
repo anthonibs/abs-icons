@@ -1,13 +1,30 @@
-import * as React from "react";
-      import { createIcon } from "../../../createIcon";
+import { createIcon } from "../../../createIcon"
 
-      import type { SVGProps } from "react";
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><circle cx={10.62} cy={6.12} r={4} /><path fillRule="evenodd" d="M16.62 15.88a2.253 2.253 0 0 0-2.03 3.22l3-3c-.29-.14-.62-.22-.97-.22m2.03 1.28-3 3a2.253 2.253 0 0 0 3-3m-5.78.97c0-2.07 1.68-3.75 3.75-3.75s3.75 1.68 3.75 3.75-1.68 3.75-3.75 3.75-3.75-1.68-3.75-3.75" /><path d="M13.58 13.5c.15.04.17.23.04.32-1.36.95-2.2 2.52-2.25 4.31-.03 1.35 1.08 2.76.79 2.91-.18.09-.98.09-1.54.09-3.87 0-7-1.79-7-4s3.13-4 7-4c1.05 0 2.05.13 2.95.37Z" /></svg>;
+import type { SVGProps } from "react"
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="0 0 24 24"
+    color="currentColor"
+    width="1em"
+    height="1em"
+    {...props}
+  >
+    <circle cx={10.62} cy={6.12} r={4} />
+    <path
+      fillRule="evenodd"
+      d="M16.62 15.88a2.253 2.253 0 0 0-2.03 3.22l3-3c-.29-.14-.62-.22-.97-.22m2.03 1.28-3 3a2.253 2.253 0 0 0 3-3m-5.78.97c0-2.07 1.68-3.75 3.75-3.75s3.75 1.68 3.75 3.75-1.68 3.75-3.75 3.75-3.75-1.68-3.75-3.75"
+    />
+    <path d="M13.58 13.5c.15.04.17.23.04.32-1.36.95-2.2 2.52-2.25 4.31-.03 1.35 1.08 2.76.79 2.91-.18.09-.98.09-1.54.09-3.87 0-7-1.79-7-4s3.13-4 7-4c1.05 0 2.05.13 2.95.37Z" />
+  </svg>
+)
 
-
-      export const UserCancelSolidIcon = createIcon("UserCancelSolidIcon", SVGComponent, {
-  "fileName": "abs-user-cancel-solid.svg",
-  "presentationName": "user-cancel",
-  "style": "solid",
-  "category": "users"
-});
+export const UserCancelSolidIcon = createIcon(
+  "UserCancelSolidIcon",
+  SVGComponent,
+  {
+    fileName: "abs-user-cancel-solid.svg",
+    presentationName: "user-cancel",
+    style: "solid",
+    category: "users",
+  },
+)

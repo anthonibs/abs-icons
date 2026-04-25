@@ -1,13 +1,13 @@
-import { EyeOutlineIcon } from "../../ui/icons";
-import useData from "../store/useData";
-import { memo } from "react";
+import { EyeOutlineIcon } from "../../ui/icons"
+import useData from "../store/useData"
+import { memo } from "react"
 
 const PreviewIcon = () => {
-  const selectedIcon = useData((state) => state.selectedIcon?.Icon);
-  const sizeIcon = useData((state) => state.sizeIcon);
-  const colorIcon = useData((state) => state.colorIcon);
+  const selectedIcon = useData((state) => state.selectedIcon)
+  const sizeIcon = useData((state) => state.sizeIcon)
+  const colorIcon = useData((state) => state.colorIcon)
 
-  const Icon = selectedIcon;
+  const Icon = selectedIcon?.Icon
 
   return (
     <div className="space-y-4">
@@ -51,7 +51,7 @@ const PreviewIcon = () => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default memo(PreviewIcon);
+export default memo(PreviewIcon)

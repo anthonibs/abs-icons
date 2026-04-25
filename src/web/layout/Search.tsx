@@ -1,80 +1,80 @@
-import useData from "../store/useData";
-import { ChangeEvent, useEffect, useRef, useState } from "react";
-import { SearchOutlineIcon } from "../../ui/icons";
+import useData from "../store/useData"
+import { ChangeEvent, useEffect, useRef, useState } from "react"
+import { SearchOutlineIcon } from "../../ui/icons"
 
 const variants = [
   { label: "Outline", value: "outline" },
   { label: "Solid", value: "solid" },
-] as const;
+] as const
 
 const Search = () => {
-  const searchQuery = useData((state) => state.searchQuery);
-  const setSearchQuery = useData((state) => state.setSearchQuery);
+  const searchQuery = useData((state) => state.searchQuery)
+  const setSearchQuery = useData((state) => state.setSearchQuery)
 
-  const variant = useData((state) => state.variants);
-  const setVariant = useData((state) => state.setVariants);
+  const variant = useData((state) => state.variants)
+  const setVariant = useData((state) => state.setVariants)
 
-  const [inputValue, setInputValue] = useState(searchQuery);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const [inputValue, setInputValue] = useState(searchQuery)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const onChangeSearchIcon = (e: ChangeEvent<HTMLInputElement>) => {
-    setInputValue(e.target.value);
-  };
+    setInputValue(e.target.value)
+  }
 
   const clearSearch = () => {
-    setInputValue("");
-    setSearchQuery("");
-    inputRef.current?.focus();
-  };
+    setInputValue("")
+    setSearchQuery("")
+    inputRef.current?.focus()
+  }
 
   useEffect(() => {
-    if (timerRef.current) clearTimeout(timerRef.current);
+    if (timerRef.current) clearTimeout(timerRef.current)
 
     timerRef.current = setTimeout(() => {
-      setSearchQuery(inputValue);
-    }, 250);
+      setSearchQuery(inputValue)
+    }, 250)
 
     return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
-  }, [inputValue, setSearchQuery]);
+      if (timerRef.current) clearTimeout(timerRef.current)
+    }
+  }, [inputValue, setSearchQuery])
 
   useEffect(() => {
     return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
-  }, []);
+      if (timerRef.current) clearTimeout(timerRef.current)
+    }
+  }, [])
 
   useEffect(() => {
-    setInputValue(searchQuery);
-  }, [searchQuery]);
+    setInputValue(searchQuery)
+  }, [searchQuery])
 
   useEffect(() => {
     const onKeydown = (event: KeyboardEvent) => {
-      const target = event.target as HTMLElement | null;
+      const target = event.target as HTMLElement | null
       const isTypingField =
         target?.tagName === "INPUT" ||
         target?.tagName === "TEXTAREA" ||
-        target?.isContentEditable;
+        target?.isContentEditable
 
       if (event.key === "/" && !isTypingField) {
-        event.preventDefault();
-        inputRef.current?.focus();
-        inputRef.current?.select();
+        event.preventDefault()
+        inputRef.current?.focus()
+        inputRef.current?.select()
       }
 
       if (
         event.key === "Escape" &&
         document.activeElement === inputRef.current
       ) {
-        clearSearch();
+        clearSearch()
       }
-    };
+    }
 
-    window.addEventListener("keydown", onKeydown);
-    return () => window.removeEventListener("keydown", onKeydown);
-  }, []);
+    window.addEventListener("keydown", onKeydown)
+    return () => window.removeEventListener("keydown", onKeydown)
+  }, [])
 
   return (
     <nav className="mb-10 flex flex-col md:flex-row gap-6 justify-between items-center">
@@ -154,7 +154,7 @@ const Search = () => {
         </button>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Search;
+export default Search

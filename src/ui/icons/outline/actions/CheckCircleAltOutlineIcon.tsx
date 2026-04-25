@@ -1,13 +1,28 @@
-import * as React from "react";
-      import { createIcon } from "../../../createIcon";
+import { createIcon } from "../../../createIcon"
 
-      import type { SVGProps } from "react";
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="m15.94 8.42-5.28 5.28c-.08.08-.22.08-.3 0l-2.3-2.3c-.31-.31-.81-.31-1.11 0s-.31.81 0 1.11l3.12 3.12c.25.25.65.25.89 0l6.09-6.09c.31-.31.31-.81 0-1.11a.78.78 0 0 0-1.11 0Z" /><path d="M12 2.5c-6.04 0-9.5 3.46-9.5 9.5s3.46 9.5 9.5 9.5 9.5-3.46 9.5-9.5-3.46-9.5-9.5-9.5m0 17.42c-5.11 0-7.92-2.81-7.92-7.92S6.89 4.08 12 4.08s7.92 2.81 7.92 7.92-2.81 7.92-7.92 7.92" /></g></svg>;
+import type { SVGProps } from "react"
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="0 0 24 24"
+    color="currentColor"
+    width="1em"
+    height="1em"
+    {...props}
+  >
+    <g>
+      <path d="m15.94 8.42-5.28 5.28c-.08.08-.22.08-.3 0l-2.3-2.3c-.31-.31-.81-.31-1.11 0s-.31.81 0 1.11l3.12 3.12c.25.25.65.25.89 0l6.09-6.09c.31-.31.31-.81 0-1.11a.78.78 0 0 0-1.11 0Z" />
+      <path d="M12 2.5c-6.04 0-9.5 3.46-9.5 9.5s3.46 9.5 9.5 9.5 9.5-3.46 9.5-9.5-3.46-9.5-9.5-9.5m0 17.42c-5.11 0-7.92-2.81-7.92-7.92S6.89 4.08 12 4.08s7.92 2.81 7.92 7.92-2.81 7.92-7.92 7.92" />
+    </g>
+  </svg>
+)
 
-
-      export const CheckCircleAltOutlineIcon = createIcon("CheckCircleAltOutlineIcon", SVGComponent, {
-  "fileName": "abs-check-circle-alt.svg",
-  "presentationName": "check-circle-alt",
-  "style": "outline",
-  "category": "actions"
-});
+export const CheckCircleAltOutlineIcon = createIcon(
+  "CheckCircleAltOutlineIcon",
+  SVGComponent,
+  {
+    fileName: "abs-check-circle-alt.svg",
+    presentationName: "check-circle-alt",
+    style: "outline",
+    category: "actions",
+  },
+)

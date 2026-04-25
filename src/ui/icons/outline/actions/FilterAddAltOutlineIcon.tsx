@@ -1,13 +1,25 @@
-import * as React from "react";
-      import { createIcon } from "../../../createIcon";
+import { createIcon } from "../../../createIcon"
 
-      import type { SVGProps } from "react";
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="m14.9 10.4-.9.99c-.58.64-.9 1.46-.9 2.32l-.02 6.17c-.04.09-.15.12-.24.08l-1.85-.92-.09-.15v-5.18c0-.86-.32-1.69-.9-2.32L3.54 4.3s-.04-.07-.04-.11c0-.09.08-.17.17-.17h9.58c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-9.5c-.7 0-1.38.39-1.63 1.05-.24.62-.1 1.28.32 1.74l6.46 7.1c.33.36.51.83.51 1.31v5.17c0 .63.36 1.21.93 1.5l1.85.92c.24.12.49.17.74.17a1.67 1.67 0 0 0 1.68-1.67v-6.09c0-.49.18-.95.51-1.31l.9-.99c.28-.31.26-.78-.05-1.06a.746.746 0 0 0-1.06.05Zm6.35-5.12h-1.89c-.08 0-.14-.06-.14-.14V3.27c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1.87c0 .08-.06.14-.14.14h-1.89c-.41 0-.75.34-.75.75s.34.75.75.75h1.89c.08 0 .14.06.14.14v1.87c0 .41.34.75.75.75s.75-.34.75-.75V6.92c0-.08.06-.14.14-.14h1.89c.41 0 .75-.34.75-.75s-.34-.75-.75-.75" /></svg>;
+import type { SVGProps } from "react"
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="0 0 24 24"
+    color="currentColor"
+    width="1em"
+    height="1em"
+    {...props}
+  >
+    <path d="m14.9 10.4-.9.99c-.58.64-.9 1.46-.9 2.32l-.02 6.17c-.04.09-.15.12-.24.08l-1.85-.92-.09-.15v-5.18c0-.86-.32-1.69-.9-2.32L3.54 4.3s-.04-.07-.04-.11c0-.09.08-.17.17-.17h9.58c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-9.5c-.7 0-1.38.39-1.63 1.05-.24.62-.1 1.28.32 1.74l6.46 7.1c.33.36.51.83.51 1.31v5.17c0 .63.36 1.21.93 1.5l1.85.92c.24.12.49.17.74.17a1.67 1.67 0 0 0 1.68-1.67v-6.09c0-.49.18-.95.51-1.31l.9-.99c.28-.31.26-.78-.05-1.06a.746.746 0 0 0-1.06.05Zm6.35-5.12h-1.89c-.08 0-.14-.06-.14-.14V3.27c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1.87c0 .08-.06.14-.14.14h-1.89c-.41 0-.75.34-.75.75s.34.75.75.75h1.89c.08 0 .14.06.14.14v1.87c0 .41.34.75.75.75s.75-.34.75-.75V6.92c0-.08.06-.14.14-.14h1.89c.41 0 .75-.34.75-.75s-.34-.75-.75-.75" />
+  </svg>
+)
 
-
-      export const FilterAddAltOutlineIcon = createIcon("FilterAddAltOutlineIcon", SVGComponent, {
-  "fileName": "abs-filter-add-alt.svg",
-  "presentationName": "filter-add-alt",
-  "style": "outline",
-  "category": "actions"
-});
+export const FilterAddAltOutlineIcon = createIcon(
+  "FilterAddAltOutlineIcon",
+  SVGComponent,
+  {
+    fileName: "abs-filter-add-alt.svg",
+    presentationName: "filter-add-alt",
+    style: "outline",
+    category: "actions",
+  },
+)
