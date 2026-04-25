@@ -9,6 +9,7 @@ export * from "./DirectUpSolidIcon";
 export * from "./FactoryAltSolidIcon";
 export * from "./GarageSolidIcon";
 export * from "./GlobeAltSolidIcon";
+export * from "./GlobeSoftSolidIcon";
 export * from "./GlobeSolidIcon";
 export * from "./GpsSolidIcon";
 export * from "./LocalPinSolidIcon";

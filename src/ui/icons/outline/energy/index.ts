@@ -21,4 +21,5 @@ export * from "./GallonOil2OutlineIcon";
 export * from "./GallonOilOutlineIcon";
 export * from "./GasStationOutlineIcon";
 export * from "./PropaneTankOutlineIcon";
+export * from "./PumpFuelOutlineIcon";
 export * from "./TankOilOutlineIcon";

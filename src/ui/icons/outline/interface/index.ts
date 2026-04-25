@@ -1,4 +1,6 @@
 export * from "./CategoryAddOutlineIcon";
+export * from "./CategoryEditOutlineIcon";
+export * from "./CategoryRemoveOutlineIcon";
 export * from "./CategoryOutlineIcon";
 export * from "./DashboardOutlineIcon";
 export * from "./GaugeAltOutlineIcon";
@@ -25,3 +27,4 @@ export * from "./SettingsAltOutlineIcon";
 export * from "./SettingsGearOutlineIcon";
 export * from "./SettingsOutlineIcon";
 export * from "./SmartHomeOutlineIcon";
+export * from "./WifiSettingsOutlineIcon";

@@ -4,6 +4,7 @@ export * from "./DogSolOutlineIcon";
 export * from "./MoonOutlineIcon";
 export * from "./PawAltOutlineIcon";
 export * from "./PawOutlineIcon";
+export * from "./SolarPanelSunOutlineIcon";
 export * from "./SunOutlineIcon";
 export * from "./TemperatureArrowDownOutlineIcon";
 export * from "./TemperatureArrowUpOutlineIcon";

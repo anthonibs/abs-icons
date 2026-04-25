@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M16.64 3.3h-3.71s.16-.76 0-.93c-.33-.33-1.53-.33-1.86 0-.16.16 0 .93 0 .93H7.36c-1.54 0-2.79 1.25-2.79 2.79v2.79c0 2.56 2.08 4.64 4.64 4.64h5.57c2.56 0 4.64-2.08 4.64-4.64V6.09c0-1.54-1.25-2.79-2.79-2.79m-5.57 5.11c0 .77-.62 1.39-1.39 1.39s-1.39-.62-1.39-1.39.62-1.39 1.39-1.39 1.39.62 1.39 1.39m4.64 0c0 .77-.62 1.39-1.39 1.39s-1.39-.62-1.39-1.39.62-1.39 1.39-1.39 1.39.62 1.39 1.39M6.39 21.87c-1.03 0-1.84-.97-1.57-1.97.86-3.15 3.74-5.46 7.16-5.46s6.22 2.24 7.13 5.32c.31 1.05-.44 2.11-1.54 2.11H6.41Z" /></svg>;
+
+
+      export const RobotSolidIcon = createIcon("RobotSolidIcon", SVGComponent, {
+  "fileName": "abs-robot-solid.svg",
+  "presentationName": "robot",
+  "style": "solid",
+  "category": "general"
+});
