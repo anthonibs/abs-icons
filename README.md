@@ -44,7 +44,7 @@ npm install @anthonibs/abs-icons
 Each icon can be imported individually as a React component using **PascalCase** naming with an `Icon` suffix:
 
 ```tsx
-import { UserOutlineIcon, UserSolidIcon } from "@anthonibs/abs-icons";
+import { UserOutlineIcon, UserSolidIcon } from '@anthonibs/abs-icons'
 
 function MyComponent() {
   return (
@@ -52,6 +52,6 @@ function MyComponent() {
       <UserIcon className="size-6 text-blue-500" />
       <UserSolidIcon className="size-6 text-blue-600" />
     </div>
-  );
+  )
 }
 ```
