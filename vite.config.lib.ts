@@ -1,5 +1,5 @@
-import { defineConfig } from "vite";
-import { resolve } from "path";
+import { defineConfig } from "vite"
+import { resolve } from "path"
 
 export default defineConfig({
   resolve: {
@@ -12,12 +12,12 @@ export default defineConfig({
       entry: resolve(__dirname, "src/index.ts"),
       formats: ["es", "cjs"],
       fileName: (format, entryName) => {
-        const ext = format === "es" ? "js" : "cjs";
-        return `${entryName}.${ext}`;
+        const ext = format === "es" ? "js" : "cjs"
+        return `${entryName}.${ext}`
       },
     },
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime"],
     },
   },
-});
+})
