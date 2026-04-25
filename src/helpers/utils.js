@@ -20,16 +20,24 @@ export function getCategory(fileName) {
     .replace(/\.svg$/, "");
 
   const parts = clean.split("-").filter((p) => !ICON_VARIANTS.includes(p));
+
+  const exactName = parts.join("-");
   const first = parts[0];
 
   for (const [category, keywords] of Object.entries(KEY_WORDS_CATEGORIES_MAP)) {
-    if (keywords.includes(first)) {
+    if (keywords.includes(exactName)) {
       return category;
     }
   }
 
   for (const [category, keywords] of Object.entries(KEY_WORDS_CATEGORIES_MAP)) {
-    if (keywords.some((k) => parts.includes(k))) {
+    if (category !== "brands" && keywords.includes(first)) {
+      return category;
+    }
+  }
+
+  for (const [category, keywords] of Object.entries(KEY_WORDS_CATEGORIES_MAP)) {
+    if (category !== "brands" && keywords.some((k) => parts.includes(k))) {
       return category;
     }
   }
