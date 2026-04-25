@@ -1,3 +1,3 @@
-export * from "./CursorOutlineIcon"
-export * from "./LinkCopiedOutlineIcon"
-export * from "./LinkOutlineIcon"
+export * from "./CursorOutlineIcon";
+export * from "./LinkCopiedOutlineIcon";
+export * from "./LinkOutlineIcon";

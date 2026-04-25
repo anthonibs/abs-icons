@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M14.14 3.14a3.04 3.04 0 0 0-4.29 0L6.28 6.71c.99-.06 1.96.3 2.67 1.01l2.59 2.59c.25.25.66.25.92 0l2.59-2.59c.7-.7 1.68-1.07 2.67-1.01zm5.18 5.18 1.54 1.54a3.027 3.027 0 0 1 .01 4.27l-1.54 1.54a2.6 2.6 0 0 1-3.67 0s-2.59-2.59-2.59-2.59c-.59-.59-1.55-.59-2.14 0l-2.59 2.59a2.6 2.6 0 0 1-3.67 0l-1.54-1.54a3.027 3.027 0 0 1 .02-4.27l1.54-1.54c1.02-1 2.65-1 3.66.01l2.59 2.59c.59.59 1.55.59 2.14 0l2.59-2.59a2.6 2.6 0 0 1 3.66-.02M6.29 17.28c.99.06 1.96-.3 2.67-1.01l2.59-2.59c.25-.25.66-.25.92 0l2.59 2.59c.7.7 1.68 1.07 2.67 1.01l-3.58 3.58a3.04 3.04 0 0 1-4.29 0l-3.57-3.57Z" /></svg>;
+
+
+      export const PixSolidIcon = createIcon("PixSolidIcon", SVGComponent, {
+  "fileName": "abs-pix-solid.svg",
+  "presentationName": "pix",
+  "style": "solid",
+  "category": "brands"
+});

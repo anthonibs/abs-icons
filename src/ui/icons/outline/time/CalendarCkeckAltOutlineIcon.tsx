@@ -1,28 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <g>
-      <path d="M16.64 4.01V2.78a.781.781 0 0 0-1.56 0v.97c-.91-.1-1.93-.15-3.07-.15s-2.16.04-3.07.15v-.97a.781.781 0 0 0-1.56 0v1.23c-3.89.9-5.15 3.4-5.15 8.8 0 7.13 2.2 9.19 9.79 9.19h.24c.42-.01.77-.38.77-.79s-.31-.75-.72-.77h-.29c-.16 0-.31 0-.46-.01h-.02c-6.35-.06-7.74-1.5-7.74-7.61 0-1.01.04-1.9.14-2.68h16.17c.08.67.13 1.42.13 2.28v.26s.01 0 .01.01c.07.36.39.63.76.63h.02c.43 0 .77-.35.78-.76v-.04c-.05-5.19-1.33-7.61-5.15-8.49ZM7.35 5.6v.39a.781.781 0 0 0 1.56 0v-.67c.88-.1 1.89-.15 3.07-.15s2.19.04 3.07.15v.67a.781.781 0 0 0 1.56 0V5.6c1.7.46 2.65 1.36 3.14 2.96H4.22c.49-1.6 1.43-2.5 3.14-2.96Z" />
-      <path d="M21.55 15.07c-.3-.3-.79-.31-1.1 0l-3.52 3.51c-.15.15-.39.15-.53 0l-1.36-1.35a.8.8 0 0 0-.54-.23c-.21 0-.4.08-.55.23-.3.3-.3.79 0 1.1l2.19 2.19c.3.3.79.3 1.11 0l4.33-4.34c.3-.3.3-.79 0-1.1h-.01Z" />
-    </g>
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M16.64 4.01V2.78a.781.781 0 0 0-1.56 0v.97c-.91-.1-1.93-.15-3.07-.15s-2.16.04-3.07.15v-.97a.781.781 0 0 0-1.56 0v1.23c-3.89.9-5.15 3.4-5.15 8.8 0 7.13 2.2 9.19 9.79 9.19h.24c.42-.01.77-.38.77-.79s-.31-.75-.72-.77h-.29c-.16 0-.31 0-.46-.01h-.02c-6.35-.06-7.74-1.5-7.74-7.61 0-1.01.04-1.9.14-2.68h16.17c.08.67.13 1.42.13 2.28v.26s.01 0 .01.01c.07.36.39.63.76.63h.02c.43 0 .77-.35.78-.76v-.04c-.05-5.19-1.33-7.61-5.15-8.49ZM7.35 5.6v.39a.781.781 0 0 0 1.56 0v-.67c.88-.1 1.89-.15 3.07-.15s2.19.04 3.07.15v.67a.781.781 0 0 0 1.56 0V5.6c1.7.46 2.65 1.36 3.14 2.96H4.22c.49-1.6 1.43-2.5 3.14-2.96Z" /><path d="M21.55 15.07c-.3-.3-.79-.31-1.1 0l-3.52 3.51c-.15.15-.39.15-.53 0l-1.36-1.35a.8.8 0 0 0-.54-.23c-.21 0-.4.08-.55.23-.3.3-.3.79 0 1.1l2.19 2.19c.3.3.79.3 1.11 0l4.33-4.34c.3-.3.3-.79 0-1.1h-.01Z" /></g></svg>;
 
-export const CalendarCkeckAltOutlineIcon = createIcon(
-  "CalendarCkeckAltOutlineIcon",
-  SVGComponent,
-  {
-    fileName: "abs-calendar-ckeck-alt.svg",
-    presentationName: "calendar-ckeck-alt",
-    style: "outline",
-    category: "time",
-  },
-)
+
+      export const CalendarCkeckAltOutlineIcon = createIcon("CalendarCkeckAltOutlineIcon", SVGComponent, {
+  "fileName": "abs-calendar-ckeck-alt.svg",
+  "presentationName": "calendar-ckeck-alt",
+  "style": "outline",
+  "category": "time"
+});

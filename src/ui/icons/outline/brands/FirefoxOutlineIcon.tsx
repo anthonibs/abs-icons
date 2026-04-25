@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="m21.38 9.33-.03-.1v-.02c-.02-.06-.04-.13-.06-.19-.12-.39-.27-.76-.44-1.12-.16-.36-.35-.7-.56-1.04a9.9 9.9 0 0 0-3.25-3.21 9.7 9.7 0 0 0-5.03-1.4c-.3 0-.61.01-.91.04-1.05.11-2.82.49-4.26 1.75 5.23-2.67 12.21.54 11.62 6.52-.21 2.13-2.02 3.6-3.71 3.85-.3.05-.6.05-.91 0-4.12-.57-3.87-3.95-2.61-5.39-1.65-.01-2.94 2.04-2.31 4.05-1.43-2.66.02-6.83 3.09-8.1-3.61-.52-7 1.23-8.08 4.27.13-1.11.39-2.2.77-3.26 0 0-1.97 1.56-2.37 4.83 0 .05-.01.1-.02.15v.05c-.02.15-.03.31-.03.46v.51c0 5.38 4.37 9.75 9.75 9.75s9.75-4.36 9.75-9.75c0-.9-.12-1.8-.37-2.67Z" /></svg>;
+
+
+      export const FirefoxOutlineIcon = createIcon("FirefoxOutlineIcon", SVGComponent, {
+  "fileName": "abs-firefox.svg",
+  "presentationName": "firefox",
+  "style": "outline",
+  "category": "brands"
+});

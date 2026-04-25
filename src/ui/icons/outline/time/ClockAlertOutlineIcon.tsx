@@ -1,28 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <g>
-      <path d="M16.02 14.6c-.11 0-.23-.03-.34-.08l-2.83-1.43a2.27 2.27 0 0 1-1.25-2.03V6.45c0-.41.34-.75.75-.75s.75.34.75.75v4.61c0 .3.16.56.43.69l2.83 1.43a.75.75 0 0 1-.34 1.42m3.67 2.78c-.41 0-.75-.34-.75-.75v-4.62c0-.41.34-.75.75-.75s.75.34.75.75v4.62c0 .41-.34.75-.75.75m.01 3.69c-.41 0-.75-.34-.75-.75s.33-.75.74-.75.75.34.75.75-.34.75-.75.75Z" />
-      <path d="M12.34 22c-1.29 0-2.59-.26-3.81-.77a9.9 9.9 0 0 1-5.38-5.44c-2.08-5.1.35-10.95 5.42-13.04a9.8 9.8 0 0 1 7.59.02 9.9 9.9 0 0 1 5.38 5.44c.16.38-.03.82-.41.98s-.82-.03-.98-.41a8.4 8.4 0 0 0-4.57-4.62 8.32 8.32 0 0 0-6.44-.01c-4.31 1.78-6.37 6.75-4.6 11.09a8.4 8.4 0 0 0 4.57 4.62c2.07.87 4.36.87 6.44.01l.18-.08c.38-.16.82.01.99.39a.76.76 0 0 1-.39.99l-.2.08c-1.22.5-2.5.75-3.78.75Z" />
-    </g>
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M16.02 14.6c-.11 0-.23-.03-.34-.08l-2.83-1.43a2.27 2.27 0 0 1-1.25-2.03V6.45c0-.41.34-.75.75-.75s.75.34.75.75v4.61c0 .3.16.56.43.69l2.83 1.43a.75.75 0 0 1-.34 1.42m3.67 2.78c-.41 0-.75-.34-.75-.75v-4.62c0-.41.34-.75.75-.75s.75.34.75.75v4.62c0 .41-.34.75-.75.75m.01 3.69c-.41 0-.75-.34-.75-.75s.33-.75.74-.75.75.34.75.75-.34.75-.75.75Z" /><path d="M12.34 22c-1.29 0-2.59-.26-3.81-.77a9.9 9.9 0 0 1-5.38-5.44c-2.08-5.1.35-10.95 5.42-13.04a9.8 9.8 0 0 1 7.59.02 9.9 9.9 0 0 1 5.38 5.44c.16.38-.03.82-.41.98s-.82-.03-.98-.41a8.4 8.4 0 0 0-4.57-4.62 8.32 8.32 0 0 0-6.44-.01c-4.31 1.78-6.37 6.75-4.6 11.09a8.4 8.4 0 0 0 4.57 4.62c2.07.87 4.36.87 6.44.01l.18-.08c.38-.16.82.01.99.39a.76.76 0 0 1-.39.99l-.2.08c-1.22.5-2.5.75-3.78.75Z" /></g></svg>;
 
-export const ClockAlertOutlineIcon = createIcon(
-  "ClockAlertOutlineIcon",
-  SVGComponent,
-  {
-    fileName: "abs-clock-alert.svg",
-    presentationName: "clock-alert",
-    style: "outline",
-    category: "time",
-  },
-)
+
+      export const ClockAlertOutlineIcon = createIcon("ClockAlertOutlineIcon", SVGComponent, {
+  "fileName": "abs-clock-alert.svg",
+  "presentationName": "clock-alert",
+  "style": "outline",
+  "category": "time"
+});

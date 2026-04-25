@@ -1,2 +1,2 @@
-export * from "./ScanAltSolidIcon"
-export * from "./SendUpRightSolidIcon"
+export * from "./ScanAltSolidIcon";
+export * from "./SendUpRightSolidIcon";

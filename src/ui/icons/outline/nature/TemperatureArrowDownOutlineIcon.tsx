@@ -1,25 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path d="M18.39 3.74c-.41 0-.75.36-.75.8v12.97l-.76-.83a.71.71 0 0 0-1.05 0c-.29.31-.29.82 0 1.14l2.04 2.2c.29.31.76.31 1.05 0l2.04-2.2c.29-.32.29-.83 0-1.14a.694.694 0 0 0-1.05 0l-.75.81V4.54c0-.44-.34-.8-.75-.8ZM7.24 22c-.77 0-1.53-.2-2.21-.6-2.11-1.24-2.84-3.98-1.62-6.11.31-.54.73-1.01 1.22-1.38V4.64C4.63 3.18 5.8 2 7.25 2s2.62 1.18 2.62 2.64v9.26c1.8 1.33 2.37 3.86 1.22 5.85a4.36 4.36 0 0 1-2.71 2.09c-.38.1-.76.15-1.15.15Zm0-18.4c-.56 0-1.02.47-1.02 1.04v10.15l-.4.23a2.897 2.897 0 0 0 0 4.99c1.34.78 3.06.33 3.84-1.01 0-.01.02-.03.03-.04.79-1.38.32-3.14-1.04-3.94l-.4-.23V4.64c0-.57-.46-1.04-1.02-1.04z" />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M18.39 3.74c-.41 0-.75.36-.75.8v12.97l-.76-.83a.71.71 0 0 0-1.05 0c-.29.31-.29.82 0 1.14l2.04 2.2c.29.31.76.31 1.05 0l2.04-2.2c.29-.32.29-.83 0-1.14a.694.694 0 0 0-1.05 0l-.75.81V4.54c0-.44-.34-.8-.75-.8ZM7.24 22c-.77 0-1.53-.2-2.21-.6-2.11-1.24-2.84-3.98-1.62-6.11.31-.54.73-1.01 1.22-1.38V4.64C4.63 3.18 5.8 2 7.25 2s2.62 1.18 2.62 2.64v9.26c1.8 1.33 2.37 3.86 1.22 5.85a4.36 4.36 0 0 1-2.71 2.09c-.38.1-.76.15-1.15.15Zm0-18.4c-.56 0-1.02.47-1.02 1.04v10.15l-.4.23a2.897 2.897 0 0 0 0 4.99c1.34.78 3.06.33 3.84-1.01 0-.01.02-.03.03-.04.79-1.38.32-3.14-1.04-3.94l-.4-.23V4.64c0-.57-.46-1.04-1.02-1.04z" /></svg>;
 
-export const TemperatureArrowDownOutlineIcon = createIcon(
-  "TemperatureArrowDownOutlineIcon",
-  SVGComponent,
-  {
-    fileName: "abs-temperature-arrow-down.svg",
-    presentationName: "temperature-arrow-down",
-    style: "outline",
-    category: "nature",
-  },
-)
+
+      export const TemperatureArrowDownOutlineIcon = createIcon("TemperatureArrowDownOutlineIcon", SVGComponent, {
+  "fileName": "abs-temperature-arrow-down.svg",
+  "presentationName": "temperature-arrow-down",
+  "style": "outline",
+  "category": "nature"
+});

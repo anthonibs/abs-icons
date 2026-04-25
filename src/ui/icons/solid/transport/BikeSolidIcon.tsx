@@ -1,25 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path d="M16.05 4.03c0 1.12-.91 2.03-2.03 2.03s-2.03-.91-2.03-2.03S12.9 2 14.02 2s2.03.91 2.03 2.03" />
-    <path
-      fillRule="evenodd"
-      d="M10.91 8.59a1.91 1.91 0 0 0-2.85.55c-.56.99-.14 2.24.9 2.7l3.13 1.37c1.35.59 1.97 2.15 1.39 3.5l-.77 1.8c-.17.39-.61.57-1 .4a.755.755 0 0 1-.4-1l.77-1.8c.25-.58-.02-1.26-.6-1.51l-3.13-1.37a3.43 3.43 0 0 1-1.61-4.84 3.434 3.434 0 0 1 5.12-.99l2.19 1.74c.16.13.37.2.58.2h3.97a.76.76 0 1 1 0 1.52h-3.97c-.55 0-1.09-.19-1.52-.53l-2.19-1.74Zm-4.98 7.34a2.279 2.279 0 1 0 0 4.56 2.279 2.279 0 1 0 0-4.56m-3.8 2.28c0-2.1 1.7-3.8 3.8-3.8s3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8-3.8-1.7-3.8-3.8m15.95-2.28a2.279 2.279 0 1 0 0 4.56 2.279 2.279 0 1 0 0-4.56m-3.8 2.28c0-2.1 1.7-3.8 3.8-3.8s3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8-3.8-1.7-3.8-3.8"
-    />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M16.05 4.03c0 1.12-.91 2.03-2.03 2.03s-2.03-.91-2.03-2.03S12.9 2 14.02 2s2.03.91 2.03 2.03" /><path fillRule="evenodd" d="M10.91 8.59a1.91 1.91 0 0 0-2.85.55c-.56.99-.14 2.24.9 2.7l3.13 1.37c1.35.59 1.97 2.15 1.39 3.5l-.77 1.8c-.17.39-.61.57-1 .4a.755.755 0 0 1-.4-1l.77-1.8c.25-.58-.02-1.26-.6-1.51l-3.13-1.37a3.43 3.43 0 0 1-1.61-4.84 3.434 3.434 0 0 1 5.12-.99l2.19 1.74c.16.13.37.2.58.2h3.97a.76.76 0 1 1 0 1.52h-3.97c-.55 0-1.09-.19-1.52-.53l-2.19-1.74Zm-4.98 7.34a2.279 2.279 0 1 0 0 4.56 2.279 2.279 0 1 0 0-4.56m-3.8 2.28c0-2.1 1.7-3.8 3.8-3.8s3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8-3.8-1.7-3.8-3.8m15.95-2.28a2.279 2.279 0 1 0 0 4.56 2.279 2.279 0 1 0 0-4.56m-3.8 2.28c0-2.1 1.7-3.8 3.8-3.8s3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8-3.8-1.7-3.8-3.8" /></svg>;
 
-export const BikeSolidIcon = createIcon("BikeSolidIcon", SVGComponent, {
-  fileName: "abs-bike-solid.svg",
-  presentationName: "bike",
-  style: "solid",
-  category: "transport",
-})
+
+      export const BikeSolidIcon = createIcon("BikeSolidIcon", SVGComponent, {
+  "fileName": "abs-bike-solid.svg",
+  "presentationName": "bike",
+  "style": "solid",
+  "category": "transport"
+});

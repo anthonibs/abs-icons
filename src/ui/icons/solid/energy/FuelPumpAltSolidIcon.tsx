@@ -1,28 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path
-      fillRule="evenodd"
-      d="M9.21 2.35h.93c2.63 0 3.95 0 4.76.82s.82 2.13.82 4.76v7.67h1.46c1.12 0 2.03.91 2.03 2.03v.07c0 .39.31.7.7.7s.7-.31.7-.7v-4.42l-1.14-.38c-.57-.19-.95-.72-.95-1.32V9.33c0-.77.63-1.4 1.4-1.4h.7v-.64a2.1 2.1 0 0 0-.69-1.44c-.04-.04-.09-.07-.22-.18l-1.15-.92a.699.699 0 0 1 .87-1.09l1.16.93c.11.09.19.15.27.22.69.62 1.1 1.48 1.15 2.4V17.7a2.09 2.09 0 1 1-4.18 0v-.07c0-.35-.28-.63-.63-.63h-1.46v3.26h1.04c.39 0 .7.31.7.7s-.31.7-.7.7H2.7c-.39 0-.7-.31-.7-.7s.31-.7.7-.7h.93V7.93c0-2.63 0-3.95.82-4.76s2.13-.82 4.76-.82M7.58 15.61c-.39 0-.7.31-.7.7s.31.7.7.7h4.65c.39 0 .7-.31.7-.7s-.31-.7-.7-.7zm3.72-9.53H8.51c-.88 0-1.32 0-1.59.27s-.27.71-.27 1.59 0 1.32.27 1.59.71.27 1.59.27h2.79c.88 0 1.32 0 1.59-.27s.27-.71.27-1.59 0-1.32-.27-1.59-.71-.27-1.59-.27"
-    />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M9.21 2.35h.93c2.63 0 3.95 0 4.76.82s.82 2.13.82 4.76v7.67h1.46c1.12 0 2.03.91 2.03 2.03v.07c0 .39.31.7.7.7s.7-.31.7-.7v-4.42l-1.14-.38c-.57-.19-.95-.72-.95-1.32V9.33c0-.77.63-1.4 1.4-1.4h.7v-.64a2.1 2.1 0 0 0-.69-1.44c-.04-.04-.09-.07-.22-.18l-1.15-.92a.699.699 0 0 1 .87-1.09l1.16.93c.11.09.19.15.27.22.69.62 1.1 1.48 1.15 2.4V17.7a2.09 2.09 0 1 1-4.18 0v-.07c0-.35-.28-.63-.63-.63h-1.46v3.26h1.04c.39 0 .7.31.7.7s-.31.7-.7.7H2.7c-.39 0-.7-.31-.7-.7s.31-.7.7-.7h.93V7.93c0-2.63 0-3.95.82-4.76s2.13-.82 4.76-.82M7.58 15.61c-.39 0-.7.31-.7.7s.31.7.7.7h4.65c.39 0 .7-.31.7-.7s-.31-.7-.7-.7zm3.72-9.53H8.51c-.88 0-1.32 0-1.59.27s-.27.71-.27 1.59 0 1.32.27 1.59.71.27 1.59.27h2.79c.88 0 1.32 0 1.59-.27s.27-.71.27-1.59 0-1.32-.27-1.59-.71-.27-1.59-.27" /></svg>;
 
-export const FuelPumpAltSolidIcon = createIcon(
-  "FuelPumpAltSolidIcon",
-  SVGComponent,
-  {
-    fileName: "abs-fuel-pump-alt-solid.svg",
-    presentationName: "fuel-pump-alt",
-    style: "solid",
-    category: "energy",
-  },
-)
+
+      export const FuelPumpAltSolidIcon = createIcon("FuelPumpAltSolidIcon", SVGComponent, {
+  "fileName": "abs-fuel-pump-alt-solid.svg",
+  "presentationName": "fuel-pump-alt",
+  "style": "solid",
+  "category": "energy"
+});

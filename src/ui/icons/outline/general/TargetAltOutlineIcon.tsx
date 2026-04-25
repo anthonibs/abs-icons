@@ -1,29 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <g>
-      <path d="M12 22c-5.48 0-9.94-4.49-9.94-10S6.52 2 12 2s9.94 4.49 9.94 10S17.48 22 12 22m0-18.5c-4.66 0-8.44 3.81-8.44 8.5s3.79 8.5 8.44 8.5 8.44-3.81 8.44-8.5S16.66 3.5 12 3.5" />
-      <path d="M12 18.3c-3.46 0-6.27-2.83-6.27-6.3S8.54 5.7 12 5.7s6.27 2.83 6.27 6.3-2.81 6.3-6.27 6.3m0-11.1c-2.63 0-4.77 2.15-4.77 4.8s2.14 4.8 4.77 4.8 4.77-2.15 4.77-4.8S14.63 7.2 12 7.2" />
-      <path d="M12 14.6c-1.43 0-2.59-1.17-2.59-2.6S10.57 9.4 12 9.4s2.59 1.17 2.59 2.6-1.16 2.6-2.59 2.6m0-3.7c-.6 0-1.09.49-1.09 1.1s.49 1.1 1.09 1.1 1.09-.49 1.09-1.1-.49-1.1-1.09-1.1" />
-    </g>
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M12 22c-5.48 0-9.94-4.49-9.94-10S6.52 2 12 2s9.94 4.49 9.94 10S17.48 22 12 22m0-18.5c-4.66 0-8.44 3.81-8.44 8.5s3.79 8.5 8.44 8.5 8.44-3.81 8.44-8.5S16.66 3.5 12 3.5" /><path d="M12 18.3c-3.46 0-6.27-2.83-6.27-6.3S8.54 5.7 12 5.7s6.27 2.83 6.27 6.3-2.81 6.3-6.27 6.3m0-11.1c-2.63 0-4.77 2.15-4.77 4.8s2.14 4.8 4.77 4.8 4.77-2.15 4.77-4.8S14.63 7.2 12 7.2" /><path d="M12 14.6c-1.43 0-2.59-1.17-2.59-2.6S10.57 9.4 12 9.4s2.59 1.17 2.59 2.6-1.16 2.6-2.59 2.6m0-3.7c-.6 0-1.09.49-1.09 1.1s.49 1.1 1.09 1.1 1.09-.49 1.09-1.1-.49-1.1-1.09-1.1" /></g></svg>;
 
-export const TargetAltOutlineIcon = createIcon(
-  "TargetAltOutlineIcon",
-  SVGComponent,
-  {
-    fileName: "abs-target-alt.svg",
-    presentationName: "target-alt",
-    style: "outline",
-    category: "general",
-  },
-)
+
+      export const TargetAltOutlineIcon = createIcon("TargetAltOutlineIcon", SVGComponent, {
+  "fileName": "abs-target-alt.svg",
+  "presentationName": "target-alt",
+  "style": "outline",
+  "category": "general"
+});

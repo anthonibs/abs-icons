@@ -1,26 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path d="M11.03 11.29c2.56 0 4.64-2.08 4.64-4.65S13.59 2 11.03 2 6.4 4.08 6.4 6.64s2.08 4.65 4.63 4.65m0-7.79c1.73 0 3.14 1.41 3.14 3.14s-1.41 3.15-3.14 3.15S7.9 8.38 7.9 6.64 9.31 3.5 11.03 3.5m5.83 11.16a3.67 3.67 0 0 0 0 7.34 3.67 3.67 0 0 0 0-7.34m0 1.5c.32 0 .63.08.9.2l-2.86 2.87a2.166 2.166 0 0 1 1.96-3.07m0 4.34c-.32 0-.63-.08-.9-.2l2.86-2.87a2.166 2.166 0 0 1-1.96 3.07" />
-    <path d="M11.94 20.46c-.3.02-.6.04-.91.04-3.28 0-6.05-1.44-6.05-3.14s2.77-3.15 6.05-3.15c.78 0 1.55.08 2.27.24.41.09.8-.17.89-.57a.75.75 0 0 0-.57-.89c-.83-.18-1.7-.27-2.59-.27-4.23 0-7.55 2.04-7.55 4.65s3.32 4.64 7.55 4.64c.35 0 .69-.01 1.03-.04a.752.752 0 1 0-.12-1.5Z" />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M11.03 11.29c2.56 0 4.64-2.08 4.64-4.65S13.59 2 11.03 2 6.4 4.08 6.4 6.64s2.08 4.65 4.63 4.65m0-7.79c1.73 0 3.14 1.41 3.14 3.14s-1.41 3.15-3.14 3.15S7.9 8.38 7.9 6.64 9.31 3.5 11.03 3.5m5.83 11.16a3.67 3.67 0 0 0 0 7.34 3.67 3.67 0 0 0 0-7.34m0 1.5c.32 0 .63.08.9.2l-2.86 2.87a2.166 2.166 0 0 1 1.96-3.07m0 4.34c-.32 0-.63-.08-.9-.2l2.86-2.87a2.166 2.166 0 0 1-1.96 3.07" /><path d="M11.94 20.46c-.3.02-.6.04-.91.04-3.28 0-6.05-1.44-6.05-3.14s2.77-3.15 6.05-3.15c.78 0 1.55.08 2.27.24.41.09.8-.17.89-.57a.75.75 0 0 0-.57-.89c-.83-.18-1.7-.27-2.59-.27-4.23 0-7.55 2.04-7.55 4.65s3.32 4.64 7.55 4.64c.35 0 .69-.01 1.03-.04a.752.752 0 1 0-.12-1.5Z" /></svg>;
 
-export const UserCancelOutlineIcon = createIcon(
-  "UserCancelOutlineIcon",
-  SVGComponent,
-  {
-    fileName: "abs-user-cancel.svg",
-    presentationName: "user-cancel",
-    style: "outline",
-    category: "users",
-  },
-)
+
+      export const UserCancelOutlineIcon = createIcon("UserCancelOutlineIcon", SVGComponent, {
+  "fileName": "abs-user-cancel.svg",
+  "presentationName": "user-cancel",
+  "style": "outline",
+  "category": "users"
+});

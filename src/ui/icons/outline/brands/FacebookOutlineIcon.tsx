@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path fillRule="evenodd" d="M21.81 12.06c0-5.42-4.39-9.81-9.81-9.81s-9.81 4.39-9.81 9.81c0 4.9 3.59 8.95 8.28 9.69V14.9H7.98v-2.84h2.49V9.9c0-2.46 1.46-3.82 3.71-3.82 1.07 0 2.2.19 2.2.19v2.41h-1.24c-1.22 0-1.6.76-1.6 1.53v1.84h2.72l-.43 2.84h-2.29v6.85c4.69-.74 8.28-4.79 8.28-9.69Z" /></svg>;
+
+
+      export const FacebookOutlineIcon = createIcon("FacebookOutlineIcon", SVGComponent, {
+  "fileName": "abs-facebook.svg",
+  "presentationName": "facebook",
+  "style": "outline",
+  "category": "brands"
+});

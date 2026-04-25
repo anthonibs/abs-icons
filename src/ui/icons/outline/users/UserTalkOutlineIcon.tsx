@@ -1,26 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path d="M10.05 11.27c2.56 0 4.63-2.08 4.63-4.63s-2.08-4.63-4.63-4.63-4.63 2.08-4.63 4.63 2.08 4.63 4.63 4.63m0-7.8a3.171 3.171 0 0 1 0 6.34 3.171 3.171 0 0 1 0-6.34m0 9.26c-4.24 0-7.56 2.04-7.56 4.63s3.32 4.63 7.56 4.63 7.56-2.04 7.56-4.63-3.32-4.63-7.56-4.63m0 7.8c-3.31 0-6.1-1.45-6.1-3.17s2.79-3.17 6.1-3.17 6.1 1.45 6.1 3.17-2.79 3.17-6.1 3.17M19.21 2.1c-.34-.21-.79-.1-1 .25s-.1.79.24 1c.07.04 1.6 1.02 1.6 3.28s-1.53 3.24-1.6 3.28c-.35.21-.46.66-.25 1a.746.746 0 0 0 1.01.26c.09-.06 2.31-1.42 2.31-4.53s-2.21-4.47-2.31-4.53Z" />
-    <path d="M17.25 4.06c-.34-.2-.78-.09-.99.24s-.11.79.23 1c.03.02.63.42.63 1.33s-.6 1.31-.62 1.32c-.35.21-.46.66-.25 1a.746.746 0 0 0 1.01.26c.49-.3 1.33-1.17 1.33-2.58s-.84-2.28-1.33-2.58Z" />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M10.05 11.27c2.56 0 4.63-2.08 4.63-4.63s-2.08-4.63-4.63-4.63-4.63 2.08-4.63 4.63 2.08 4.63 4.63 4.63m0-7.8a3.171 3.171 0 0 1 0 6.34 3.171 3.171 0 0 1 0-6.34m0 9.26c-4.24 0-7.56 2.04-7.56 4.63s3.32 4.63 7.56 4.63 7.56-2.04 7.56-4.63-3.32-4.63-7.56-4.63m0 7.8c-3.31 0-6.1-1.45-6.1-3.17s2.79-3.17 6.1-3.17 6.1 1.45 6.1 3.17-2.79 3.17-6.1 3.17M19.21 2.1c-.34-.21-.79-.1-1 .25s-.1.79.24 1c.07.04 1.6 1.02 1.6 3.28s-1.53 3.24-1.6 3.28c-.35.21-.46.66-.25 1a.746.746 0 0 0 1.01.26c.09-.06 2.31-1.42 2.31-4.53s-2.21-4.47-2.31-4.53Z" /><path d="M17.25 4.06c-.34-.2-.78-.09-.99.24s-.11.79.23 1c.03.02.63.42.63 1.33s-.6 1.31-.62 1.32c-.35.21-.46.66-.25 1a.746.746 0 0 0 1.01.26c.49-.3 1.33-1.17 1.33-2.58s-.84-2.28-1.33-2.58Z" /></svg>;
 
-export const UserTalkOutlineIcon = createIcon(
-  "UserTalkOutlineIcon",
-  SVGComponent,
-  {
-    fileName: "abs-user-talk.svg",
-    presentationName: "user-talk",
-    style: "outline",
-    category: "users",
-  },
-)
+
+      export const UserTalkOutlineIcon = createIcon("UserTalkOutlineIcon", SVGComponent, {
+  "fileName": "abs-user-talk.svg",
+  "presentationName": "user-talk",
+  "style": "outline",
+  "category": "users"
+});

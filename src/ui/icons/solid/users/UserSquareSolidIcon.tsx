@@ -1,25 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path d="M12 2C5.64 2 2 5.64 2 12s3.64 10 10 10 10-3.65 10-10S18.36 2 12 2m4.33 16.14c-1.23.85-2.72 1.34-4.33 1.34s-3.1-.49-4.33-1.34c-.54-.37-.78-1.08-.46-1.66.66-1.2 2.01-1.95 4.79-1.95s4.13.75 4.79 1.95c.32.58.08 1.29-.46 1.66M12 6.43c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7-2.7-1.21-2.7-2.7 1.21-2.7 2.7-2.7" />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M12 2C5.64 2 2 5.64 2 12s3.64 10 10 10 10-3.65 10-10S18.36 2 12 2m4.33 16.14c-1.23.85-2.72 1.34-4.33 1.34s-3.1-.49-4.33-1.34c-.54-.37-.78-1.08-.46-1.66.66-1.2 2.01-1.95 4.79-1.95s4.13.75 4.79 1.95c.32.58.08 1.29-.46 1.66M12 6.43c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7-2.7-1.21-2.7-2.7 1.21-2.7 2.7-2.7" /></svg>;
 
-export const UserSquareSolidIcon = createIcon(
-  "UserSquareSolidIcon",
-  SVGComponent,
-  {
-    fileName: "abs-user-square-solid.svg",
-    presentationName: "user-square",
-    style: "solid",
-    category: "users",
-  },
-)
+
+      export const UserSquareSolidIcon = createIcon("UserSquareSolidIcon", SVGComponent, {
+  "fileName": "abs-user-square-solid.svg",
+  "presentationName": "user-square",
+  "style": "solid",
+  "category": "users"
+});

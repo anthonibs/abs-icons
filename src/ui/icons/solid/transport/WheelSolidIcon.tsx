@@ -1,21 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path d="M12 2C5.65 2 2 5.65 2 12s3.65 10 10 10 10-3.65 10-10S18.35 2 12 2m1.07 9.62c-.22.41-.35.86-.37 1.32a3.3 3.3 0 0 0-.7-.08c-.24 0-.47.03-.7.08a3.04 3.04 0 0 0-.37-1.32c.21-.08.41-.18.59-.3s.34-.27.48-.42c.29.33.66.57 1.07.72m-.24-2.78V6.28a5.82 5.82 0 0 1 4.18 2.81l-2.36.98a1.33 1.33 0 0 1-1.82-1.24Zm-3 1.33q-.255 0-.48-.09l-2.38-.97a5.82 5.82 0 0 1 4.19-2.83v2.56c0 .73-.6 1.33-1.33 1.33m-3.48.48 2.19.89c.91.36 1.35 1.39.99 2.3-.06.14-.13.27-.22.39L7.86 16.1a5.81 5.81 0 0 1-1.5-5.45Zm2.83 6.47 1.49-1.93a1.71 1.71 0 0 1 2.67.01l1.48 1.92c-1.76.97-3.88.96-5.64 0m6.96-1-1.44-1.87a1.75 1.75 0 0 1 .36-2.47c.13-.1.27-.17.42-.23l2.17-.91c.49 1.96-.08 4.04-1.5 5.48Z" />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M12 2C5.65 2 2 5.65 2 12s3.65 10 10 10 10-3.65 10-10S18.35 2 12 2m1.07 9.62c-.22.41-.35.86-.37 1.32a3.3 3.3 0 0 0-.7-.08c-.24 0-.47.03-.7.08a3.04 3.04 0 0 0-.37-1.32c.21-.08.41-.18.59-.3s.34-.27.48-.42c.29.33.66.57 1.07.72m-.24-2.78V6.28a5.82 5.82 0 0 1 4.18 2.81l-2.36.98a1.33 1.33 0 0 1-1.82-1.24Zm-3 1.33q-.255 0-.48-.09l-2.38-.97a5.82 5.82 0 0 1 4.19-2.83v2.56c0 .73-.6 1.33-1.33 1.33m-3.48.48 2.19.89c.91.36 1.35 1.39.99 2.3-.06.14-.13.27-.22.39L7.86 16.1a5.81 5.81 0 0 1-1.5-5.45Zm2.83 6.47 1.49-1.93a1.71 1.71 0 0 1 2.67.01l1.48 1.92c-1.76.97-3.88.96-5.64 0m6.96-1-1.44-1.87a1.75 1.75 0 0 1 .36-2.47c.13-.1.27-.17.42-.23l2.17-.91c.49 1.96-.08 4.04-1.5 5.48Z" /></svg>;
 
-export const WheelSolidIcon = createIcon("WheelSolidIcon", SVGComponent, {
-  fileName: "abs-wheel-solid.svg",
-  presentationName: "wheel",
-  style: "solid",
-  category: "transport",
-})
+
+      export const WheelSolidIcon = createIcon("WheelSolidIcon", SVGComponent, {
+  "fileName": "abs-wheel-solid.svg",
+  "presentationName": "wheel",
+  "style": "solid",
+  "category": "transport"
+});

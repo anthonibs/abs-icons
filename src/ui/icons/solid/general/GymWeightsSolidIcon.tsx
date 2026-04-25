@@ -1,25 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path d="M2 12c0-.93.64-1.71 1.5-1.94v3.87c-.86-.22-1.5-1.01-1.5-1.94Zm20 0c0 .93-.64 1.71-1.5 1.94v-3.87c.86.22 1.5 1.01 1.5 1.94Zm-3-3v6c0 .46 0 .7-.05.89-.14.52-.54.92-1.06 1.06-.19.05-.43.05-.89.05s-.7 0-.89-.05c-.52-.14-.92-.54-1.06-1.06C15 15.7 15 15.47 15 15v-2.15a.1.1 0 0 0-.1-.1H9.09a.1.1 0 0 0-.1.1V15c0 .46 0 .7-.05.89-.14.52-.54.92-1.06 1.06-.19.05-.43.05-.89.05s-.7 0-.89-.05c-.52-.14-.92-.54-1.06-1.06-.05-.19-.05-.42-.05-.89V9c0-.46 0-.7.05-.89.14-.52.54-.92 1.06-1.06.19-.05.43-.05.89-.05s.7 0 .89.05c.52.14.92.54 1.06 1.06.05.19.05.42.05.89v2.15c0 .05.04.1.1.1h5.81a.1.1 0 0 0 .1-.1V9c0-.46 0-.7.05-.89.14-.52.54-.92 1.06-1.06C16.3 7 16.54 7 17 7s.7 0 .89.05c.52.14.92.54 1.06 1.06.05.19.05.42.05.89" />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M2 12c0-.93.64-1.71 1.5-1.94v3.87c-.86-.22-1.5-1.01-1.5-1.94Zm20 0c0 .93-.64 1.71-1.5 1.94v-3.87c.86.22 1.5 1.01 1.5 1.94Zm-3-3v6c0 .46 0 .7-.05.89-.14.52-.54.92-1.06 1.06-.19.05-.43.05-.89.05s-.7 0-.89-.05c-.52-.14-.92-.54-1.06-1.06C15 15.7 15 15.47 15 15v-2.15a.1.1 0 0 0-.1-.1H9.09a.1.1 0 0 0-.1.1V15c0 .46 0 .7-.05.89-.14.52-.54.92-1.06 1.06-.19.05-.43.05-.89.05s-.7 0-.89-.05c-.52-.14-.92-.54-1.06-1.06-.05-.19-.05-.42-.05-.89V9c0-.46 0-.7.05-.89.14-.52.54-.92 1.06-1.06.19-.05.43-.05.89-.05s.7 0 .89.05c.52.14.92.54 1.06 1.06.05.19.05.42.05.89v2.15c0 .05.04.1.1.1h5.81a.1.1 0 0 0 .1-.1V9c0-.46 0-.7.05-.89.14-.52.54-.92 1.06-1.06C16.3 7 16.54 7 17 7s.7 0 .89.05c.52.14.92.54 1.06 1.06.05.19.05.42.05.89" /></svg>;
 
-export const GymWeightsSolidIcon = createIcon(
-  "GymWeightsSolidIcon",
-  SVGComponent,
-  {
-    fileName: "abs-gym-weights-solid.svg",
-    presentationName: "gym-weights",
-    style: "solid",
-    category: "general",
-  },
-)
+
+      export const GymWeightsSolidIcon = createIcon("GymWeightsSolidIcon", SVGComponent, {
+  "fileName": "abs-gym-weights-solid.svg",
+  "presentationName": "gym-weights",
+  "style": "solid",
+  "category": "general"
+});

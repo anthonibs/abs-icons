@@ -1,32 +1,34 @@
-export * as transportsolidIcons from "./transport"
-export * from "./transport"
-export * as timesolidIcons from "./time"
-export * from "./time"
-export * as generalsolidIcons from "./general"
-export * from "./general"
-export * as arrowssolidIcons from "./arrows"
-export * from "./arrows"
-export * as commercesolidIcons from "./commerce"
-export * from "./commerce"
-export * as locationsolidIcons from "./location"
-export * from "./location"
-export * as energysolidIcons from "./energy"
-export * from "./energy"
-export * as devicessolidIcons from "./devices"
-export * from "./devices"
-export * as documentssolidIcons from "./documents"
-export * from "./documents"
-export * as mediasolidIcons from "./media"
-export * from "./media"
-export * as naturesolidIcons from "./nature"
-export * from "./nature"
-export * as interfacesolidIcons from "./interface"
-export * from "./interface"
-export * as analyticssolidIcons from "./analytics"
-export * from "./analytics"
-export * as securitysolidIcons from "./security"
-export * from "./security"
-export * as userssolidIcons from "./users"
-export * from "./users"
-export * as actionssolidIcons from "./actions"
-export * from "./actions"
+export * as transportsolidIcons from "./transport";
+export * from "./transport";
+export * as timesolidIcons from "./time";
+export * from "./time";
+export * as generalsolidIcons from "./general";
+export * from "./general";
+export * as arrowssolidIcons from "./arrows";
+export * from "./arrows";
+export * as commercesolidIcons from "./commerce";
+export * from "./commerce";
+export * as locationsolidIcons from "./location";
+export * from "./location";
+export * as energysolidIcons from "./energy";
+export * from "./energy";
+export * as devicessolidIcons from "./devices";
+export * from "./devices";
+export * as documentssolidIcons from "./documents";
+export * from "./documents";
+export * as brandssolidIcons from "./brands";
+export * from "./brands";
+export * as mediasolidIcons from "./media";
+export * from "./media";
+export * as naturesolidIcons from "./nature";
+export * from "./nature";
+export * as interfacesolidIcons from "./interface";
+export * from "./interface";
+export * as analyticssolidIcons from "./analytics";
+export * from "./analytics";
+export * as securitysolidIcons from "./security";
+export * from "./security";
+export * as userssolidIcons from "./users";
+export * from "./users";
+export * as actionssolidIcons from "./actions";
+export * from "./actions";

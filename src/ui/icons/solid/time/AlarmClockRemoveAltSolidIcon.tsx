@@ -1,25 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path d="m4.56 5.57 3.67-2.3c.33-.2.42-.62.22-.95a.683.683 0 0 0-.95-.22L3.83 4.4c-.33.2-.42.63-.22.95.2.33.62.42.95.22m11.21-2.29 3.67 2.3c.33.2.75.11.95-.22s.11-.75-.22-.95l-3.67-2.3c-.33-.2-.75-.1-.95.22-.2.33-.11.75.22.95M12 4.12c-5.68 0-8.94 3.26-8.94 8.94S6.32 22 12 22s8.94-3.26 8.94-8.94S17.68 4.12 12 4.12m1.06 9.02 1.38 1.38a.694.694 0 0 1-.98.98l-1.38-1.38h-.17l-1.38 1.38a.694.694 0 0 1-.98-.98l1.38-1.38v-.17l-1.38-1.38c-.27-.28-.28-.71 0-.98s.71-.27.98 0l1.38 1.38h.17l1.38-1.38c.28-.27.71-.28.98 0s.27.71 0 .98l-1.38 1.38z" />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="m4.56 5.57 3.67-2.3c.33-.2.42-.62.22-.95a.683.683 0 0 0-.95-.22L3.83 4.4c-.33.2-.42.63-.22.95.2.33.62.42.95.22m11.21-2.29 3.67 2.3c.33.2.75.11.95-.22s.11-.75-.22-.95l-3.67-2.3c-.33-.2-.75-.1-.95.22-.2.33-.11.75.22.95M12 4.12c-5.68 0-8.94 3.26-8.94 8.94S6.32 22 12 22s8.94-3.26 8.94-8.94S17.68 4.12 12 4.12m1.06 9.02 1.38 1.38a.694.694 0 0 1-.98.98l-1.38-1.38h-.17l-1.38 1.38a.694.694 0 0 1-.98-.98l1.38-1.38v-.17l-1.38-1.38c-.27-.28-.28-.71 0-.98s.71-.27.98 0l1.38 1.38h.17l1.38-1.38c.28-.27.71-.28.98 0s.27.71 0 .98l-1.38 1.38z" /></svg>;
 
-export const AlarmClockRemoveAltSolidIcon = createIcon(
-  "AlarmClockRemoveAltSolidIcon",
-  SVGComponent,
-  {
-    fileName: "abs-alarm-clock-remove-alt-solid.svg",
-    presentationName: "alarm-clock-remove-alt",
-    style: "solid",
-    category: "time",
-  },
-)
+
+      export const AlarmClockRemoveAltSolidIcon = createIcon("AlarmClockRemoveAltSolidIcon", SVGComponent, {
+  "fileName": "abs-alarm-clock-remove-alt-solid.svg",
+  "presentationName": "alarm-clock-remove-alt",
+  "style": "solid",
+  "category": "time"
+});

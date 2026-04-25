@@ -1,22 +1,12 @@
-import { createIcon } from "../../../createIcon"
+import { createIcon } from "../../../createIcon";
 
-import type { SVGProps } from "react"
-const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    color="currentColor"
-    width="1em"
-    height="1em"
-    {...props}
-  >
-    <path d="M16.66 11.8c0 .41.34.75.75.75h.3c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-.3c-.41 0-.75.34-.75.75m-5.01-4.66H7.59c-.41 0-.75.34-.75.75s.34.75.75.75h4.06c.41 0 .75-.34.75-.75s-.34-.75-.75-.75" />
-    <path d="M21.87 9.32V9.3c0-.06-.02-.11-.03-.16-.73-4.68-3.57-6.43-9.84-6.43C4.58 2.71 1.95 5.14 1.95 12S4.58 21.29 12 21.29 22.05 18.86 22.05 12c0-.99-.06-1.87-.18-2.68M20.55 12c0 .6-.03 1.15-.07 1.67h-3.21a1.81 1.81 0 1 1 0-3.62h3.19c.06.6.09 1.24.09 1.95M12 19.79c-6.55 0-8.55-1.82-8.55-7.79s2-7.79 8.55-7.79c5.06 0 7.4 1.09 8.2 4.33h-2.93c-1.83 0-3.31 1.49-3.31 3.31s1.49 3.31 3.31 3.31h3c-.74 3.46-3.06 4.62-8.27 4.62Z" />
-  </svg>
-)
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M16.66 11.8c0 .41.34.75.75.75h.3c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-.3c-.41 0-.75.34-.75.75m-5.01-4.66H7.59c-.41 0-.75.34-.75.75s.34.75.75.75h4.06c.41 0 .75-.34.75-.75s-.34-.75-.75-.75" /><path d="M21.87 9.32V9.3c0-.06-.02-.11-.03-.16-.73-4.68-3.57-6.43-9.84-6.43C4.58 2.71 1.95 5.14 1.95 12S4.58 21.29 12 21.29 22.05 18.86 22.05 12c0-.99-.06-1.87-.18-2.68M20.55 12c0 .6-.03 1.15-.07 1.67h-3.21a1.81 1.81 0 1 1 0-3.62h3.19c.06.6.09 1.24.09 1.95M12 19.79c-6.55 0-8.55-1.82-8.55-7.79s2-7.79 8.55-7.79c5.06 0 7.4 1.09 8.2 4.33h-2.93c-1.83 0-3.31 1.49-3.31 3.31s1.49 3.31 3.31 3.31h3c-.74 3.46-3.06 4.62-8.27 4.62Z" /></svg>;
 
-export const WalletOutlineIcon = createIcon("WalletOutlineIcon", SVGComponent, {
-  fileName: "abs-wallet.svg",
-  presentationName: "wallet",
-  style: "outline",
-  category: "commerce",
-})
+
+      export const WalletOutlineIcon = createIcon("WalletOutlineIcon", SVGComponent, {
+  "fileName": "abs-wallet.svg",
+  "presentationName": "wallet",
+  "style": "outline",
+  "category": "commerce"
+});
