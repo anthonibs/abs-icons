@@ -5,6 +5,7 @@ export * from "./UserCheckSolidIcon";
 export * from "./UserRemoveSolidIcon";
 export * from "./UserScanSolidIcon";
 export * from "./UserSolidIcon";
+export * from "./UserSpeakSolidIcon";
 export * from "./UserSquareSolidIcon";
 export * from "./UserTalkSolidIcon";
 export * from "./UsersGroupSolidIcon";

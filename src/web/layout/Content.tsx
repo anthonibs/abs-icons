@@ -1,22 +1,22 @@
-import { memo } from "react";
+import { memo } from "react"
 
 export type IconComponent = React.NamedExoticComponent<IconProps> & {
-  metadata: IconMetadata;
-};
+  metadata: IconMetadata
+}
 
-import Search from "./Search";
-import useData from "../store/useData";
-import ListIcons from "./ListIcons";
-import PreviewIcon from "./PreviewIcon";
-import SizeControl from "./SizeControl";
-import ColorControl from "./ColorControl";
-import { IconProps } from "../../ui/createIcon";
-import { IconMetadata } from "../interfaces";
-import Categories from "./Categories";
-import { SettingsOutlineIcon } from "../../ui/icons";
+import Search from "./Search"
+import useData from "../store/useData"
+import ListIcons from "./ListIcons"
+import PreviewIcon from "./PreviewIcon"
+import SizeControl from "./SizeControl"
+import ColorControl from "./ColorControl"
+import { IconProps } from "../../ui/createIcon"
+import { IconMetadata } from "../interfaces"
+import Categories from "./Categories"
+import { SettingsOutlineIcon } from "../../ui/icons"
 
 const Content = () => {
-  const handleReset = useData((state) => state.handleReset);
+  const handleReset = useData((state) => state.handleReset)
 
   return (
     <main className="w-full max-w-350 mx-auto px-4 py-12 grid gap-8 md:grid-cols-[180px_1fr_280px]">
@@ -74,7 +74,7 @@ const Content = () => {
         </div>
       </aside>
     </main>
-  );
-};
+  )
+}
 
-export default memo(Content);
+export default memo(Content)

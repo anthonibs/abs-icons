@@ -1,4 +1,5 @@
 export * from "./BashSolidIcon";
+export * from "./BluetoothSolidIcon";
 export * from "./CloudAltSolidIcon";
 export * from "./CloudServerSolidIcon";
 export * from "./CommandLineSolidIcon";
@@ -9,3 +10,4 @@ export * from "./FloppyDiskSolidIcon";
 export * from "./MathSymbolsSolidIcon";
 export * from "./SaveSolidIcon";
 export * from "./TerminalSquareSolidIcon";
+export * from "./VrGogglesSolidIcon";

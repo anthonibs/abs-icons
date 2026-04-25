@@ -1,8 +1,8 @@
-import { defineConfig } from "tsup";
-import pkg from "glob";
-const { sync: globSync } = pkg;
+import { defineConfig } from "tsup"
+import pkg from "glob"
+const { sync: globSync } = pkg
 
-const iconFiles = globSync("src/ui/icons/**/*.{ts,tsx}");
+const iconFiles = globSync("src/ui/icons/**/*.{ts,tsx}")
 
 export default defineConfig({
   entry: ["src/ui/icons/index.ts", ...iconFiles],
@@ -16,4 +16,4 @@ export default defineConfig({
   tsconfig: "./tsconfig.build.json",
   outDir: "dist",
   bundle: true,
-});
+})

@@ -18,11 +18,9 @@ We are excited about your interest in expanding **abs-icons**! To maintain visua
 Naming defines the icon category and style. Always use the `abs-` prefix and lowercase letters.
 
 - **Outline (Default):** No suffix needed. The base icon is assumed to be outline.
-
   - Example: `abs-user`, `abs-settings`.
 
 - **Solid:** Must include the `-solid` suffix.
-
   - Example: `abs-user-solid`, `abs-settings-solid`.
 
 ### ✨ Design Variations

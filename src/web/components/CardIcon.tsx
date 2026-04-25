@@ -1,14 +1,14 @@
-import { memo, useState, useCallback } from "react";
-import { renderToStaticMarkup } from "react-dom/server";
-import { IconComponent } from "../layout/Content";
-import useData from "../store/useData";
+import { memo, useState, useCallback } from "react"
+import { renderToStaticMarkup } from "react-dom/server"
+import { IconComponent } from "../layout/Content"
+import useData from "../store/useData"
 
 type CardIconProps = {
-  name: string;
-  Icon: IconComponent;
-  size?: number;
-  color?: string;
-};
+  name: string
+  Icon: IconComponent
+  size?: number
+  color?: string
+}
 
 const CardIcon = ({
   name,
@@ -18,29 +18,29 @@ const CardIcon = ({
 }: CardIconProps) => {
   const isSelected = useData(
     useCallback((state) => state.selectedIcon?.name === name, [name]),
-  );
-  const setSelectedIcon = useData((state) => state.setSelectedIcon);
+  )
+  const setSelectedIcon = useData((state) => state.setSelectedIcon)
 
-  const [copiedSvg, setCopiedSvg] = useState(false);
-  const [copiedJsx, setCopiedJsx] = useState(false);
+  const [copiedSvg, setCopiedSvg] = useState(false)
+  const [copiedJsx, setCopiedJsx] = useState(false)
 
   const handleCopySvg = (e: React.MouseEvent) => {
-    e.stopPropagation();
+    e.stopPropagation()
     const svgString = renderToStaticMarkup(
       <Icon width={size} height={size} fill="currentColor" />,
-    );
-    navigator.clipboard.writeText(svgString);
-    setCopiedSvg(true);
-    setTimeout(() => setCopiedSvg(false), 1200);
-  };
+    )
+    navigator.clipboard.writeText(svgString)
+    setCopiedSvg(true)
+    setTimeout(() => setCopiedSvg(false), 1200)
+  }
 
   const handleCopyImport = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const importText = `<${name}/>`;
-    navigator.clipboard.writeText(importText);
-    setCopiedJsx(true);
-    setTimeout(() => setCopiedJsx(false), 1200);
-  };
+    e.stopPropagation()
+    const importText = `<${name}/>`
+    navigator.clipboard.writeText(importText)
+    setCopiedJsx(true)
+    setTimeout(() => setCopiedJsx(false), 1200)
+  }
 
   return (
     <article
@@ -82,7 +82,7 @@ const CardIcon = ({
         </button>
       </div>
     </article>
-  );
-};
+  )
+}
 
-export default memo(CardIcon);
+export default memo(CardIcon)

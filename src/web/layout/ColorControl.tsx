@@ -1,17 +1,17 @@
-import { useEffect, useRef } from "react";
-import useData from "../store/useData";
+import { useEffect, useRef } from "react"
+import useData from "../store/useData"
 
 const ColorControl = () => {
-  const colorTimerRef = useRef<number | null>(null);
+  const colorTimerRef = useRef<number | null>(null)
 
-  const colorIcon = useData((state) => state.colorIcon);
-  const setColorIcon = useData((state) => state.setColorIcon);
+  const colorIcon = useData((state) => state.colorIcon)
+  const setColorIcon = useData((state) => state.setColorIcon)
 
   useEffect(() => {
     return () => {
-      if (colorTimerRef.current) clearTimeout(colorTimerRef.current);
-    };
-  }, []);
+      if (colorTimerRef.current) clearTimeout(colorTimerRef.current)
+    }
+  }, [])
 
   return (
     <div className="space-y-4">
@@ -72,7 +72,7 @@ const ColorControl = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ColorControl;
+export default ColorControl

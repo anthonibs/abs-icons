@@ -1,5 +1,5 @@
-const GIT_HUB_URL = import.meta.env.VITE_GITHUB_URL || "#";
-const NPM_PACKAGE_URL = import.meta.env.VITE_NPM_PACKAGE_URL || "#";
+const GIT_HUB_URL = import.meta.env.VITE_GITHUB_URL || "#"
+const NPM_PACKAGE_URL = import.meta.env.VITE_NPM_PACKAGE_URL || "#"
 
 const Footer = () => {
   return (
@@ -184,7 +184,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

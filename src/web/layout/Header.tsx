@@ -1,27 +1,27 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
-const GIT_HUB_URL = import.meta.env.VITE_GITHUB_URL || "#";
+const GIT_HUB_URL = import.meta.env.VITE_GITHUB_URL || "#"
 
 const Header = () => {
-  const [packageVersion, setPackageVersion] = useState<string>("");
+  const [packageVersion, setPackageVersion] = useState<string>("")
 
   useEffect(() => {
     async function getPackageData() {
       try {
         const versionRes = await fetch(
           "https://registry.npmjs.org/@anthonibs/abs-icons/latest",
-        );
+        )
 
-        const versionData = await versionRes.json();
+        const versionData = await versionRes.json()
 
-        setPackageVersion(versionData.version);
+        setPackageVersion(versionData.version)
       } catch (error) {
-        console.error("Erro ao buscar dados da API do NPM:", error);
+        console.error("Erro ao buscar dados da API do NPM:", error)
       }
     }
 
-    getPackageData();
-  }, []);
+    getPackageData()
+  }, [])
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-abs-card-border/50 bg-abs-background/80 backdrop-blur-sm">
@@ -84,7 +84,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M2 6.12c0-1.24 1.01-2.25 2.25-2.25H15c2.9 0 5.25 2.35 5.25 5.25v7.5h1c.41 0 .75.34.75.75s-.34.75-.75.75H10.93c-.06 0-.11.04-.13.09-.44 1.12-1.52 1.91-2.79 1.91s-2.36-.79-2.79-1.91c-.02-.06-.07-.09-.13-.09h-.82c-1.24 0-2.25-1.01-2.25-2.25V6.12Zm6 9.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5" /></svg>;
+
+
+      export const CaravanSolidIcon = createIcon("CaravanSolidIcon", SVGComponent, {
+  "fileName": "abs-caravan-solid.svg",
+  "presentationName": "caravan",
+  "style": "solid",
+  "category": "transport"
+});

@@ -1,5 +1,6 @@
 export * from "./AirplayOutlineIcon";
 export * from "./Camera2OutlineIcon";
+export * from "./CameraAiOutlineIcon";
 export * from "./CameraOffOutlineIcon";
 export * from "./CameraOutlineIcon";
 export * from "./CastOutlineIcon";

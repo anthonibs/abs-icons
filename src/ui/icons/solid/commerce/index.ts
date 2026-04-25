@@ -10,6 +10,7 @@ export * from "./DeliveryCartSolidIcon";
 export * from "./MoneySolidIcon";
 export * from "./MoneySymbolsSolidIcon";
 export * from "./OutboxSolidIcon";
+export * from "./PiggyBankSolidIcon";
 export * from "./ShoppingBagAltSolidIcon";
 export * from "./ShoppingBagHappySolidIcon";
 export * from "./ShoppingBagSoftSolidIcon";

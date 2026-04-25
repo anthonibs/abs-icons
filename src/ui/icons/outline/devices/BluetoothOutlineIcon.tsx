@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M12.14 22c-.12 0-.22-.03-.32-.07a.75.75 0 0 1-.31-.25.78.78 0 0 1-.12-.61v-7.24c0-.16-.18-.25-.31-.16l-5.05 3.56A.753.753 0 1 1 5.16 16l5.44-3.84c.11-.08.11-.24 0-.32L5.13 7.98A.753.753 0 1 1 6 6.75l5.07 3.58c.13.09.31 0 .31-.16V2.75c0-.41.34-.75.75-.75.14 0 .27.04.38.11s.03.02.05.03l6.11 4.31c.3.21.48.56.48.93s-.18.72-.48.93l-5.02 3.54c-.11.08-.11.24 0 .32l5 3.53c.3.21.48.56.48.93s-.18.72-.48.93l-5.96 4.2a.77.77 0 0 1-.56.25Zm.75-8.17v5.58c0 .16.18.25.31.16l3.96-2.79c.11-.08.11-.24 0-.32l-3.96-2.79c-.13-.09-.31 0-.31.16m0-9.25v5.61c0 .16.18.25.31.16l3.98-2.81c.11-.08.11-.24 0-.32l-3.98-2.8c-.13-.09-.31 0-.31.16" /></svg>;
+
+
+      export const BluetoothOutlineIcon = createIcon("BluetoothOutlineIcon", SVGComponent, {
+  "fileName": "abs-bluetooth.svg",
+  "presentationName": "bluetooth",
+  "style": "outline",
+  "category": "devices"
+});

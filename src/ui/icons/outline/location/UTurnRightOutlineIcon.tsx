@@ -1,5 +1,4 @@
-import * as React from "react";
-      import { createIcon } from "../../../createIcon";
+import { createIcon } from "../../../createIcon";
 
       import type { SVGProps } from "react";
 const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M6.19 20.21V9.03c0-1.02.34-2.03 1-2.81.91-1.07 2.04-1.62 3.38-1.63 1.19-.01 2.36.46 3.2 1.3s1.3 1.91 1.3 3.13v4.86l-1.39-1.39a.79.79 0 0 0-1.12 0 .79.79 0 0 0 0 1.12l2.67 2.67a.9.9 0 0 0 1.27 0l2.67-2.67a.79.79 0 0 0 0-1.12.79.79 0 0 0-1.12 0l-1.39 1.39V9.02c0-1.68-.59-3.1-1.76-4.27s-2.59-1.76-4.27-1.76-3.1.59-4.27 1.76S4.6 7.34 4.6 9.02V20.2c0 .44.36.79.79.79.44 0 .79-.36.79-.79Z" /></svg>;
