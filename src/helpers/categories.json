@@ -18,13 +18,7 @@
     "tray-download",
     "upload"
   ],
-  "analytics": [
-    "chart",
-    "graph",
-    "trend",
-    "trending",
-    "waveform"
-  ],
+  "analytics": ["chart", "graph", "trend", "trending", "waveform"],
   "arrows": [
     "arrow",
     "arrows",
@@ -198,12 +192,7 @@
     "solar-panel",
     "tank"
   ],
-  "general": [
-    "chat",
-    "color",
-    "palette",
-    "swatch"
-  ],
+  "general": ["chat", "color", "palette", "swatch"],
   "interface": [
     "category",
     "dashboard",
@@ -275,11 +264,7 @@
     "umbrella",
     "weather"
   ],
-  "navigation": [
-    "copied",
-    "cursor",
-    "link"
-  ],
+  "navigation": ["copied", "cursor", "link"],
   "security": [
     "incognito",
     "key",
@@ -338,11 +323,5 @@
     "wheel",
     "zeppelin"
   ],
-  "users": [
-    "id-card",
-    "personalcard",
-    "user",
-    "user-profile",
-    "users"
-  ]
+  "users": ["id-card", "personalcard", "user", "user-profile", "users"]
 }
