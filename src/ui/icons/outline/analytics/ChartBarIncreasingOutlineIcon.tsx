@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M21.25 20.44H12c-4.15 0-6.23 0-7.37-1.13-1.13-1.13-1.13-3.2-1.13-7.32V2.81c0-.41-.34-.75-.75-.75S2 2.4 2 2.81V12c0 4.54 0 6.81 1.58 8.38 1.57 1.56 3.86 1.56 8.42 1.56h9.25c.41 0 .75-.34.75-.75s-.34-.75-.75-.75" /><path d="M15 11.75H7c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h8c.41 0 .75.34.75.75s-.34.75-.75.75m4 5H7c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h12c.41 0 .75.34.75.75s-.34.75-.75.75m-9-10H7c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h3c.41 0 .75.34.75.75s-.34.75-.75.75" /></g></svg>;
+
+
+      export const ChartBarIncreasingOutlineIcon = createIcon("ChartBarIncreasingOutlineIcon", SVGComponent, {
+  "fileName": "abs-chart-bar-increasing.svg",
+  "presentationName": "chart-bar-increasing",
+  "style": "outline",
+  "category": "analytics"
+});

@@ -25,6 +25,7 @@ export * from "./ScanBarcodeOutlineIcon";
 export * from "./ScanCubeOutlineIcon";
 export * from "./ScanFaceOutlineIcon";
 export * from "./ScanSearchOutlineIcon";
+export * from "./ScanTextOutlineIcon";
 export * from "./ScanOutlineIcon";
 export * from "./SearchAiOutlineIcon";
 export * from "./SearchMinusOutlineIcon";

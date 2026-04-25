@@ -1,0 +1,13 @@
+import * as React from "react";
+      import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="m12.81 6.94 1.47 1.47c.1.1.1.27 0 .38l-1.46 1.46V6.94Zm0 10.12 1.47-1.46c.1-.1.1-.27 0-.38l-1.46-1.46v3.31Zm-1.95-5.25L7.66 8.6c-.1-.1-.1-.27 0-.38l.66-.66c.1-.1.27-.1.38 0l2.2 2.21c.17.17.45.05.45-.19V4.04c0-.24.29-.36.45-.19l4.54 4.54c.1.1.1.27 0 .38l-3.04 3.04c-.1.1-.1.27 0 .38l3.04 3.04c.1.1.1.27 0 .38l-4.54 4.54c-.17.17-.45.05-.45-.19v-5.54c0-.24-.29-.36-.45-.19l-2.21 2.21c-.1.1-.27.1-.38 0l-.66-.66c-.1-.1-.1-.27 0-.38l3.2-3.21c.1-.1.1-.27 0-.38ZM12.01 22c4.37 0 7.38-2.07 7.38-10S16.38 2 12.01 2 4.63 4.07 4.63 12s3.01 10 7.38 10" /></svg>;
+
+
+      export const BluetoothSolidIcon = createIcon("BluetoothSolidIcon", SVGComponent, {
+  "fileName": "abs-bluetooth-solid.svg",
+  "presentationName": "bluetooth",
+  "style": "solid",
+  "category": "devices"
+});

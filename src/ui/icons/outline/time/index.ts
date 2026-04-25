@@ -47,6 +47,7 @@ export * from "./Replay30OutlineIcon";
 export * from "./Replay5OutlineIcon";
 export * from "./ReturnTimeOutlineIcon";
 export * from "./StopWatchOutlineIcon";
+export * from "./TimerAcurteOutlineIcon";
 export * from "./TimerAltOutlineIcon";
 export * from "./TimerPauseAltOutlineIcon";
 export * from "./TimerPlayAltOutlineIcon";

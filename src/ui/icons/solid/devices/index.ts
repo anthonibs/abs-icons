@@ -1,4 +1,5 @@
 export * from "./BashSolidIcon";
+export * from "./BluetoothSolidIcon";
 export * from "./CloudAltSolidIcon";
 export * from "./CloudServerSolidIcon";
 export * from "./CommandLineSolidIcon";
