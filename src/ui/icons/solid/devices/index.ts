@@ -10,3 +10,4 @@ export * from "./FloppyDiskSolidIcon";
 export * from "./MathSymbolsSolidIcon";
 export * from "./SaveSolidIcon";
 export * from "./TerminalSquareSolidIcon";
+export * from "./VrGogglesSolidIcon";

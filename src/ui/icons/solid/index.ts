@@ -16,6 +16,8 @@ export * as devicessolidIcons from "./devices";
 export * from "./devices";
 export * as documentssolidIcons from "./documents";
 export * from "./documents";
+export * as brandssolidIcons from "./brands";
+export * from "./brands";
 export * as mediasolidIcons from "./media";
 export * from "./media";
 export * as naturesolidIcons from "./nature";

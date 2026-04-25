@@ -22,7 +22,6 @@ export * from "./MarkerPinSimpleSolidIcon";
 export * from "./MarkerPinSolidIcon";
 export * from "./OfficeSolidIcon";
 export * from "./PennantSolidIcon";
-export * from "./PiggyBankSolidIcon";
 export * from "./RoadAltSolidIcon";
 export * from "./RoadLocationSolidIcon";
 export * from "./RoadSignBothAltSolidIcon";

@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M20.19 2.25H3.92c-.89 0-1.67.64-1.67 1.52v16.31c0 .92.75 1.67 1.67 1.67h16.26c.89 0 1.56-.79 1.56-1.67V3.77c0-.88-.67-1.52-1.56-1.52ZM8.06 18.5H5.74c-.13 0-.24-.11-.24-.24v-8.21c0-.13.11-.24.24-.24h2.32c.13 0 .24.11.24.24v8.21c0 .13-.11.24-.24.24M7 8.49h-.02c-.89 0-1.47-.67-1.47-1.5s.59-1.5 1.51-1.5 1.47.65 1.49 1.5c0 .83-.58 1.5-1.51 1.5M18.27 18.5h-2.32c-.13 0-.24-.11-.24-.24v-4.51c0-1.14-.41-1.92-1.42-1.92-.77 0-1.23.52-1.43 1.03-.08.18-.1.43-.1.69v4.71c0 .13-.11.24-.24.24H10.2c-.13 0-.24-.11-.24-.24v-8.21c0-.13.11-.24.24-.24h2.56v1.21c.41-.58 1.04-1.41 2.52-1.41 1.83 0 3.22 1.21 3.22 3.81v4.84c0 .13-.11.24-.24.24Z" /></svg>;
+
+
+      export const LinkedinOutlineIcon = createIcon("LinkedinOutlineIcon", SVGComponent, {
+  "fileName": "abs-linkedin.svg",
+  "presentationName": "linkedin",
+  "style": "outline",
+  "category": "brands"
+});

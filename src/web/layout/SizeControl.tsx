@@ -1,47 +1,47 @@
-import { useRef, useState, useEffect, memo } from "react";
-import useData from "../store/useData";
+import { useRef, useState, useEffect, memo } from "react"
+import useData from "../store/useData"
 
-const min = 16;
-const max = 128;
+const min = 16
+const max = 128
 
 const SizeControl = () => {
-  const sizeIcon = useData((state) => state.sizeIcon);
-  const setSizeIcon = useData((state) => state.setSizeIcon);
+  const sizeIcon = useData((state) => state.sizeIcon)
+  const setSizeIcon = useData((state) => state.setSizeIcon)
 
-  const [localSize, setLocalSize] = useState<number>(sizeIcon);
+  const [localSize, setLocalSize] = useState<number>(sizeIcon)
 
-  const isDragging = useRef(false);
-  const timeoutRef = useRef<number | null>(null);
+  const isDragging = useRef(false)
+  const timeoutRef = useRef<number | null>(null)
 
   useEffect(() => {
     if (!isDragging.current) {
-      setLocalSize(sizeIcon);
+      setLocalSize(sizeIcon)
     }
-  }, [sizeIcon]);
+  }, [sizeIcon])
 
   useEffect(() => {
     return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, []);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current)
+    }
+  }, [])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = Number(e.target.value);
-    setLocalSize(val);
-    isDragging.current = true;
+    const val = Number(e.target.value)
+    setLocalSize(val)
+    isDragging.current = true
 
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current)
 
     timeoutRef.current = window.setTimeout(() => {
-      setSizeIcon(val);
-    }, 300);
-  };
+      setSizeIcon(val)
+    }, 300)
+  }
 
   const handleCommit = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    isDragging.current = false;
-    setSizeIcon(localSize);
-  };
+    if (timeoutRef.current) clearTimeout(timeoutRef.current)
+    isDragging.current = false
+    setSizeIcon(localSize)
+  }
 
   return (
     <div className="space-y-4">
@@ -62,7 +62,7 @@ const SizeControl = () => {
           onTouchEnd={handleCommit}
           onKeyUp={(e) => {
             if (["Enter", "ArrowLeft", "ArrowRight"].includes(e.key)) {
-              handleCommit();
+              handleCommit()
             }
           }}
           className="abs-input-range"
@@ -77,7 +77,7 @@ const SizeControl = () => {
         <span>{max}px</span>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default memo(SizeControl);
+export default memo(SizeControl)

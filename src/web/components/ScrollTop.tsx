@@ -1,9 +1,9 @@
-import { ArrowUpOutlineIcon } from "@anthonibs/abs-icons";
+import { ArrowUpOutlineIcon } from "@anthonibs/abs-icons"
 
 const ScrollTop = () => {
   const handleScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
 
   return (
     <div className="fixed bottom-6 right-6">
@@ -16,7 +16,7 @@ const ScrollTop = () => {
         <ArrowUpOutlineIcon />
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default ScrollTop;
+export default ScrollTop

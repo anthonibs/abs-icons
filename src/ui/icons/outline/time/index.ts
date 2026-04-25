@@ -39,6 +39,7 @@ export * from "./ClockUpdateOutlineIcon";
 export * from "./ClockOutlineIcon";
 export * from "./HourglassTimeAltOutlineIcon";
 export * from "./HourglassTimeOutlineIcon";
+export * from "./Hours24OutlineIcon";
 export * from "./IwatchAltOutlineIcon";
 export * from "./IwatchChargeAltOutlineIcon";
 export * from "./IwatchOutlineIcon";

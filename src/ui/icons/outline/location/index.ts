@@ -54,7 +54,6 @@ export * from "./MarkerPinRemoveOutlineIcon";
 export * from "./MarkerPinSimpleOutlineIcon";
 export * from "./MarkerPinOutlineIcon";
 export * from "./PennantOutlineIcon";
-export * from "./PiggyBankOutlineIcon";
 export * from "./RoadAltOutlineIcon";
 export * from "./RoadLocationOutlineIcon";
 export * from "./RoadSignBothAltOutlineIcon";

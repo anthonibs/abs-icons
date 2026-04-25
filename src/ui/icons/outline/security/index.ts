@@ -1,4 +1,5 @@
 export * from "./IncognitoOutlineIcon";
+export * from "./KeyOutlineIcon";
 export * from "./LockUnlockOutlineIcon";
 export * from "./LockOutlineIcon";
 export * from "./ShieldAlertSoftOutlineIcon";

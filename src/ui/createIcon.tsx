@@ -1,9 +1,9 @@
-import { memo } from "react";
-import type { SVGProps, FC, NamedExoticComponent } from "react";
-import { IconMetadata } from "../web/interfaces";
+import { memo } from "react"
+import type { SVGProps, FC, NamedExoticComponent } from "react"
+import { IconMetadata } from "../web/interfaces"
 
 export interface IconProps extends SVGProps<SVGSVGElement> {
-  size?: number;
+  size?: number
 }
 
 export function createIcon(
@@ -17,11 +17,11 @@ export function createIcon(
   }: IconProps) {
     return (
       <SvgComponent fill="currentColor" width={size} height={size} {...props} />
-    );
-  }) as unknown as NamedExoticComponent<IconProps> & { metadata: IconMetadata };
+    )
+  }) as unknown as NamedExoticComponent<IconProps> & { metadata: IconMetadata }
 
-  IconWrapper.displayName = name;
-  IconWrapper.metadata = metadata;
+  IconWrapper.displayName = name
+  IconWrapper.metadata = metadata
 
-  return IconWrapper;
+  return IconWrapper
 }

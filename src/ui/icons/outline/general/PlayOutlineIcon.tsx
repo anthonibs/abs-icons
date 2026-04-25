@@ -1,5 +1,4 @@
-import * as React from "react";
-      import { createIcon } from "../../../createIcon";
+import { createIcon } from "../../../createIcon";
 
       import type { SVGProps } from "react";
 const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M8.11 19.76c-.5 0-.99-.13-1.45-.38-.95-.53-1.52-1.5-1.52-2.59V7.22c0-1.09.57-2.06 1.52-2.59s2.07-.51 3 .06l7.79 4.78c.89.54 1.42 1.49 1.42 2.53s-.53 1.99-1.42 2.53l-7.79 4.78c-.48.3-1.02.44-1.55.44Zm0-14.01c-.25 0-.49.06-.72.19-.47.26-.75.74-.75 1.28v9.57c0 .54.28 1.02.75 1.28s1.03.25 1.49-.03l7.79-4.78c.44-.27.7-.74.7-1.25s-.26-.98-.7-1.25L8.88 5.98c-.24-.15-.5-.22-.77-.22Z" /></svg>;

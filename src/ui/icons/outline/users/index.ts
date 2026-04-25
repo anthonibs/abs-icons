@@ -1,3 +1,4 @@
+export * from "./IdCardOutlineIcon";
 export * from "./PersonalcardOutlineIcon";
 export * from "./UserAddOutlineIcon";
 export * from "./UserCancelOutlineIcon";

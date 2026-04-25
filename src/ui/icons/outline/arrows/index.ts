@@ -16,6 +16,7 @@ export * from "./BackUpOutlineIcon";
 export * from "./ChevronLeftOutlineIcon";
 export * from "./ChevronRightOutlineIcon";
 export * from "./CollapseOutlineIcon";
+export * from "./Degrees360OutlineIcon";
 export * from "./EnlargeShrinkOutlineIcon";
 export * from "./EnlargeVOutlineIcon";
 export * from "./ExpandCornerOutlineIcon";
