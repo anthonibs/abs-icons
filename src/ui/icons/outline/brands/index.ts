@@ -17,6 +17,7 @@ export * from "./GithubCopilotOutlineIcon";
 export * from "./GooglePlayOutlineIcon";
 export * from "./Html5OutlineIcon";
 export * from "./JavascriptOutlineIcon";
+export * from "./LinkedinAltOutlineIcon";
 export * from "./LinkedinOutlineIcon";
 export * from "./NodejsOutlineIcon";
 export * from "./PixOutlineIcon";

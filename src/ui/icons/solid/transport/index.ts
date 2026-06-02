@@ -9,6 +9,7 @@ export * from "./CarRoadSolidIcon";
 export * from "./CarSmartSolidIcon";
 export * from "./CarSolidIcon";
 export * from "./CarTransmissionSolidIcon";
+export * from "./CaravanAltSolidIcon";
 export * from "./CaravanSolidIcon";
 export * from "./EngineSolidIcon";
 export * from "./ExclamationEngineSolidIcon";

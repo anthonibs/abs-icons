@@ -1,3 +1,4 @@
+export * from "./BlackboardOutlineIcon";
 export * from "./BookAltOutlineIcon";
 export * from "./BookMarkOutlineIcon";
 export * from "./BookNotesOutlineIcon";

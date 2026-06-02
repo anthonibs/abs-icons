@@ -1,9 +1,9 @@
 export * as transportsolidIcons from "./transport";
 export * from "./transport";
-export * as timesolidIcons from "./time";
-export * from "./time";
 export * as generalsolidIcons from "./general";
 export * from "./general";
+export * as timesolidIcons from "./time";
+export * from "./time";
 export * as arrowssolidIcons from "./arrows";
 export * from "./arrows";
 export * as commercesolidIcons from "./commerce";

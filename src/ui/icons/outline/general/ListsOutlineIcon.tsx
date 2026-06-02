@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M20 4.12H10c-1.03 0-1.88.85-1.88 1.88S8.97 7.88 10 7.88h10c1.03 0 1.88-.85 1.88-1.88S21.03 4.12 20 4.12m-16 0c-1.03 0-1.88.85-1.88 1.88S2.97 7.88 4 7.88 5.88 7.03 5.88 6 5.03 4.12 4 4.12m16 6H10c-1.03 0-1.88.85-1.88 1.88s.85 1.88 1.88 1.88h10c1.03 0 1.88-.85 1.88-1.88s-.85-1.88-1.88-1.88m-16 0c-1.03 0-1.88.85-1.88 1.88s.85 1.88 1.88 1.88 1.88-.85 1.88-1.88-.85-1.88-1.88-1.88m16 6H10c-1.03 0-1.88.85-1.88 1.88s.85 1.88 1.88 1.88h10c1.03 0 1.88-.85 1.88-1.88s-.85-1.88-1.88-1.88m-16 0c-1.03 0-1.88.85-1.88 1.88s.85 1.88 1.88 1.88 1.88-.85 1.88-1.88-.85-1.88-1.88-1.88" /></svg>;
+
+
+      export const ListsOutlineIcon = createIcon("ListsOutlineIcon", SVGComponent, {
+  "fileName": "abs-lists.svg",
+  "presentationName": "lists",
+  "style": "outline",
+  "category": "general"
+});

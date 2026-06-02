@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M8.1 21.21c-1.22-.53-2.27-1.24-3.18-2.14s-1.61-1.96-2.14-3.18-.79-2.52-.79-3.9.26-2.68.79-3.9 1.24-2.27 2.14-3.18S6.88 3.3 8.1 2.77s2.52-.79 3.9-.79 2.68.26 3.9.79 2.27 1.24 3.18 2.14 1.61 1.96 2.14 3.18.79 2.52.79 3.9-.26 2.68-.79 3.9c-.52 1.22-1.24 2.27-2.14 3.18s-1.96 1.61-3.18 2.14-2.52.79-3.9.79-2.68-.26-3.9-.79m2.9-1.42V4.2c0-.08-.07-.14-.15-.13-1.95.28-3.57 1.15-4.86 2.63s-2 3.39-1.99 5.35.67 3.75 1.99 5.25c1.29 1.48 2.91 2.35 4.86 2.63.08.01.15-.05.15-.13Zm2 .15c.5-.08.99-.2 1.48-.34s.94-.35 1.38-.61h-2.85v.95Zm0-2.95h5.25c.13-.15.25-.31.35-.47s.2-.34.3-.53H13zm0-3h6.75l.1-.5.1-.5H13zm0-3h6.95l-.1-.5-.1-.5H13zm0-3h5.9c-.1-.18-.2-.36-.3-.53s-.22-.32-.35-.48H13v1Zm0-3h2.85c-.43-.27-.89-.47-1.38-.61s-.98-.25-1.48-.34v.95Z" /></svg>;
+
+
+      export const TonalityOutlineIcon = createIcon("TonalityOutlineIcon", SVGComponent, {
+  "fileName": "abs-tonality.svg",
+  "presentationName": "tonality",
+  "style": "outline",
+  "category": "general"
+});

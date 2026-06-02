@@ -184,7 +184,9 @@
     "text-document",
     "ticket",
     "tickets",
-    "voucher"
+    "voucher",
+    "blackboard",
+    "whiteboard"
   ],
   "energy": [
     "barrel",

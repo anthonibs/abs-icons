@@ -8,5 +8,5 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-blackboard.svg",
   "presentationName": "blackboard",
   "style": "outline",
-  "category": "general"
+  "category": "documents"
 });
