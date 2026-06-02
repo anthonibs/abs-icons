@@ -18,4 +18,5 @@ export * from "./TrendDownOutlineIcon";
 export * from "./TrendUp2OutlineIcon";
 export * from "./TrendUpOutlineIcon";
 export * from "./TrendingFlatOutlineIcon";
+export * from "./WaveformAltOutlineIcon";
 export * from "./WaveformOutlineIcon";

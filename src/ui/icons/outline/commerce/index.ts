@@ -1,3 +1,4 @@
+export * from "./AttachMoneyOutlineIcon";
 export * from "./BagAltOutlineIcon";
 export * from "./BagSoftOutlineIcon";
 export * from "./BagOutlineIcon";

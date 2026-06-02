@@ -1,6 +1,7 @@
 export * from "./AddToPlaylistOutlineIcon";
 export * from "./CheckCircleAltOutlineIcon";
 export * from "./CheckCircleOutlineIcon";
+export * from "./CheckDoubleOutlineIcon";
 export * from "./CheckSmallOutlineIcon";
 export * from "./CloseOutlineIcon";
 export * from "./CopyOutlineIcon";

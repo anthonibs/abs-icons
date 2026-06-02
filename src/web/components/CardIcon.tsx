@@ -45,14 +45,16 @@ const CardIcon = ({
   return (
     <article
       onClick={() => setSelectedIcon({ name, Icon })}
-      style={{
-        ["--enter-delay" as any]: `${(name.charCodeAt(0) % 6) * 80}ms`,
-      }}
+      style={
+        {
+          "--enter-delay": `${(name.charCodeAt(0) % 6) * 80}ms`,
+        } as React.CSSProperties
+      }
       className={`abs-card-icon-anim group animate-in fade-in duration-500 relative flex flex-col items-center justify-center h-40 bg-abs-card-background rounded-2xl border transition-all overflow-hidden hover:border-abs-brand-primary ${
         isSelected ? "border-abs-brand-primary" : "border-abs-card-border"
       }`}
     >
-      <div className="flex flex-col items-center group-hover:opacity-40 transition-opacity duration-300 icon">
+      <div className="flex flex-col items-center  group-hover:opacity-40 transition-opacity duration-300 icon">
         <span className="icon-inner">
           <Icon width={size} height={size} fill={color} />
         </span>
@@ -63,6 +65,14 @@ const CardIcon = ({
           }`}
         >
           {Icon.metadata?.presentationName || name}
+        </span>
+
+        <span
+          className={`text-[9px] absolute bottom-2 font-mono uppercase tracking-wider  ${
+            isSelected ? "text-abs-text-main" : "text-abs-text-muted/80"
+          }`}
+        >
+          #{Icon.metadata?.category}
         </span>
       </div>
 

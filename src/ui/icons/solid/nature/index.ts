@@ -2,6 +2,7 @@ export * from "./CatAliceSolidIcon";
 export * from "./ClimberSolidIcon";
 export * from "./CrownStarSolidIcon";
 export * from "./DogSolSolidIcon";
+export * from "./LeafAltSolidIcon";
 export * from "./LeafSolidIcon";
 export * from "./MoonSolidIcon";
 export * from "./PawAltSolidIcon";

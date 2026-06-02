@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M19.28 13.14s-.04-.02-.05-.02l-3.52-1-.09-.03-.37-.11-.09-.25-2.88-8.32c-.14-.41-.48-.73-.9-.85l-2.21-.65.12 1.19.76 7.39-1.3-.37-1.86-.53-.05-.02-.23-.06-.08-.24-.87-2.52a1.44 1.44 0 0 0-.97-.92l-1.45-.41a.173.173 0 0 0-.22.17v7.05l.64.18 3.42.98 7.88 2.24 3.02.85c.95.22 2.3-.24 2.83-.99.1-.15.15-.33.14-.51-.07-.86-.81-1.84-1.65-2.24ZM3 21.1c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1" /></svg>;
+
+
+      export const FlightLandSolidIcon = createIcon("FlightLandSolidIcon", SVGComponent, {
+  "fileName": "abs-flight-land-solid.svg",
+  "presentationName": "flight-land",
+  "style": "solid",
+  "category": "general"
+});

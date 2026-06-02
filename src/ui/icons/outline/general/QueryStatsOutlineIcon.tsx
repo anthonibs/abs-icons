@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M21.25 2.29h-.02a.98.98 0 0 0-1.42.26L17.5 6.22c-.23.37-.77.38-1.02.01l-1.67-2.5a.94.94 0 0 0-1.58.03l-2.8 4.55c-.22.35-.71.39-.98.08L7.84 6.51a.958.958 0 0 0-1.54.12l-3.82 6.11a.993.993 0 0 0 .26 1.33h.02c.46.35 1.12.22 1.42-.27l2.63-4.22c.22-.35.71-.39.98-.07l1.94 2.27c.27.31.76.27.98-.08l2.87-4.66c.23-.38.78-.39 1.02-.02l1.93 2.9c.24.37.78.36 1.02-.01l3.95-6.27a.983.983 0 0 0-.26-1.33Zm-1.85 16.7c.46-.72.7-1.62.7-2.7 0-2.83-1.69-4.52-4.52-4.52s-4.52 1.69-4.52 4.52 1.69 4.52 4.52 4.52c1.07 0 1.98-.25 2.7-.7l1.56 1.56c.15.15.35.23.56.23s.41-.08.56-.23a.79.79 0 0 0 0-1.12zm-6.91-2.7c0-2.02 1.07-3.09 3.09-3.09s3.09 1.07 3.09 3.09-1.07 3.09-3.09 3.09-3.09-1.07-3.09-3.09" /></svg>;
+
+
+      export const QueryStatsOutlineIcon = createIcon("QueryStatsOutlineIcon", SVGComponent, {
+  "fileName": "abs-query-stats.svg",
+  "presentationName": "query-stats",
+  "style": "outline",
+  "category": "general"
+});

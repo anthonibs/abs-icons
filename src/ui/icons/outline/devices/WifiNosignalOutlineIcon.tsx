@@ -1,0 +1,12 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M21 7.85c-.18 0-.35-.06-.5-.19-4.84-4.29-12.16-4.29-17 0-.31.27-.78.25-1.06-.06a.756.756 0 0 1 .06-1.06c5.41-4.8 13.58-4.8 18.99 0 .31.27.34.75.06 1.06-.15.17-.35.25-.56.25Z" /><path d="M5.7 11.45c-.2 0-.39-.08-.54-.23-.29-.3-.28-.77.02-1.06 2.98-2.89 7.48-3.58 11.21-1.72.37.19.52.64.34 1.01s-.63.52-1.01.34a8.3 8.3 0 0 0-9.49 1.46.75.75 0 0 1-.52.21Zm3.15 3.18c-.2 0-.39-.08-.54-.23-.29-.3-.28-.77.02-1.06.7-.68 1.58-1.15 2.53-1.36.4-.09.8.17.89.57s-.17.81-.57.89c-.69.15-1.31.49-1.81.97a.75.75 0 0 1-.52.21Zm3.24 3.92c-.55 0-1.01-.45-1.01-1s.44-1 1-1h.01c.55 0 1 .45 1 1s-.45 1-1 1m4.99-.59c-.41 0-.75-.34-.75-.75v-5c0-.41.34-.75.75-.75s.75.34.75.75v5c0 .41-.34.75-.75.75m0 3.1c-.41 0-.75-.34-.75-.75v-.1c0-.41.34-.75.75-.75s.75.34.75.75v.1c0 .41-.34.75-.75.75" /></g></svg>;
+
+
+      export const WifiNosignalOutlineIcon = createIcon("WifiNosignalOutlineIcon", SVGComponent, {
+  "fileName": "abs-wifi-nosignal.svg",
+  "presentationName": "wifi-nosignal",
+  "style": "outline",
+  "category": "devices"
+});

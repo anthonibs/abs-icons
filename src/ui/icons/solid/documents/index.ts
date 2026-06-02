@@ -1,3 +1,4 @@
+export * from "./BlackboardSolidIcon";
 export * from "./BookAltSolidIcon";
 export * from "./BookMarkSolidIcon";
 export * from "./BookOpenSolidIcon";
