@@ -16,6 +16,8 @@ const __dirname = path.dirname(__filename)
 const SRC = path.resolve(__dirname, "../src/icons")
 const OUT = path.resolve(__dirname, "../src/ui/icons")
 
+const DAYS_TO_BE_NEW = 30
+
 async function generate() {
   if (fs.existsSync(OUT)) fs.rmSync(OUT, { recursive: true, force: true })
   fs.mkdirSync(OUT, { recursive: true })
@@ -25,12 +27,19 @@ async function generate() {
   const tree = { solid: {}, outline: {} }
 
   for (const filename of files) {
+    const filePath = path.join(SRC, filename)
+    const stats = fs.statSync(filePath)
+
+    const iconAgeInDays =
+      (Date.now() - stats.birthtimeMs) / (1000 * 60 * 60 * 24)
+    const isNew = iconAgeInDays <= DAYS_TO_BE_NEW
+
     const isSolid = filename.toLowerCase().includes("solid")
     const styleFolder = isSolid ? "solid" : "outline"
     const groupFolder = getCategory(filename)
     const componentName = formatComponentName(filename)
 
-    const rawSvg = fs.readFileSync(path.join(SRC, filename), "utf8")
+    const rawSvg = fs.readFileSync(filePath, "utf8")
     const cleanedSvg = cleanSvgForReact(rawSvg)
 
     const componentCode = await transform(
@@ -52,6 +61,7 @@ async function generate() {
       presentationName: formatFileName(filename),
       style: styleFolder,
       category: groupFolder,
+      isNew,
     }
 
     const finalCode = `
