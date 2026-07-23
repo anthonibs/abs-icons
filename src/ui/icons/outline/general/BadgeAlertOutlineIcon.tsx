@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-badge-alert.svg",
   "presentationName": "badge-alert",
   "style": "outline",
-  "category": "general"
+  "category": "general",
+  "isNew": false
 });

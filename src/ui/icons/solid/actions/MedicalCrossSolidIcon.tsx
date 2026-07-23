@@ -1,0 +1,13 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M11 2h-.15C9.81 2.08 9 2.95 9 4v2.8L6.57 5.4c-.96-.55-2.18-.22-2.73.73l-1 1.73-.07.14c-.45.94-.1 2.07.81 2.59l2.43 1.4-2.43 1.4c-.96.55-1.28 1.78-.73 2.73l1 1.73.08.13c.59.86 1.74 1.12 2.65.6l2.43-1.4v2.8c0 1.1.9 2 2 2h2.15c1.04-.08 1.85-.95 1.85-2v-2.8l2.43 1.4c.96.55 2.18.22 2.73-.73l1-1.73.07-.14c.45-.94.1-2.07-.81-2.59L18 11.99l2.43-1.4c.96-.55 1.28-1.78.73-2.73l-1-1.73-.08-.13a2.003 2.003 0 0 0-2.65-.6L15 6.8V4c0-1.1-.9-2-2-2z" /></svg>;
+
+
+      export const MedicalCrossSolidIcon = createIcon("MedicalCrossSolidIcon", SVGComponent, {
+  "fileName": "abs-medical-cross-solid.svg",
+  "presentationName": "medical-cross",
+  "style": "solid",
+  "category": "actions",
+  "isNew": true
+});

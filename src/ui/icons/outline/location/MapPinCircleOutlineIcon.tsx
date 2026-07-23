@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-map-pin-circle.svg",
   "presentationName": "map-pin-circle",
   "style": "outline",
-  "category": "location"
+  "category": "location",
+  "isNew": false
 });

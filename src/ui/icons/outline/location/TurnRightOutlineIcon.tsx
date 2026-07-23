@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-turn-right.svg",
   "presentationName": "turn-right",
   "style": "outline",
-  "category": "location"
+  "category": "location",
+  "isNew": false
 });

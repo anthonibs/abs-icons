@@ -8,6 +8,7 @@ export * from "./CutImageOutlineIcon";
 export * from "./CutOutlineIcon";
 export * from "./GalleryAltOutlineIcon";
 export * from "./GalleryOutlineIcon";
+export * from "./ImageUpscaleOutlineIcon";
 export * from "./ImageOutlineIcon";
 export * from "./PhotoOutlineIcon";
 export * from "./VideoOutlineIcon";

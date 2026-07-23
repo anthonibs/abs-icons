@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-arrow-down-solid.svg",
   "presentationName": "arrow-down",
   "style": "solid",
-  "category": "arrows"
+  "category": "arrows",
+  "isNew": false
 });

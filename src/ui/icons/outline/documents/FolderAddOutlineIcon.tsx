@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-folder-add.svg",
   "presentationName": "folder-add",
   "style": "outline",
-  "category": "documents"
+  "category": "documents",
+  "isNew": false
 });

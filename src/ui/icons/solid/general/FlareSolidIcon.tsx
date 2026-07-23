@@ -1,0 +1,13 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M11.11 2.55c.25-.49.85-.69 1.34-.45.19.1.35.25.45.45l2.42 4.83c.28.56.74 1.02 1.3 1.3l4.83 2.42c.49.25.69.85.45 1.34-.08.15-.19.29-.34.38l-.11.06-4.83 2.42c-.56.28-1.02.74-1.3 1.3l-2.42 4.83c-.25.49-.85.7-1.34.45a.9.9 0 0 1-.38-.34l-.06-.11L8.7 16.6a2.92 2.92 0 0 0-1.3-1.3l-4.83-2.42c-.49-.25-.7-.85-.45-1.34.08-.16.19-.29.34-.38l.11-.06L7.4 8.68a2.92 2.92 0 0 0 1.3-1.3l2.42-4.83Z" /></svg>;
+
+
+      export const FlareSolidIcon = createIcon("FlareSolidIcon", SVGComponent, {
+  "fileName": "abs-flare-solid.svg",
+  "presentationName": "flare",
+  "style": "solid",
+  "category": "general",
+  "isNew": true
+});

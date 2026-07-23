@@ -1,3 +1,5 @@
+export * from "./BinaryCodeAltOutlineIcon";
+export * from "./BinaryCodeOutlineIcon";
 export * from "./BlackboardOutlineIcon";
 export * from "./BookAltOutlineIcon";
 export * from "./BookMarkOutlineIcon";
@@ -32,6 +34,7 @@ export * from "./DocumentCopyOutlineIcon";
 export * from "./DocumentDuplicatePlusOutlineIcon";
 export * from "./DocumentDuplicateOutlineIcon";
 export * from "./DocumentMultipleOutlineIcon";
+export * from "./DocumentSlidersOutlineIcon";
 export * from "./DocumentSpreadsheetOutlineIcon";
 export * from "./DocumentTextSoftOutlineIcon";
 export * from "./DocumentTextOutlineIcon";

@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-document-chart-pie.svg",
   "presentationName": "document-chart-pie",
   "style": "outline",
-  "category": "documents"
+  "category": "documents",
+  "isNew": false
 });

@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-finger-alt.svg",
   "presentationName": "finger-alt",
   "style": "outline",
-  "category": "general"
+  "category": "general",
+  "isNew": false
 });

@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-map-marker.svg",
   "presentationName": "map-marker",
   "style": "outline",
-  "category": "location"
+  "category": "location",
+  "isNew": false
 });

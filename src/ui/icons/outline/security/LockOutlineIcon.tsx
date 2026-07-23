@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-lock.svg",
   "presentationName": "lock",
   "style": "outline",
-  "category": "security"
+  "category": "security",
+  "isNew": false
 });

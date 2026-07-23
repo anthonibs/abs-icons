@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-send-up-right-solid.svg",
   "presentationName": "send-up-right",
   "style": "solid",
-  "category": "actions"
+  "category": "actions",
+  "isNew": false
 });

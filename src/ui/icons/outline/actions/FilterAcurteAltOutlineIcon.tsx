@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-filter-acurte-alt.svg",
   "presentationName": "filter-acurte-alt",
   "style": "outline",
-  "category": "actions"
+  "category": "actions",
+  "isNew": false
 });

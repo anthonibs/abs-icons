@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-gallon-oil-2.svg",
   "presentationName": "gallon-oil-2",
   "style": "outline",
-  "category": "energy"
+  "category": "energy",
+  "isNew": false
 });

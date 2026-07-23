@@ -20,6 +20,7 @@ export * from "./MapRouteSolidIcon";
 export * from "./MapStreetSolidIcon";
 export * from "./MarkerPinSimpleSolidIcon";
 export * from "./MarkerPinSolidIcon";
+export * from "./MarkerPinUserSolidIcon";
 export * from "./OfficeSolidIcon";
 export * from "./PennantSolidIcon";
 export * from "./RoadAltSolidIcon";

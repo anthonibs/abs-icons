@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-calendar-range-alt.svg",
   "presentationName": "calendar-range-alt",
   "style": "outline",
-  "category": "time"
+  "category": "time",
+  "isNew": false
 });

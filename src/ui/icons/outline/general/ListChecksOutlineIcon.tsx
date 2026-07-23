@@ -1,0 +1,13 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M21 5.75h-8c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h8c.41 0 .75.34.75.75s-.34.75-.75.75m0 7h-8c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h8c.41 0 .75.34.75.75s-.34.75-.75.75m0 7h-8c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h8c.41 0 .75.34.75.75s-.34.75-.75.75m-16-.13c-.27 0-.54-.1-.75-.31l-1.78-1.78a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0L5 17.94l3.47-3.47c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-3.78 3.78c-.21.21-.48.31-.75.31m0-10c-.27 0-.54-.1-.75-.31L2.47 7.53a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0L5 7.94l3.47-3.47c.29-.29.77-.29 1.06 0s.29.77 0 1.06L5.75 9.31c-.21.21-.48.31-.75.31" /></svg>;
+
+
+      export const ListChecksOutlineIcon = createIcon("ListChecksOutlineIcon", SVGComponent, {
+  "fileName": "abs-list-checks.svg",
+  "presentationName": "list-checks",
+  "style": "outline",
+  "category": "general",
+  "isNew": true
+});

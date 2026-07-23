@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-check-small.svg",
   "presentationName": "check-small",
   "style": "outline",
-  "category": "actions"
+  "category": "actions",
+  "isNew": false
 });

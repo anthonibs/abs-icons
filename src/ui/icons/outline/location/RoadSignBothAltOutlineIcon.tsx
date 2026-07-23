@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-road-sign-both-alt.svg",
   "presentationName": "road-sign-both-alt",
   "style": "outline",
-  "category": "location"
+  "category": "location",
+  "isNew": false
 });

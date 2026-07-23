@@ -1,0 +1,13 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M14 21.04h-4c-.96 0-1.75-.79-1.75-1.75v-6c0-.14-.11-.25-.25-.25H4.71c-.39 0-.75-.15-1.03-.43s-.43-.64-.43-1.03.15-.76.43-1.03l7.09-7.09a1.75 1.75 0 0 1 2.47 0l7.09 7.09c.28.27.43.64.43 1.03 0 .8-.65 1.46-1.46 1.46h-3.29c-.14 0-.25.11-.25.25v6c0 .96-.79 1.75-1.75 1.75Zm-6-9.5c.96 0 1.75.79 1.75 1.75v6c0 .14.11.25.25.25h4c.14 0 .25-.11.25-.25v-6c0-.96.79-1.75 1.75-1.75h3.29l-7.12-7.01c-.13-.13-.23-.13-.35 0l-7.09 7.09 3.26-.07Z" /></svg>;
+
+
+      export const ArrowBigUpOutlineIcon = createIcon("ArrowBigUpOutlineIcon", SVGComponent, {
+  "fileName": "abs-arrow-big-up.svg",
+  "presentationName": "arrow-big-up",
+  "style": "outline",
+  "category": "arrows",
+  "isNew": true
+});

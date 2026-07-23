@@ -25,6 +25,7 @@ export * from "./LogoutOutlineIcon";
 export * from "./MenuCollapseOutlineIcon";
 export * from "./MenuOutlineIcon";
 export * from "./SettingsAltOutlineIcon";
+export * from "./SettingsGearSuggestOutlineIcon";
 export * from "./SettingsGearOutlineIcon";
 export * from "./SettingsOutlineIcon";
 export * from "./SmartHomeOutlineIcon";

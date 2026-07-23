@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-link-copied.svg",
   "presentationName": "link-copied",
   "style": "outline",
-  "category": "navigation"
+  "category": "navigation",
+  "isNew": false
 });

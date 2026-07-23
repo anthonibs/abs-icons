@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-shield-duo-alt.svg",
   "presentationName": "shield-duo-alt",
   "style": "outline",
-  "category": "security"
+  "category": "security",
+  "isNew": false
 });

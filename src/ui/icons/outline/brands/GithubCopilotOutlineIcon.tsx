@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-github-copilot.svg",
   "presentationName": "github-copilot",
   "style": "outline",
-  "category": "brands"
+  "category": "brands",
+  "isNew": false
 });

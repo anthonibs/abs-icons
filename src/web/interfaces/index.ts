@@ -7,6 +7,7 @@ export interface IconMetadata {
   presentationName: string
   style: "outline" | "solid"
   category: string
+  isNew?: boolean
 }
 
 export type IconComponent = ComponentType<SVGProps<SVGSVGElement>> &

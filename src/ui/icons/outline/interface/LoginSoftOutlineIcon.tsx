@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-login-soft.svg",
   "presentationName": "login-soft",
   "style": "outline",
-  "category": "interface"
+  "category": "interface",
+  "isNew": false
 });

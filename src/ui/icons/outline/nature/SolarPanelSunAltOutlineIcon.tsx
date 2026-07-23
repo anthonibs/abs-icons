@@ -1,0 +1,13 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M11.08 3.5h1.84c.41 0 .75-.34.75-.75S13.33 2 12.92 2h-1.84c-.41 0-.75.34-.75.75s.34.75.75.75m8.58 14.11 1.13-1.99a1.673 1.673 0 0 0-1.44-2.52H8.32c-.94 0-1.81.52-2.27 1.35L3.2 19.49c-.15.26-.23.55-.23.84 0 .92.75 1.67 1.67 1.67h11.03c.95 0 1.82-.52 2.26-1.34l.77-1.36.86 2.22a.753.753 0 0 0 .97.43c.39-.15.58-.58.43-.97zm-.17-2.74L18.4 16.8h-5.11l1.25-2.2h4.82c.09 0 .17.08.17.18m-12.16.41v-.01c.19-.35.56-.57.95-.57h4.48l-1.25 2.2H6.44l.91-1.62Zm-2.88 5.14 1.14-2.03h5.1l-1.25 2.2H4.66c-.09 0-.17-.08-.17-.17m12.15-.39c-.19.35-.56.57-.95.57h-4.48l1.25-2.2h5.11l-.92 1.63ZM3.73 12.75c.41 0 .75-.34.75-.75v-1.85c0-.41-.34-.75-.75-.75s-.75.34-.75.75V12c0 .41.34.75.75.75m0-5.55c2.44 0 4.42-2 4.42-4.45 0-.41-.34-.75-.75-.75s-.75.34-.75.75c0 1.63-1.31 2.95-2.92 2.95-.41 0-.75.34-.75.75s.34.75.75.75m5.96 2.62c.15.15.34.22.53.22s.38-.07.53-.22c.29-.29.3-.77 0-1.06l-1.29-1.3a.745.745 0 0 0-1.06 0c-.29.29-.3.77 0 1.06z" /></svg>;
+
+
+      export const SolarPanelSunAltOutlineIcon = createIcon("SolarPanelSunAltOutlineIcon", SVGComponent, {
+  "fileName": "abs-solar-panel-sun-alt.svg",
+  "presentationName": "solar-panel-sun-alt",
+  "style": "outline",
+  "category": "nature",
+  "isNew": true
+});

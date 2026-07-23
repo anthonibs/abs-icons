@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-monitor-screen.svg",
   "presentationName": "monitor-screen",
   "style": "outline",
-  "category": "devices"
+  "category": "devices",
+  "isNew": false
 });
