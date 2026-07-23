@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-marker-pin-add.svg",
   "presentationName": "marker-pin-add",
   "style": "outline",
-  "category": "location"
+  "category": "location",
+  "isNew": false
 });

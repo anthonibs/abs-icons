@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-switch-access-shortcut-add.svg",
   "presentationName": "switch-access-shortcut-add",
   "style": "outline",
-  "category": "arrows"
+  "category": "arrows",
+  "isNew": false
 });

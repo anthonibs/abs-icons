@@ -55,6 +55,12 @@ const CardIcon = ({
       }`}
     >
       <div className="flex flex-col items-center  group-hover:opacity-40 transition-opacity duration-300 icon">
+        {Icon.metadata?.isNew && (
+          <span className="absolute top-3 left-3 text-[9px] font-mono uppercase tracking-wider text-abs-brand-primary">
+            NEW
+          </span>
+        )}
+
         <span className="icon-inner">
           <Icon width={size} height={size} fill={color} />
         </span>

@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-scan-alt-solid.svg",
   "presentationName": "scan-alt",
   "style": "solid",
-  "category": "actions"
+  "category": "actions",
+  "isNew": false
 });

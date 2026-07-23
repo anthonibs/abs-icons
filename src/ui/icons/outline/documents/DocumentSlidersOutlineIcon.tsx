@@ -1,0 +1,13 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="M15.75 11.17h-4.88V11c0-.41-.34-.75-.75-.75s-.75.34-.75.75v.17H8.25c-.41 0-.75.34-.75.75s.34.75.75.75h1.12v.17c0 .41.34.75.75.75s.75-.34.75-.75v-.17h4.88c.41 0 .75-.34.75-.75s-.34-.75-.75-.75m0 4.62h-1.12v-.17c0-.41-.34-.75-.75-.75s-.75.34-.75.75v.17H8.25c-.41 0-.75.34-.75.75s.34.75.75.75h4.88v.17c0 .41.34.75.75.75s.75-.34.75-.75v-.17h1.12c.41 0 .75-.34.75-.75s-.34-.75-.75-.75" /><path d="M18.24 3.91C16.99 2.7 15.44 2 14 2H7.96C5.73 2 3.91 3.83 3.91 6.08v11.84c0 2.25 1.82 4.08 4.05 4.08h8.08c2.23 0 4.05-1.83 4.05-4.08V7.43c0-1.07-.71-2.41-1.85-3.52M17.2 4.99c.57.55.92 1.09 1.14 1.58l-1.56.03c-.91.02-1.14-.15-1.19-.2-.11-.11-.1-.49-.09-.85 0-.61-.02-1.25-.3-1.81.69.24 1.39.65 2 1.25m1.4 12.93c0 1.42-1.14 2.58-2.55 2.58s-8.09-.01-8.09-.01c-1.41 0-2.55-1.16-2.55-2.58V5.45c0-1.07.88-1.95 1.95-1.95h4.32c2.36.26 2.34.96 2.32 2.01 0 .61-.03 1.38.53 1.94.44.44 1.12.65 2.12.65h.16l1.71-.03s.08.04.08.08z" /></g></svg>;
+
+
+      export const DocumentSlidersOutlineIcon = createIcon("DocumentSlidersOutlineIcon", SVGComponent, {
+  "fileName": "abs-document-sliders.svg",
+  "presentationName": "document-sliders",
+  "style": "outline",
+  "category": "documents",
+  "isNew": true
+});

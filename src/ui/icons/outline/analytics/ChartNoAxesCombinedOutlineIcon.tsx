@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-chart-no-axes-combined.svg",
   "presentationName": "chart-no-axes-combined",
   "style": "outline",
-  "category": "analytics"
+  "category": "analytics",
+  "isNew": false
 });

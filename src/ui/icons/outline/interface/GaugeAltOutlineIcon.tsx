@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-gauge-alt.svg",
   "presentationName": "gauge-alt",
   "style": "outline",
-  "category": "interface"
+  "category": "interface",
+  "isNew": false
 });

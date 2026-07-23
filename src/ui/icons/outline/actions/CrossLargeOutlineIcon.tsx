@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-cross-large.svg",
   "presentationName": "cross-large",
   "style": "outline",
-  "category": "actions"
+  "category": "actions",
+  "isNew": false
 });

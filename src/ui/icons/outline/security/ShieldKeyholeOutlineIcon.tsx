@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-shield-keyhole.svg",
   "presentationName": "shield-keyhole",
   "style": "outline",
-  "category": "security"
+  "category": "security",
+  "isNew": false
 });

@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-ruler-pencil.svg",
   "presentationName": "ruler-pencil",
   "style": "outline",
-  "category": "documents"
+  "category": "documents",
+  "isNew": false
 });

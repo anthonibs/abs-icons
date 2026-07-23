@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-wifi-error.svg",
   "presentationName": "wifi-error",
   "style": "outline",
-  "category": "devices"
+  "category": "devices",
+  "isNew": false
 });

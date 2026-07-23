@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-figma.svg",
   "presentationName": "figma",
   "style": "outline",
-  "category": "brands"
+  "category": "brands",
+  "isNew": false
 });

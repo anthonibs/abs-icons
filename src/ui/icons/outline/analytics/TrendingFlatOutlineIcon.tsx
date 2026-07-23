@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-trending-flat.svg",
   "presentationName": "trending-flat",
   "style": "outline",
-  "category": "analytics"
+  "category": "analytics",
+  "isNew": false
 });

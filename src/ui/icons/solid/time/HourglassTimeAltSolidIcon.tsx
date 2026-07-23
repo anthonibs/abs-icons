@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-hourglass-time-alt-solid.svg",
   "presentationName": "hourglass-time-alt",
   "style": "solid",
-  "category": "time"
+  "category": "time",
+  "isNew": false
 });

@@ -1,0 +1,13 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="M21.58 2.08a.763.763 0 0 0-1.01.34l-2.11 4.21h-2.95l1.77-3.54c.19-.37.04-.82-.34-1.01a.763.763 0 0 0-1.01.34l-2.11 4.21h-2.95l1.77-3.54c.19-.37.04-.82-.34-1.01a.763.763 0 0 0-1.01.34L9.18 6.63H6.23L8 3.09c.19-.37.04-.82-.34-1.01a.763.763 0 0 0-1.01.34l-4.57 9.24c-.19.37-.04.82.34 1.01a.74.74 0 0 0 1-.33l2.11-4.21h2.95l-1.77 3.54c-.19.37-.04.82.34 1.01a.74.74 0 0 0 1-.33l2.11-4.21h2.95l-1.77 3.54c-.19.37-.04.82.34 1.01a.74.74 0 0 0 1-.33l2.11-4.21h2.95l-1.77 3.54c-.19.37-.04.82.34 1.01a.74.74 0 0 0 1-.33l4.62-9.25c.19-.37.04-.82-.34-1.01ZM12 14.95c-.41 0-.75.34-.75.75v5.55c0 .41.34.75.75.75s.75-.34.75-.75V15.7c0-.41-.34-.75-.75-.75" /></svg>;
+
+
+      export const AntennaOutlineIcon = createIcon("AntennaOutlineIcon", SVGComponent, {
+  "fileName": "abs-antenna.svg",
+  "presentationName": "antenna",
+  "style": "outline",
+  "category": "devices",
+  "isNew": true
+});

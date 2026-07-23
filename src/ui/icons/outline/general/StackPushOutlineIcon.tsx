@@ -1,0 +1,13 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><g><path d="m2.84 12.42 7.96 4.03c.38.19.79.29 1.2.29s.82-.1 1.2-.29l7.96-4.04c.33-.17.54-.51.54-.89s-.21-.72-.54-.89l-1.88-.96a.75.75 0 0 0-1.01.33.75.75 0 0 0 .33 1.01l.99.5-7.07 3.58c-.32.17-.71.17-1.04 0l-7.07-3.58.99-.5A.75.75 0 0 0 5.73 10a.75.75 0 0 0-1.01-.33l-1.89.96c-.33.17-.54.51-.54.89s.21.71.54.89Z" /><path d="M21.92 15.88a.75.75 0 0 0-1.01-.33l-8.39 4.25c-.32.17-.71.17-1.04 0l-8.39-4.25a.75.75 0 0 0-1.01.33.75.75 0 0 0 .33 1.01l8.39 4.25c.38.19.79.29 1.2.29s.82-.1 1.2-.29l8.39-4.25a.75.75 0 0 0 .33-1.01m-10.76-4.14c.22.23.52.35.84.35s.62-.13.84-.35L16 8.54c.29-.29.29-.77 0-1.06a.754.754 0 0 0-1.06 0l-2.18 2.21V3.33c0-.41-.34-.75-.75-.75s-.75.34-.75.75v6.38L9.08 7.5a.745.745 0 0 0-1.06 0c-.29.29-.3.77 0 1.06l3.16 3.2Z" /></g></svg>;
+
+
+      export const StackPushOutlineIcon = createIcon("StackPushOutlineIcon", SVGComponent, {
+  "fileName": "abs-stack-push.svg",
+  "presentationName": "stack-push",
+  "style": "outline",
+  "category": "general",
+  "isNew": true
+});

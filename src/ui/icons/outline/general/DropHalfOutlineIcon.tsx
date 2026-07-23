@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-drop-half.svg",
   "presentationName": "drop-half",
   "style": "outline",
-  "category": "general"
+  "category": "general",
+  "isNew": false
 });

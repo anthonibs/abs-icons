@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-volume-mute.svg",
   "presentationName": "volume-mute",
   "style": "outline",
-  "category": "media"
+  "category": "media",
+  "isNew": false
 });

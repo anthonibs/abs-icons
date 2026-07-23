@@ -8,4 +8,5 @@ export * from "./HomeWifiSolidIcon";
 export * from "./LayerAltSolidIcon";
 export * from "./LayerDoubleAltSolidIcon";
 export * from "./LayerThreeAltSolidIcon";
+export * from "./SettingsGearSuggestSolidIcon";
 export * from "./SmartHomeSolidIcon";

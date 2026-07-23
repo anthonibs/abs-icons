@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-scan-text.svg",
   "presentationName": "scan-text",
   "style": "outline",
-  "category": "actions"
+  "category": "actions",
+  "isNew": false
 });

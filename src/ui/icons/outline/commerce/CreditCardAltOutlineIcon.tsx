@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-credit-card-alt.svg",
   "presentationName": "credit-card-alt",
   "style": "outline",
-  "category": "commerce"
+  "category": "commerce",
+  "isNew": false
 });

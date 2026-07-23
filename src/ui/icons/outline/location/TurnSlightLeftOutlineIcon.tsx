@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-turn-slight-left.svg",
   "presentationName": "turn-slight-left",
   "style": "outline",
-  "category": "location"
+  "category": "location",
+  "isNew": false
 });

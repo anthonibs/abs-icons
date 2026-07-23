@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-database-sync.svg",
   "presentationName": "database-sync",
   "style": "outline",
-  "category": "devices"
+  "category": "devices",
+  "isNew": false
 });

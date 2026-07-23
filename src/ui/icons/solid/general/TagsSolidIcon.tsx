@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-tags-solid.svg",
   "presentationName": "tags",
   "style": "solid",
-  "category": "general"
+  "category": "general",
+  "isNew": false
 });

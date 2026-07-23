@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-search-ai.svg",
   "presentationName": "search-ai",
   "style": "outline",
-  "category": "actions"
+  "category": "actions",
+  "isNew": false
 });

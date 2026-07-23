@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-cube-check.svg",
   "presentationName": "cube-check",
   "style": "outline",
-  "category": "commerce"
+  "category": "commerce",
+  "isNew": false
 });

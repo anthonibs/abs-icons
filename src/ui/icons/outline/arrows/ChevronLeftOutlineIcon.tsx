@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-chevron-left.svg",
   "presentationName": "chevron-left",
   "style": "outline",
-  "category": "arrows"
+  "category": "arrows",
+  "isNew": false
 });

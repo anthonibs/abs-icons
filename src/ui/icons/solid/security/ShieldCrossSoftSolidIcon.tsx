@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-shield-cross-soft-solid.svg",
   "presentationName": "shield-cross-soft",
   "style": "solid",
-  "category": "security"
+  "category": "security",
+  "isNew": false
 });

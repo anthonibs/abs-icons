@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-search-minus.svg",
   "presentationName": "search-minus",
   "style": "outline",
-  "category": "actions"
+  "category": "actions",
+  "isNew": false
 });

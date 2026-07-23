@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-math-symbols-solid.svg",
   "presentationName": "math-symbols",
   "style": "solid",
-  "category": "devices"
+  "category": "devices",
+  "isNew": false
 });

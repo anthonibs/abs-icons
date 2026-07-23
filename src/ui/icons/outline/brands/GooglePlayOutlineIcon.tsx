@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-google-play.svg",
   "presentationName": "google-play",
   "style": "outline",
-  "category": "brands"
+  "category": "brands",
+  "isNew": false
 });

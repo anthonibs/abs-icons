@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-lifebuoy.svg",
   "presentationName": "lifebuoy",
   "style": "outline",
-  "category": "transport"
+  "category": "transport",
+  "isNew": false
 });

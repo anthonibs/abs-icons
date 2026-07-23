@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-cursor.svg",
   "presentationName": "cursor",
   "style": "outline",
-  "category": "navigation"
+  "category": "navigation",
+  "isNew": false
 });

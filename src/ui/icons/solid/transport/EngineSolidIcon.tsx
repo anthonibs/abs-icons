@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-engine-solid.svg",
   "presentationName": "engine",
   "style": "solid",
-  "category": "transport"
+  "category": "transport",
+  "isNew": false
 });

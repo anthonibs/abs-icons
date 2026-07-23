@@ -1,0 +1,13 @@
+import { createIcon } from "../../../createIcon";
+
+      import type { SVGProps } from "react";
+const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24" color="currentColor" width="1em" height="1em" {...props}><path d="m21.73 11.29-3-5.95a2.58 2.58 0 0 0-2.33-1.43H7.6c-.99 0-1.88.55-2.32 1.43l-3 5.95c-.18.35-.27.74-.27 1.14v5.54c0 1.17.96 2.13 2.13 2.13h15.72c1.18 0 2.14-.96 2.14-2.14v-5.53c0-.39-.09-.79-.27-1.14M6.61 6.01c.19-.37.56-.6.98-.6h8.81c.42 0 .8.23.99.61l2.64 5.24h-4.02c-.45 0-.86.22-1.11.59l-1.21 1.81c-.15.22-.4.35-.66.35h-2.05a.79.79 0 0 1-.66-.35l-1.21-1.81c-.25-.37-.67-.59-1.11-.59H3.97l2.64-5.24Z" /></svg>;
+
+
+      export const InboxSolidIcon = createIcon("InboxSolidIcon", SVGComponent, {
+  "fileName": "abs-inbox-solid.svg",
+  "presentationName": "inbox",
+  "style": "solid",
+  "category": "general",
+  "isNew": true
+});

@@ -8,5 +8,6 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "fileName": "abs-iwatch-alt-solid.svg",
   "presentationName": "iwatch-alt",
   "style": "solid",
-  "category": "time"
+  "category": "time",
+  "isNew": false
 });
