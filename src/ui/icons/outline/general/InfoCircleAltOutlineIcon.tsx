@@ -9,5 +9,5 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => <svg viewBox="0 0 24 24
   "presentationName": "info-circle-alt",
   "style": "outline",
   "category": "general",
-  "isNew": false
+  "isNew": true
 });
