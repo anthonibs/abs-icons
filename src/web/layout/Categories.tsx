@@ -30,7 +30,7 @@ const Categories = () => {
   }
 
   return (
-    <nav className="mt-12 bg-abs-card-background border border-abs-card-border rounded-lg p-4">
+    <nav className="mt-5 bg-abs-card-background border border-abs-card-border rounded-lg p-4">
       <ul className="flex flex-col gap-1 max-h-[60vh] overflow-auto pr-1 abs-scrollbar">
         <li className="list-none">
           <button
