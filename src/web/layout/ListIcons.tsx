@@ -1,117 +1,75 @@
-import { memo, useRef, useState, useEffect, useMemo } from "react"
-import { useVirtualizer } from "@tanstack/react-virtual"
+import { memo, useLayoutEffect, useRef, useState } from "react"
 import CardIcon from "../components/CardIcon"
 import useListIcons from "../hooks/useListIcons"
 
-const CARD_HEIGHT = 158
-const GAP = 24
-const MIN_CARD_WIDTH = 160
-const VIEWPORT_OFFSET = 260
-const MIN_VIEWPORT_HEIGHT = 420
-const MAX_VIEWPORT_HEIGHT = 820
+import { useWindowVirtualizer } from "@tanstack/react-virtual"
 
 const ListIcons = () => {
   const { icons, sizeIcon, colorIcon } = useListIcons()
 
-  const parentRef = useRef<HTMLElement | null>(null)
-  const [columns, setColumns] = useState(4)
+  const listRef = useRef<HTMLDivElement | null>(null)
+  const [scrollMargin, setScrollMargin] = useState(0)
 
-  useEffect(() => {
-    if (!parentRef.current) return
-    let timeoutId: number
-
-    const observer = new ResizeObserver((entries) => {
-      window.clearTimeout(timeoutId)
-
-      timeoutId = window.setTimeout(() => {
-        const { width } = entries[0].contentRect
-        const cols = Math.floor((width + GAP) / (MIN_CARD_WIDTH + GAP))
-        setColumns(Math.max(1, cols))
-      }, 150)
-    })
-
-    observer.observe(parentRef.current)
-
-    return () => {
-      observer.disconnect()
-      window.clearTimeout(timeoutId)
-    }
+  useLayoutEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setScrollMargin(listRef.current?.offsetTop ?? 0)
   }, [])
 
-  const rows = useMemo(() => {
-    const chunked = []
-    for (let i = 0; i < icons.length; i += columns) {
-      chunked.push(icons.slice(i, i + columns))
-    }
-    return chunked
-  }, [icons, columns])
-
-  const rowVirtualizer = useVirtualizer({
-    count: rows.length,
-    getScrollElement: () => parentRef.current,
-    estimateSize: () => CARD_HEIGHT + GAP,
+  const virtualizer = useWindowVirtualizer({
+    count: Math.ceil(icons.length / 4),
+    estimateSize: () => 180,
     overscan: 5,
+    scrollMargin,
   })
 
-  useEffect(() => {
-    parentRef.current?.scrollTo({ top: 0, behavior: "auto" })
-    rowVirtualizer.scrollToIndex(0, { align: "start" })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [icons])
-
   return (
-    <section
-      ref={parentRef}
-      className="w-full relative abs-scrollbar pr-3"
-      style={{
-        height: `clamp(${MIN_VIEWPORT_HEIGHT}px, calc(100vh - ${VIEWPORT_OFFSET}px), ${MAX_VIEWPORT_HEIGHT}px)`,
-        overflow: "auto",
-        contain: "strict",
-      }}
-    >
+    <section className="w-full relative pr-3">
       {icons.length === 0 ? (
         <div className="py-20 text-center text-abs-text-muted">
           It seems that there are no icons matching the current filters. Try
           adjusting the filters to find the icons you need.
         </div>
       ) : (
-        <div
-          style={{
-            height: `${rowVirtualizer.getTotalSize()}px`,
-            width: "100%",
-            position: "relative",
-          }}
-        >
-          {rowVirtualizer.getVirtualItems().map((virtualRow) => {
-            const rowItems = rows[virtualRow.index]
+        <div ref={listRef} className="List">
+          <div
+            style={{
+              height: `${virtualizer.getTotalSize()}px`,
+              width: "100%",
+              position: "relative",
+            }}
+          >
+            {virtualizer.getVirtualItems().map((virtualRow) => {
+              const rowStartIndex = virtualRow.index * 4
+              const rowIcons = icons.slice(rowStartIndex, rowStartIndex + 4)
 
-            return (
-              <div
-                key={virtualRow.key}
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: `${CARD_HEIGHT}px`,
-                  transform: `translateY(${virtualRow.start}px)`,
-                  display: "grid",
-                  gridTemplateColumns: `repeat(${columns}, minmax(${MIN_CARD_WIDTH}px, 1fr))`,
-                  gap: `${GAP}px`,
-                }}
-              >
-                {rowItems.map(([name, Icon]) => (
-                  <CardIcon
-                    key={name}
-                    name={name}
-                    Icon={Icon}
-                    size={sizeIcon}
-                    color={colorIcon}
-                  />
-                ))}
-              </div>
-            )
-          })}
+              return (
+                <div
+                  key={virtualRow.key}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: `${virtualRow.size}px`,
+                    transform: `translateY(${
+                      virtualRow.start - virtualizer.options.scrollMargin
+                    }px)`,
+                  }}
+                  className="grid grid-cols-4 gap-4"
+                >
+                  {rowIcons.map(([name, Icon]) => (
+                    <CardIcon
+                      key={name}
+                      name={name}
+                      Icon={Icon}
+                      size={sizeIcon}
+                      color={colorIcon}
+                    />
+                  ))}
+                </div>
+              )
+            })}
+          </div>
         </div>
       )}
     </section>
