@@ -40,7 +40,7 @@ const HeroBanner = () => {
   return (
     <section
       id="hero-banner"
-      className="border-b border-abs-card-border bg-abs-background-dark relative overflow-hidden"
+      className="border-b border-abs-card-border bg-abs-background-dark relative overflow-hidden pt-20"
     >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl opacity-10 pointer-events-none">
         <div className="absolute top-[-50%] left-[20%] w-96 h-96 bg-abs-brand-primary rounded-full blur-3xl"></div>
