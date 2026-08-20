@@ -1,9 +1,12 @@
 import { useDeferredValue, useMemo } from "react"
+import type { createIcon } from "../../ui/createIcon"
 import useData from "../store/useData"
 
 import * as Icons from "../../ui/icons"
 
-const ICON_ENTRIES = Object.entries(Icons) as [string, any][]
+type IconComponent = ReturnType<typeof createIcon>
+
+const ICON_ENTRIES = Object.entries(Icons) as [string, IconComponent][]
 
 const useListIcons = () => {
   const searchQuery = useData((state) => state.searchQuery)
@@ -17,9 +20,6 @@ const useListIcons = () => {
     const query = deferredSearchQuery.trim().toLowerCase()
 
     return ICON_ENTRIES.filter(([name, component]) => {
-      const isIcon = typeof component === "function" || component?.metadata
-      if (!isIcon) return false
-
       const matchesSearch =
         query.length === 0 || name.toLowerCase().includes(query)
       const matchesVariant =
@@ -38,6 +38,7 @@ const useListIcons = () => {
     icons,
     sizeIcon,
     colorIcon,
+    variant,
   }
 }
 
