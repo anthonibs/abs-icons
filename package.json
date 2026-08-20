@@ -51,6 +51,7 @@
     "preview:web": "vite preview --config vite.config.web.ts",
     "prebuild:lib": "npm run optimize:svgs && npm run generate:icons",
     "build:lib": "npm run prebuild:lib && tsup",
+    "prepublishOnly": "npm run build:lib",
     "major": "npm version major && git push && git push origin --tags",
     "minor": "npm version minor && git push && git push origin --tags",
     "patch": "npm version patch && git push && git push origin --tags",
